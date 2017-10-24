@@ -2,4 +2,22 @@ git bash here
 
 commands
 
-ls -a
+ls -a		
+//shows all files in the correct dir
+
+git init
+//
+
+git add . 
+//adds all files inside the dir from "working dir" to "staging"
+
+git config --global user.email "you@example.com"
+git config --global user.name "Your Name"
+
+rogerdudler.github.io/git-guide/
+
+git add.
+git commit -m "message"
+git push remote branch
+
+git push <remote>
