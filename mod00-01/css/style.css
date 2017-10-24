@@ -8,7 +8,7 @@ body {
 }
 
 p {
-	font-family: 'anton', san-serif;
+	font-family: 'Average Sans', san-serif;
 }
 
 h1 {
@@ -17,9 +17,9 @@ h1 {
 }
 
 h2 {
+	color: yellow;
 	text-transform: uppercase;
-	letter-spacing: 2px;
-	font-color: yellow;
+	letter-spacing: 3px;
 }
 
 #me {
@@ -27,7 +27,7 @@ h2 {
 	border-radius: 50%;
 	border-style: solid;
 	border-width: 2px;
-	border-color: 'LightGray';
+	border-color: 'silver';
 	margin-top: 50px;
 }
 

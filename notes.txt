@@ -15,9 +15,13 @@ git config --global user.email "you@example.com"
 git config --global user.name "Your Name"
 
 rogerdudler.github.io/git-guide/
+http://tinyurl.com/b3nc-webdev-prep-course
 
 git add.
 git commit -m "message"
 git push remote branch
 
 git push <remote>
+git push github master
+
+https://rochelleilustre.github.io/b3nc-ilustre-rochelle/mod00-01/
