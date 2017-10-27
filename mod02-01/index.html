@@ -2,6 +2,13 @@
 <html>
 <head>
 	<meta charset="utf-8">
+
+	<meta name="viewport" content="width-device-width, initial-scale=1.0">
+	<!--this tells the browswer that this is mobile-friendly website/application-->
+
+	<meta name="X-UA-compatible" content="IE=edge">
+	<!--compatibility to old versions of IE-->
+
 	<title>My Second Website - This is the best website ever!</title>
 
 	<style type="text/css">
@@ -353,60 +360,69 @@
 
 	<hr>
 
-	<fieldset>
-		<legend>Your Details:</legend>
+	<h1>Activity: Creating HTML mark up</h1>
 
-		<label for="name">Name:</label>
-		<input type="text" name="name">
+	<form action="" method="" style="width: 40%;">
 
-		<br>
+		<fieldset>
+			<legend>Your Details:</legend>
 
-		<label for="email">Email:</label>
-		<input type="email" name="email">
-	</fieldset>
+			<label for="name">Name:</label>
+			<input size="40" type="text" name="name">
 
-	<fieldset>
-		<legend>Your Review:</legend>
+			<br>
 
-		<br>
-
-		<label>How did you hear about us?</label>
-		<select name="media">
-			<option value="google" selected=google">Google</option>
-			<option value="facebook">Facebook</option>
-			<option value="instagram">Instagram</option>
-			<option value="blog">Blog</option>
-			<option value="website">Website</option>
-			<option value="referral">Referral</option>
-		</select>
-
-		<br>
-		<br>
-
-		<label>Would you visit us again?</label>
-			<input type="radio" name="answer" value="">Yes
-			<input type="radio" name="answer" value="">No
-			<input type="radio" name="answer" value="">Maybe
-
-		<br>
-		<br>
-
-			<label>Comments:</label>
-
-		<br>
-		
-			<textarea></textarea>
-
-		<br>
-		<br>
-
-		<input type="checkbox" name="signmeup" value="signmeup">Sign me up for emails updates
+			<label for="email">Email:</label>
+			<input size="40" type="email" name="email">
+		</fieldset>
 
 		<br>
 
-		<button type="button">Submit Review</button>
+		<fieldset>
+			<legend>Your Review:</legend>
 
-	</fieldset>
+			<br>
+
+			<label>How did you hear about us?</label>
+			<select name="ads">
+				<option selected="google">Google</option>
+				<option>Facebook</option>
+				<option>Instagram</option>
+				<option>Blog</option>
+				<option>Website</option>
+				<option>Referral</option>
+			</select>
+
+			<br>
+			<br>
+
+			<label>Would you visit us again?</label>
+
+			<br>
+				<label><input type="radio" name="visit">Yes</label>
+				<label><input type="radio" name="visit">No</label>
+				<label><input type="radio" name="visit">Maybe</label>
+
+			<br>
+			<br>
+
+				<label>Comments:</label>
+
+			<br>
+			
+				<textarea style="width: 93%;"></textarea>
+
+			<br>
+			<br>
+
+			<input type="checkbox" name="signmeup" value="signmeup" checked="checked">Sign me up for emails updates
+
+			<br>
+
+			<button type="button">Submit Review</button>
+
+		</fieldset>
+	</form>
 
 </body>
 </html>
