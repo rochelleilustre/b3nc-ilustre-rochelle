@@ -1,58 +1,85 @@
 <!DOCTYPE html>
 <html>
 <head>
+
+	<meta charset="utf-8">
+	<meta name="viewport" content="width-device-width, initial-scale=1.0">
+	<meta name="X-UA-compatible" content="IE-edge">
+
 	<title>Actvity # 3</title>
 
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 </head>
+
 <body style="font-family: arial">
 
 	<div style="width: 90%" align="center">
-		<form>
 		<header>
 			<h1 style="background-color: dodgerblue;">TUITT CODING BOOTCAMP</h1>
 		</header>
 
-		<nav>
+		<main>		
+			<div>
+				<h3><i class="fa fa-home" aria-hidden="true"></i>Dashboard</h3>				
+			</div>	
+
+			<div>
+				<i class="fa fa-file-text" aria-hidden="true"></i>	
+					<div>
+						<p>5</p>
+						<p>posts</p>
+					</div>	
+			</div>
+
+			<div>
+				<i class="fa fa-plus-circle" aria-hidden="true"></i>
+					<div>
+						<p>13</p>
+						<p>images</p>
+					</div>
+			</div>
+
 		
-				<i class="fa fa-apple" style="font-size: 25px; color: gray"></i>Dashboard
-				<i class="fa fa-windows" style="font-size: 25px; color: green"></i>5 posts
-				<i class="fa fa-get-pocket" style="font-size: 25px; color: blue"></i>13 images
-			</ul>
 
+		
 
-		</nav>
+			<h3><i class="fa fa-plus-circle" aria-hidden="true"></i></i>New Post</h3>
+			
+				<form action="" method="">
+					<input type="text" name="" placeholder="Enter your post title">
+					<textarea placeholder="Enter post content here"></textarea>
+					<input type="submit" name="" value="Publish">
 
-		<main>
+					<br>
+					<br>
+				</form>
 
-			<h1><i class="fa fa-telegram" style="font-size: 30px; color: gray"></i>New Post</h1>
-				<textarea>Enter your post title</textarea>
-				<br>
-				<textarea>Enter post content here</textarea>
-				<br>
-				<button>Publish</button>
+			<h1><i class="fa fa-cloud-upload" aria-hidden="true"></i>Upload Image</h1>
+
+				<ul>
+					<li><a href="#"><img src="http://lorempixel.com/100/100" alt="#">Image</a></li>
+					<li><a href="#"><img src="http://lorempixel.com/100/100" alt="#">Image</a></li>
+					<li><a href="#"><img src="http://lorempixel.com/100/100" alt="#">Image</a></li>
+					<li><a href="#"><img src="http://lorempixel.com/100/100" alt="#">Image</a></li>
+					<li><a href="#"><img src="http://lorempixel.com/100/100" alt="#">Image</a></li>
+				</ul>
+				
+				<form action="" method="">
+					<input type="file" name="" hidden="">
+					<button type="button">Browse</button>
+					<button type="submit">Upload</button>
+
+				</form>
 		</main>
 
-		<aside>
-			<h1>Upload Image</h1>
-				<img src="#" style="width: 100px;">
-				<span>Image</span>
-				<span>Image</span>
-				<span>Image</span>
-				<span>Image</span>
-				<span>Image</span>
 
-				<br>
-				<button>Browse</button>
-				<button>Upload</button>
-		</aside>
+		<br>
 
 		<footer style="background-color: gray;">
 			<span>Tuitt Coding Bootcamp &copy; 2017</span>
 		</footer>
 
-		</form>
 	</div>
 </body>
 </html>
