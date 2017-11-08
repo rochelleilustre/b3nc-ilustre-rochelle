@@ -7,3 +7,10 @@
 ## 2017-10-25
 ### Getting started with GitLab
 This is my first feedback.
+
+## 2017-11-08
+### Bootcamp Night 11
+So far so good!  
+Learning a lot from Sir Billy.
+
+
