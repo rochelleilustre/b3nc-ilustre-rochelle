@@ -40,3 +40,12 @@ New list item:
 	:zap:
 
 	:v:
+
+	## Tables
+
+| firstname    | lastname | 
+|:-------------|:---------|
+|rochelle benet| ilustre  |
+|billy wilson  | arante   |
+|peejay        | saracho  |
+|alan          | beraquit |
