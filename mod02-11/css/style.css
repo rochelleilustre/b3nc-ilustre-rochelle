@@ -1,0 +1,151 @@
+*{
+	margin: 0;
+	border: 0;
+}
+
+div	{
+	width: 100%;
+	margin: 0 auto;
+}
+
+.black-container {
+	width: 700px;
+	height: auto;
+	padding: 10px;
+	background-color: black;
+	margin-bottom: 10px;
+}
+
+.grey-boxes {
+	width: 150px;
+	height: 150px;
+	margin: 10px;
+	background-color: grey;
+	float: left;
+}
+
+.clear:after {
+	content: ""; /*empty string or invisible element*/
+	clear: both;
+	display: block;
+}
+
+.black-container2 {
+	width: 700px;
+	height: auto;
+	padding: 10px;
+	background-color: black;
+	margin-bottom: 10px;
+
+}
+
+.caption {
+	width: 150px;
+	/*height: 150px;*/
+	border: 1px solid white;
+	background-color: black;
+	padding: 10px;
+	float: left;
+	margin: 10px;
+}
+
+.grey-boxes2{
+	width: 150px;
+	height: 150px;
+	background-color: grey;
+	margin-bottom: 10px;
+}
+
+.caption {
+	color: white;
+	text-align: center;
+	padding: 10px;
+}
+
+p {
+	padding: 10px;
+}
+
+.black-container3 {
+	width: 700px;
+	height: auto;
+	padding: 10px;
+	background-color: black;
+	margin-bottom: 10px;
+
+}
+
+h1,
+p {
+	color: white;
+}
+
+.box {
+	width: 150px;
+	height: 150px;
+	background-color: grey;
+	margin-right: 10px;
+	margin-top: 10px;
+	float: left;
+}
+
+.black-container4 {
+	width: 700px;
+	height: auto;
+	padding: 10px;
+	margin-bottom: 10px;
+	background-color: black;
+}
+
+.box-container4 {
+	width: 150px;
+	height: 150px;
+	background-color: grey;
+	margin-right: 10px;
+	margin-top: 10px;
+	float: left;
+}
+
+.text-container4 {
+	width: 77%;
+	float: right;
+
+}
+
+.black-container5 {
+	width: 700px;
+	background-color: black;
+	margin-bottom: 10px;
+}
+
+
+
+.box-container5 {
+	width: 50px;
+	height: 50px;
+	background-color: grey;
+}
+
+.box-cont5 {
+	width: 20%;
+	float: left;
+}
+
+.textarea {
+	width: 80%;
+	float: left;
+}
+
+textarea {
+	width: 80%
+}
+
+button {
+	background-color: white;
+	display: inline-block;
+	bottom: 0;
+	margin: : 10px;
+	text-decoration: none;
+}
+
+
