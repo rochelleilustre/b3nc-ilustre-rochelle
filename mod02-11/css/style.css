@@ -4,7 +4,7 @@
 }
 
 body {
-	background-color: salmon;
+	background-color: #FEF8E8;
 }
 
 div	{
@@ -17,7 +17,7 @@ div	{
 	width: 700px;
 	height: auto;
 	padding: 10px;
-	background-color: #336699;
+	background-color: #211529;
 	margin-bottom: 10px;
 }
 
@@ -25,7 +25,7 @@ div	{
 	width: 150px;
 	height: 150px;
 	margin: 10px;
-	background-color: #C0C0C0;
+	background-color: #554D70;
 	float: left;
 }
 
@@ -41,7 +41,7 @@ div	{
 	width: 700px;
 	height: auto;
 	padding: 10px;
-	background-color: black;
+	background-color: #211529;
 	margin-bottom: 10px;
 
 }
@@ -49,8 +49,8 @@ div	{
 .caption {
 	width: 150px;
 	/*height: 150px;*/
-	border: 1px solid white;
-	background-color: #333366;
+	border: 1px solid #FBE6BF;
+	background-color: #5D4067;
 	padding: 10px;
 	float: left;
 	margin: 10px;
@@ -59,7 +59,7 @@ div	{
 .grey-boxes2{
 	width: 150px;
 	height: 150px;
-	background-color: #fff;
+	background-color: #554D70;
 	margin-bottom: 10px;
 }
 
@@ -79,7 +79,7 @@ p {
 	width: 700px;
 	height: auto;
 	padding: 10px;
-	background-color: #D08504;
+	background-color: #211529;
 	margin-bottom: 10px;
 
 }
@@ -92,7 +92,7 @@ p {
 .box {
 	width: 150px;
 	height: 150px;
-	background-color: grey;
+	background-color: #554D70;
 	margin-right: 10px;
 	margin-top: 10px;
 	float: left;
@@ -105,13 +105,13 @@ p {
 	height: auto;
 	padding: 10px;
 	margin-bottom: 10px;
-	background-color: #29407C;
+	background-color: #211529;
 }
 
 .box-container4 {
 	width: 150px;
 	height: 150px;
-	background-color: grey;
+	background-color: #554D70;
 	margin-right: 10px;
 	margin-top: 10px;
 	float: left;
@@ -125,7 +125,7 @@ p {
 
 .black-container5 {
 	width: 700px;
-	background-color: black;
+	background-color: #211529;
 	margin-bottom: 10px;
 }
 
@@ -134,7 +134,7 @@ p {
 .box-container5 {
 	width: 50px;
 	height: 50px;
-	background-color: grey;
+	background-color: #554D70;
 }
 
 .box-cont5 {
@@ -149,8 +149,9 @@ p {
 }
 
 textarea {
-	width: 100%;
+	width: 95%;
 	height: 90px;
+	padding-right: 10px;
 }
 
 button {
@@ -178,14 +179,14 @@ button {
 
 .black-container6 {
 	width: 700px;
-	background-color: black;
+	background-color: #211529;
 	margin-bottom: 10px;
 }
 
 .grey-box6 {
 	width: 50px;
 	height: 50px;
-	background-color: grey;
+	background-color: #554D70;
 	float: left;
 }
 
@@ -209,7 +210,7 @@ button {
 .hidden-box {
 	width: 61px;
 	height: 268px;
-	background-color: black;
+	background-color: #211529;
 	border-right: 2px solid white;
 	float: left;
 }
@@ -219,14 +220,14 @@ button {
 	width: 500px;
 	height: auto;
 	padding: 10px;
-	background-color: #191970;
+	background-color: #211529;
 	margin-bottom: 10px;
 }
 
 .grey-box7{
 	height: 100px;
 	width: 40%;
-	background-color: #FFEBCD;
+	background-color: #554D70;
 	float: left;
 }
 
@@ -245,14 +246,14 @@ p small {
 	width: 500px;
 	height: auto;
 	padding: 10px;
-	background-color: #B58AA5;
+	background-color: #211529;
 	margin-bottom: 10px;
 }
 
 .grey-box8{
 	height: 100px;
 	width: 40%;
-	background-color: #CECFCE;
+	background-color: #554D70;
 	float: right;
 }
 
@@ -262,7 +263,7 @@ p small {
 	width: 700px;
 	height: auto;
 	padding: 10px;
-	background-color: black;
+	background-color: #211529;
 	margin-bottom: 10px;
 }
 
@@ -281,7 +282,7 @@ p small {
 .grey-box9 {
 	width: 150px;
 	height: 150px;
-	background-color: grey;
+	background-color: #554D70;
 	margin-right: 5px;
 	margin-bottom:5px;
 	display: inline-block;
@@ -298,7 +299,7 @@ p small {
 	width: 1000px;
 	height: auto;
 	padding: 10px;
-	background-color: black;
+	background-color: #211529;
 	margin-bottom: 10px;
 
 }
@@ -327,7 +328,7 @@ p small {
 .grey-box10 {
 	width: 150px;
 	height: 110px;
-	background-color: grey;
+	background-color: #554D70;
 }
 
 .right-side10 {
@@ -339,7 +340,7 @@ p small {
 .large-box10 {
 	height: 200px;
 	width: 400px;
-	background-color: grey;
+	background-color: #554D70;
 }
 
 .menu {
@@ -350,7 +351,7 @@ p small {
 .baguio-box {
 	width: 150px;
 	height: 100px;
-	background-color: grey;
+	background-color: #554D70;
 	margin-right: 5px;
 	float: left;
 }
