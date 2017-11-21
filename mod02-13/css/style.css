@@ -1,0 +1,170 @@
+.colorfg {
+	color: white;
+}
+
+.colorbg {
+	background-color: darkcyan;
+}
+
+.name {
+	background-color: mediumaquamarine;
+}
+
+.rgb {
+	background-color: rgb(102, 205, 170); 
+}
+
+.rgba {
+	background-color: rgba(255, 255, 255, 0.5);
+}
+
+.hex {
+	background-color: #012;
+}
+
+.hsl {
+	background-color: hsl(0, 0%, 100%);
+}
+
+.hsla {
+	background-color: hsla(30, 50%, 78%, 0.5);
+}
+
+.opacity {
+	background-color: red;
+	opacity: 0.5;
+}
+
+.bold {
+	font-weight: bold;
+}
+
+.italic {
+	font-style: italic;
+}
+
+.uppercase {
+	text-transform: uppercase;
+	letter-spacing: 1px;
+}
+
+.lowercase {
+	text-transform: lowercase;
+}
+
+.capitalize {
+	text-transform: capitalize;
+}
+
+.underline {
+	text-decoration: underline;
+}
+
+.linethrough {
+	text-decoration: line-through;
+}
+
+.none {
+	text-decoration: none;
+}
+
+.lineheight {
+	line-height: 2;
+}
+
+.letterspacing {
+	letter-spacing: 2px;
+}
+.wordspacing {
+	word-spacing: 1em;
+}
+
+
+.alignleft {
+	text-align: left;
+}
+
+.alignright {
+	text-align: right;
+}
+
+.aligncenter {
+	text-align: center;
+}
+
+.alignjustify {
+	text-align: justify;
+}
+
+.indent {
+	text-indent: 20px;
+}
+
+.textshadow {
+	text-shadow: 10px 10px 20px #000;
+}
+
+link
+
+visited
+
+hover
+
+active
+
+focus
+
+clear
+
+.localfont {
+	font-family: 'Arial';
+}
+
+downloadedfont
+
+opensourcefont
+
+.serif {
+	font-family: 'georgia', serif;
+}
+
+.sansserif {
+	font-family: 'arial', sans-serif;
+}
+
+.monosspace {
+	font-family: 'courier', monospace;
+}
+
+.cursive {
+	font-family: "comic sans MS", cursive;
+}
+
+.fantasy {
+	font-family: fantasy;
+}
+
+.pixels {
+	font-size: 16px;
+}	
+
+.percent {
+	font-size: 200%;
+}
+
+.ems {
+	font-size: 1em;
+}
+
+@font-face {
+	font-family: 'XB Kayhan';
+	src: url('../font/Kayhan/XB Kayhan.ttf');
+}
+
+.downloadedfont {
+	font-family: 'XB Kayhan';
+}
+
+.boxshadow {
+	box-shadow: 10px 10px 5px #888;
+}
