@@ -33,10 +33,12 @@ body {
 */
 
 .nav {
-	background-color: lightyellow;
+	background-color: white;
 	height: 100%;
 	width: 200px;
 	position: fixed;
+	
+
 }
 
 ul {
@@ -45,10 +47,11 @@ ul {
 
 ul > li {
 	list-style: none;
-	background-color: lightblue;
+	background-color: #F0E5C9;
 	margin-bottom: 2px;
 	text-align: center;
-	line-height: 48px;
+	line-height: 30px;
+	border-radius: 3%;
 /*	padding: 20px;*/
 }
 
@@ -71,6 +74,11 @@ ul > li > a {
 	background-color: skyblue;
 	position: relative;
 	min-height: 700px;
+	background-image: url("https://static1.squarespace.com/static/5192a215e4b0efb5c8bd028c/t/560ad2b1e4b082bb08943725/1443549874708/apple-accesories-banner.jpg?format=2500w");
+	background-repeat: no-repeat;
+	background-position: left;
+	background-size: cover;
+
 }
 
 .box {
@@ -84,8 +92,12 @@ ul > li > a {
 	transform: translate(-50%, -50%);
 }
 
+h1 {
+	font-family: 'Vollkorn SC', serif;
+}
+
 .about {
-	background-color: indianred;
+	background-color: #f7e3d9;
 	min-height: 700px;
 }
 
@@ -96,7 +108,7 @@ ul > li > a {
  *
 */
 .services {
-	background-color: midnightblue;
+	background-color: white;
 	min-height: 300px;
 }
 
@@ -130,14 +142,14 @@ ul > li > a {
 }
 
 .projects {
-	background-color: crimson;
+	background-color: #FCEEE3;
 	min-height: 300px;
 }
 
 
 
 .gallery {
-	background-color: orange;
+	background-color: white;
 	min-height: 400px;
 }
 
@@ -163,7 +175,7 @@ ul > li > a {
 *
 */
 .footer {
-	background-color: green;
+	background-color: #594433;
 	min-height: 70px;
 }
 
