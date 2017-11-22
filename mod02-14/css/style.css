@@ -1,0 +1,173 @@
+/*CSS reset*/
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+.wrapper {
+	background-color: #fff;
+	width: 80%;
+	margin: 20px auto;
+	padding: 20px;
+	position: relative;
+}
+
+
+body {
+	background-color: lightgrey;
+}
+
+.item1 {
+	width: 150px;
+	height: 150px;
+	background-color: orange;
+	margin-bottom: 20px;
+}
+
+.item2 {
+	width: 150px;
+	height: 150px;
+	background-color: orange;
+	border-left: 15px solid blue;
+	border-right: 15px solid blue;
+	margin-bottom: 20px;
+
+}
+
+.item3 {
+	border: 1px solid black;
+	padding: 10px;
+	border-radius: 0 10px 0 10px;
+	padding: 10px;
+	display: inline-block;
+	margin-bottom: 20px;
+}
+
+.item4 {
+	width: 150px;
+	height: 150px;
+	background-color: pink;
+	border-radius: 50%;
+	margin-bottom: 20px;
+}
+
+.item5 {
+	width: 150px;
+	height: 150px;
+	background-color: pink;
+	border-radius: 50%;
+	text-align: center;
+	line-height: 150px;
+	margin-bottom: 20px;
+}
+
+.item6 {
+	width: 400px;
+	height: 200px;
+	border: 1px solid;
+	position: relative;
+	margin-bottom: 20px;
+}
+
+.item6 > img {
+	position: absolute;
+	width: 80px;
+	bottom: 0;
+	left: 0;
+}
+
+
+.item7,
+.item8 {
+	width: 400px;
+	height: 200px;
+	border: 1px solid;
+	position: relative;
+	margin-bottom: 20px;
+}
+
+#coconut {
+	position: absolute;
+	width: 80px;
+	bottom: 0;
+	right: 0;
+}
+
+#sun {
+	position: absolute;
+	width: 80px;
+	top: 0;
+	left: 0;
+}
+
+.item8 > p {
+	text-align: center;
+	line-height: 200px;
+	margin-bottom: 20px;
+}
+
+
+/*****************/
+img#dog {
+	width: 150px;
+	border-radius: 50%;
+/*	display: block;
+*/}
+
+.item10 {
+	width: 400px;
+	border: 1px solid;
+	position: relative;
+	margin-bottom: 20px;
+
+}
+
+.item10 > p {
+	line-height: 150px;
+	display: inline;
+}
+
+.item10 > img {
+	position: absolute;	
+	left: 0;
+}
+
+/*****************/
+
+.item11 {
+	width: 400px;
+	border: 1px solid;
+	text-align: center;
+	margin-bottom: 20px;
+
+}
+
+#red {
+	width: 70px;
+}
+
+h1 {
+	margin: 10px auto;
+}
+
+.bgred {
+	background-color: salmon;
+}
+
+table,
+th,
+td {
+	border: 1px solid;
+	padding: 10px;
+}
+
+th {
+	color: white;
+	background-color: black;
+}
+
+table {
+	border-collapse: collapse;
+	text-align: center;
+}
