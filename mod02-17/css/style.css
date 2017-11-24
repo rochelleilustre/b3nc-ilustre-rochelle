@@ -209,7 +209,7 @@ img[alt*="Social"]{
 
 	.banner {
 		position: relative;
-		height: 320px;
+		min-height: 320px;
 	}
 
 
@@ -222,8 +222,8 @@ img[alt*="Social"]{
 		position: absolute;
 		top: 50%;
 		left: 50%;
-/*		transform: translate(-50%, -50%);
-*/	}
+		transform: translate(-50%, -50%);
+	}
 
 	.column {
 		border: 1px solid black;
