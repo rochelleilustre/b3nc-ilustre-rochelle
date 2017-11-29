@@ -1,0 +1,75 @@
+* {
+	box-sizing: border-box;
+}
+
+body {
+	background-color: black;
+}
+
+.banner {
+	width: 100%;
+	min-height: 600px;
+	background-color: lightblue;
+	background-image: url('https://images.pexels.com/photos/414781/pexels-photo-414781.jpeg?w=940&h=650&auto=compress&cs=tinysrgb');
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center center;
+	opacity: 0.8;
+	border-top: 1px solid lightgrey;
+	border-bottom: 1px solid lightgrey;
+}
+
+.button {
+	text-align: center;
+	margin-top: 400px;
+	
+}
+
+
+.clear:after {
+	content: "";
+	display: block;
+	clear: both;
+
+}
+
+/****** media queries *****/
+
+/* mobile devices */
+@media only screen and (max-width: 400px) {
+
+	.banner {
+		max-width: 400px;
+		margin-top: 100px;
+	}
+
+}
+
+
+
+/* tablet devices */
+@media only screen and (min-width: 401px) 
+and (max-width: 960px) {
+
+	
+
+	.banner {
+/*		min-width: 401px;
+*/		margin-top: 100px;
+	}
+
+
+}
+
+
+
+/* desktop devices */
+@media only screen and (min-width: 961px) {
+
+	.banner {
+		margin-top: 120px;
+	}
+
+
+
+}
