@@ -1,0 +1,1079 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box; /*to avoid overflowing elements*/
+	/*box-sizing: content-box; default box-sizing*/
+}
+
+
+<html lang="en">
+
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-compatible" content="IE=edge">
+
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+
+.clear:after {
+	content: ""; /*empty string or invisible element*/
+	clear: both;
+	display: block;
+}
+
+
+10/24/17--------------------------------------------------------------------------------
+
+
+git bash here
+
+commands
+
+ls -a		
+//shows all files in the correct dir
+
+git init
+//
+
+git add . 
+//adds all files inside the dir from "working dir" to "staging"
+
+git config --global user.email "you@example.com"
+git config --global user.name "Your Name"
+
+rogerdudler.github.io/git-guide/
+http://tinyurl.com/b3nc-webdev-prep-course
+
+git add.
+git commit -m "message"
+git push remote branch
+
+git push <remote>
+git push github master
+
+https://rochelleilustre.github.io/b3nc-ilustre-rochelle/mod00-01/
+
+
+Hi! I'm Chellie! I'm a Full Stack Web Developer Student at Tuitt Coding Bootcamp. 
+I graduated with a Bachelors degree in Computer Science at Trinity College of Quezon City in 2005. And currently working in a BPO. I also took up Visual Graphic and Web design at First Academy of Computer Arts. And Digital Illustration & Page Design at CIIT.  
+
+10/25/17--------------------------------------------------------------------------------
+
+https://gitlab.com/
+username rochelleilustre
+https://gitlab.com/rochelleilustre/b3nc-ilustre-rochelle.git
+
+ls -a
+
+git remote -v
+
+git remote add gitlab
+
+git remote set-url gitlab https://gitlab.com/rochelleilustre/b3nc-ilustre-rochelle.git
+
+git remote -v
+
+git push gitlab master
+
+
+touch README.md
+//create read me file
+ls -a
+
+
+git add .
+git commit -m "create new README.md file"
+git log
+git push gitlab master
+
+mkdir mod01-01
+//create folder
+
+ls -a
+
+HTML-----------------------
+structure
+
+heading elements h1 h2 h3 ..
+h1 no limit
+SEO h1 is used once
+
+HTML elements 
+bldg blocks of HTML pages
+
+HTML tags
+
+self enclosing, empty, void tags
+
+HTML attributes
+
+!doctype declaration
+
+head
+title
+body --entire content of the page
+
+ctrl + [ 	unindent
+ctrl + ] 	indent
+ctrl shift k 	delete line
+ctrl shift d	duplicate line
+ctrl d		highlight
+ctrk k		skip highlighting
+ctrl shift /	comment
+
+text formatting
+
+strong
+bold
+emphasis
+superscript
+subscript
+abbreviation
+
+block quote
+quote
+cite
+
+*document structure
+*text formatting
+
+10/26/17--------------------------------------------------------------------------------
+
+git status -s
+git status
+git add . 
+git commit -m "message"
+git log
+git push gitlab master
+git push github master
+
+small
+
+*link formatting
+
+<a href="">
+can be absolute
+can be relative
+
+email link
+
+*list formatting
+ordered
+unordered
+
+mkdir mod02-01/img/  //add folder
+ls -s mod02-01/img/  //view files
+
+500x500 size images file size
+
+*forms
+id = name
+
+METHOD
+-get
+-post
+-delete
+-update
+
+10/27/17--------------------------------------------------------------------------------
+
+
+**semantic html
+
+header
+//introductory content
+
+nav
+footer
+
+**document info
+
+html head
+
+tinyurl.com/tuitt-b3nc-html-activity-1
+
+<meta charset="utf-8">
+
+<meta name="viewport" content="width-device-width, initial-scale=1.0">
+<!--this tells the browswer that this is mobile-friendly website/application-->
+
+<meta http-equiv="X-UA-compatible" content="IE=edge">
+<!--compatibility to old versions of IE-->
+
+
+<meta charset="utf-8">
+<meta charset="utf-8">
+<meta charset="utf-8">
+<meta charset="utf-8">
+<meta charset="utf-8">
+
+<meta name="viewport" content="width-device-width, initial-scale=1.0">
+<meta name="viewport" content="width-device-width, initial-scale=1.0">
+<meta name="viewport" content="width-device-width, initial-scale=1.0">
+<meta name="viewport" content="width-device-width, initial-scale=1.0">
+<meta name="viewport" content="width-device-width, initial-scale=1.0">
+
+<meta name="X-UA-compatible" content="IE=edge">
+<meta name="X-UA-compatible" content="IE=edge">
+<meta name="X-UA-compatible" content="IE=edge">
+<meta name="X-UA-compatable" content="IE=edge">
+
+
+tinyurl.com/tuitt-b3nc-gitlab-accounts
+
+
+
+	<dl>
+		<dt>Empathy</dt>
+		<dd>the imaginative projection of a subjective state into an object so that the objects appears to be infused with it</dd>
+
+		<dt>Impanel</dt>
+		<dd>to choose people to serve on a jury</dd>
+	</dl>
+
+
+
+
+10/30/17--------------------------------------------------------------------------------
+
+Night # 6
+
+-	continuation/completion of last week's activity 1 on html
+-	discussion possible coding solution to activity 1 on html
+-	short quiz on html
+-	lectures, coding challenges, and activities on html DOM (document object model)
+
+UTF unicode
+
+http://tinyurl.com/tuitt-html-quiz-1
+
+
+
+DOM (document object model)
+-	platform and language-netural interface
+-	change the doc structure, style and content
+-	document as nodes and objects
+- 	prog lang can connect to the page
+
+HTML DOM
+-	std for how to get, change, add or delete HTML elements
+-	HTML DOM manipulation
+
+
+HTML elements as objects
+Properties of all HTML elements
+Methods to access all HTML elements
+Events for all HTML elements
+HTML DOM tree of objects
+
+text > string > sequence of characters (alpha-numeric & special char)
+
+w3schools.com
+MDN mozilla developer network
+codecademy
+
+11/02/17--------------------------------------------------------------------------------
+
+ISABEL SIEH
+girls will code
+
+Night # 7
+-	recap
+-	coding challenges and activites on html DOM
+	activity 1	index1.html	http://192.168.0.122/tuitt/
+	activity 2	index2.html
+	activity 3	index3.html
+
+
+icons <i class=""></i>
+
+http://fontawesome.io
+
+11/03/17--------------------------------------------------------------------------------
+
+hard reload ctrl shift R
+
+change the brand name **done
+change the footer **done
+change the color styles and font **done
+
+commit on git lab and github 8:53 PM 03/11/2017
+deploy, get the url and paste in http://tinyurl.com/y6ug6a6t
+
+https://gitlab.com/rochelleilustre/b3nc-ilustre-rochelle.git
+
+SAS: http://tinyurl.com/tuitt-b3nc-skills-evaluation
+Weekly Evaluation: http://tinyurl.com/tuittNight3
+
+11/6/17--------------------------------------------------------------------------------
+
+night #9
+intro to CSS
+
+Intro to CSS
+
+W3C www consortium
+
+HTML4 separation of structure and style
+
+selector	declaration	declaration
+h1		{color:blue;  	font-size:12px;}
+		property:value; property:value; 
+
+declaration blocks
+
+3 main ways styles cascade
+1.	sgl rule can affect multipl html elements
+2.	one html element can be affected by many rules
+3.	one stylesheet can be applied to many pages
+
+SELECTOR target element/s
+-	type 		elements {style:properties;}
+-	ID		#ID_value {style:properties;}
+-	class		.class_name {style:properties;}
+-	attribute	[attr=value] {style:properties;}
+-	universal	*{style:properties;}	css resetting
+
+Importing CSS
+-	external stylesheet **must be! <link rel="stylesheet" type="text/css" href="css/style.css">
+-	internal stylesheet **for testing and trouble shooting purp only <head><style>
+-	inline style **for testing and trouble shooting /debugging purp only <h1><style="">
+
+<link rel="stylesheet" type="text/css" href="css/style.css">
+<link rel="stylesheet" type="text/css" href="css/style.css">
+<link rel="stylesheet" type="text/css" href="css/style.css">
+<link rel="stylesheet" type="text/css" href="css/style.css">
+<link rel="stylesheet" type="text/css" href="css/style.css">
+
+COMBINATOR
+relationship between selectors
+-	adjacent sibling selector +
+	+ separates 2 selector and matches the 2nd
+	former_element + target_element {style: properties;}
+
+-	general sibling selector -
+	- separates 2 selector and matches the 2nd element only
+	former_element - target_element {style: properties;}
+
+-	child selector >
+	selector1 > selector2 {style: properties;}
+
+-	desendant selector (whitespace)
+	single space
+	selector1 selector2 {style: properties;}
+
+PSEUDO CLASSES provides styles for various states of elements
+:link css pseudo class - represent links (anchor)
+
+creating new folder
+ls -a
+mkdir mod02-05/
+ls -a
+touch mod02-05/index.html
+ls -a mod02-05/
+mkdir mod02-05/css/
+touch mod02-05/css/style.css
+
+a:link
+a:visited
+a:focus
+a:hover
+
+developer portfolio 1st version
+capstone project 1
+
+Web Developer Portfolio Basic Format
+tinyurl.com/tuitt-webdev-portfolio-format
+
+SPECIFICITY
+most relevant to an element
+
+measure specificity
+style attribute, 		1000
+id, 				100
+class, psuedo-class, attribute, 10
+elements 			1
+
+body #content .data img:hover
+specificity level 1|100|10|11
+
+/*CSS comments*/
+
+ctrl shift i 	inspect element
+
+11/7/17--------------------------------------------------------------------------------
+
+nigth # 10
+git clone resources repo from gitlab
+quiz into to css
+intro to css box model
+
+ls -a
+git clone [remote url] https://gitlab.com/tuitt/students/b3nc/resources.git
+ls -a
+ls -a resources/
+
+ls
+ls resources/
+pwd
+cp -v resources/css_quiz.md quiz/
+ls quiz
+
+1000	inline style
+100	id
+10	class, pseudo-class, attribute
+1	element
+
+element element attribute
+100 10
+1 10 1
+
+1 100 100
+
+1 1 1 10
+
+ctrl shift p  install package control
+
+free code camp manila
+
+Quiz answer into to CSS: ****************************
+CSS QUIZ
+What does CSS stand for?**Cascading Style Sheets**
+
+What is the correct HTML for referring to an external style sheet? 
+<link rel="stylesheet" type="text/css" href="style.css">
+
+Where in an HTML document is the correct place to refer to an external style sheet? 
+In the <head> section
+
+Which HTML tag is used to define an internal style sheet? <style>
+
+Which HTML attribute is used to define inline styles? Style
+
+Which statement uses a correct CSS syntax? body {color: black;}
+
+How do you insert a comment in a CSS file?/* this is a comment */
+
+How do you add a background color for all <h1> elements? h1 {background-color: #FFFFFF;}
+
+How do you select an element with id "demo"? #demo
+
+How do you select elements with class name "test"?.test
+
+How do you select all p elements inside a div element? div p
+
+How do you group selectors? **Separate each selector with a comma**
+
+Which pseudo class selects links that are currently being hovered over by the mouse pointer? **:hover**
+
+If two selectors apply to the same element, the one with lower specificity wins. False
+
+It is the main international standards organization for the World Wide Web **W3C**
+
+### (5 pts) Identify the parts of the CSS Rule-set below:
+	a, h1 {
+	    font-weight: bold;
+	    color: grey
+	}
+
+Selector: a, h1
+Declaration: font-weight: bold; color: grey;
+Property Name: font-weight, color
+Property Value: bold, grey
+Declaration block: {font-weight: bold; color: grey;}
+
+### (5 pts) Determine the specificity value for each selectors below:
+
+div li a : 3
+	div 1
+	li 1
+	a 1
+
+#article .breaking-news : 110  
+	#article 100
+	.breaking-news 10
+
+section .important-text span: 12
+	section 1
+	.important-text 10
+	span 1
+
+main #comment #reply : 201
+	main 1
+	#comment 100
+	#reply 100
+
+nav > ul > li > a:hover : 10
+	nav 1
+	ul 1
+	li 1 
+	a 1
+	:hover 10
+
+***********************************************************************
+CSS BOX MODEL
+
+HTML element
+block box
+inline box
+
+
+&lt;em&gt; <!--html entity-->
+
+
+top right bottom left
+
+11/8/17--------------------------------------------------------------------------------
+
+night #11
+-cont of css box model 
+-sublime text 3 getting started
+-markdown getting started
+
+../resources/$ git origin master
+
+or
+
+../your-folder $ git clone [url-from-gitlab]
+
+
+
+install package
+material theme
+material activate theme
+markdown extended
+
+# Header 1
+## Header 2
+### Header 3
+#### Header 4
+##### Header 5
+###### Header 6
+
+Personal repository
+https://gitlab.com/tuitt/students/b3nc/rochelleilustre.git
+
+shift insert --gitbash copy paste 
+
+alt shift w insert <> </>
+
+*explicit dimensions
+width
+height
+
+**content boxes vs border boxes
+**centering with auto margins
+**resetting styles
+
+everything is a box
+boxes can be inline or block level
+boxes have content padding borders and margins
+mastering css box model means you can layout most web pages
+
+
+11/9/17--------------------------------------------------------------------------------
+
+
+
+
+
+error message
+update comment
+shift o edit mode
+escape
+: x 	save changes
+
+
+delete repo
+
+git clone https://gitlab.com/tuitt/students/b3nc/resources.git
+
+
+git remote --help
+
+git remote -v
+
+git add
+git commit
+git push / pull
+
+cd .. 				to go back
+cd resources/ 			go to folder
+git pull gitlab master 		pull update
+
+
+
+**CSS positioning
+normal flow/static
+relative
+absolute 
+floats
+
+element {
+	position: static;
+}
+
+off-canvas
+positioning of elements not viewable to the user interface
+
+viewport
+space that is visible to the user interface
+
+
+STATIC POSITIONING
+RELATIVE
+
+ALT SHIFT W 
+insert element then edit
+
+11/13/17--------------------------------------------------------------------------------
+
+RELATIVE POSITIONING
+ABSOLUTE POSITIONING
+
+RELATIVELY ABSOLUTE POSITION
+
+parent position: relative
+element position: absolute
+
+FIXED POSITIONING
+
+OVERLAPPING
+z-index
+
+relative fixed absolute --box can overlap
+
+FLOATING ELEMENTS
+vertical flow
+horizontal flow
+
+FLOATS and Clear
+
+11/14/17--------------------------------------------------------------------------------
+
+
+tinyurl.com/TuittNight3
+
+tinyurl.com/tuitt-b3nc-css-floats-clears/
+
+11/15/17--------------------------------------------------------------------------------
+
+colorcombos.com
+
+choose 3 way color scheme palette
+
+apply it to the activity elements { background color, links and headers}
+
+use actual image source
+
+customize output {border radius}
+
+11/20/17--------------------------------------------------------------------------------
+
+**CSS presentation properties
+**coding challenge "Dog, Sun, and Little Red Riding Hood"
+**coding challenge - Replicate a website layout
+**responsive web design
+**coding challenge - applying RWD to a CSS wireframe
+**CSS fluid grid system
+**bootstrap CSS framework
+**Capstone Project 1 development
+	-ideation and discovery
+	-initial project documentation
+	-sketching & wireframing
+
+
+https://www.favicon-generator.org/
+
+11/21/17--------------------------------------------------------------------------------
+
+
+continuation *CSS combinators, position and float (code along)
+customize output
+deploy to github
+**CSS presentation properties
+**coding challenge "Dog, Sun, and Little Red Riding Hood"
+
+
+https://static1.squarespace.com/static/5192a215e4b0efb5c8bd028c/t/560ad2b1e4b082bb08943725/1443549874708/apple-accesories-banner.jpg?format=2500w
+
+
+cd resource/
+git pull origin master
+
+Developers portfolio
+capstone 1
+capstone 2 e-commerce
+capstone 3
+
+11/22/17--------------------------------------------------------------------------------
+
+btemplates.com/2016/blogger-template-shiroi
+
+**CSS presentation properties
+**coding challenge "Dog, Sun, and Little Red Riding Hood"
+
+
+responsive web design
+applying RWD to a CSS wireframe
+
+CSS fluid grid system
+
+cd resource/
+git pull origin master
+
+random picker
+
+LUXURY
+
+
+11/23/17--------------------------------------------------------------------------------
+
+SERVICES
+Services1
+
+
+TREATMENTS
+Facial treatment
+Body treatments
+
+
+PRODUCTS
+
+
+PROMOS
+
+http://btemplates.com/2012/blogger-template-x9-function-shadow/demo/
+
+11/24/17--------------------------------------------------------------------------------
+
+RESPONSIVE WEB DESIGN
+
+/*media queries*/
+/*mobile devices*/
+@media only screen and (max-width: 400px) {
+
+	body {
+		background-color: red;
+	}
+
+}
+
+/*tablet devices*/
+@media only screen and (min-width: 401px) 
+and (max-width: 960px) {
+
+
+
+/*desktop devices*/
+@media only screen and (min-width: 961px) {
+
+	body {
+		background-color: blue;
+	}
+}
+
+
+css media queries mdn
+
+mobile first development
+
+disabling viewport zooming 
+emulator
+
+RD
+-mockups
+-CSS rules for each layout
+-media queries
+
+
+
+
+https://tinyurl.com/b3nc-mod02-17-activity
+
+
+FLUID GRID SYSTEM
+
+container
+	row
+	row	
+		column
+		column
+	row
+
+11/27/17--------------------------------------------------------------------------------
+
+
+
+bootstrap CSS framework
+
+CAPSTONE project 1 development
+	ideation and discovery
+	initial project dov
+	sketching and wireframing
+	dev, testing and deployment
+
+TWITTER BOOTSTRAP
+-	powerful mobile first front end framework for faster and easier web dev
+
+-	developed by MARK OTTO and JACOB THORNTON at twitter.
+	resleased as an open source
+
+MOBILE first approach
+	-bootstrap 3, frameowrk consists of mobile first
+browser support
+
+
+WHY use bootstrap?
+RAPID APPLICATION DEVELOPMENT
+BUILT IN RESPONSIVE DESIGN
+
+package:
+SCAFFOLDING
+CSS
+COMPONENTS
+JAVASCRIPT PLUGINS
+CUSTOMIZE
+
+versions:
+BOOTSTRAP 2
+BOOTSTRAP 3
+BOOTSTRAP 4
+
+BASIC html template using bootstrap
+basic grid structure
+
+COMPONENTS
+-glyphicons
+-dropdowns
+-button groups
+-button dropdowns
+-input groups
+-navs
+-navbar
+-breadcrumbs
+
+-pagination
+-labels
+-badges
+-jumbotron
+-page header
+-thumbnails 
+-alerts
+-progress bars
+
+-media objects
+-list group
+-panels
+-responsive embed
+-wells
+
+
+bootstrap-3.3.7-dist/css/
+
+
+link bootstrap
+link css
+link js
+
+
+
+	<!-- meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+	<meta http-equiv="X-UA-compatible" content="I=edge">
+
+	<title>Bootstrap CSS Framework</title>
+
+	<!-- import bootstrap CSS -->
+	<link rel="stylesheet" type="text/css" href="bootstrap-3.3.7-dist/css/bootstrap.min.css">
+
+	<!-- import customs CSS -->
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+
+	
+
+
+</head>
+<body>
+
+	<!-- import jquery -->
+	<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+
+	<!-- import boostrap js -->
+	<script type="text/javascript" src="bootstrap-3.3.7-dis/js/bootstrap.min.js"></script>
+
+
+https://code.jquery.com/
+
+bootstrap
+rapid prototyping
+
+dec 1
+rapid application
+
+materializecss.com
+
+foundation.zurb.com/templates.com
+paper css
+
+API
+
+11/28/17--------------------------------------------------------------------------------
+
+**Project discovery and ideation**
+
+Discovery is the act of finding something that had not been known before.
+
+Ideation is the process of generating ideas.
+
+1.	Who is the owner?
+2.	Who is the audience (target market)?
+
+	What features are important to each user?
+	What is important to me? (Things that i need to display in my website)
+				 (Things that I am looking for when browsing a website)
+
+Striking a Balance
+Use your skills to bear and find a great solution that meets each party's needs.
+
+Nature of my business. 
+	selling cupcake and calligraphy workshop
+		showcase cupcake products
+		show detials about workshops conduct
+		show available workshop shced for current month
+		let people to register
+		contact
+		location of business
+		
+Audience.
+	Consumerns, calligraphy enthusiasts, event coordinators.
+	view photos of cupcake products.
+	Know prices of each products
+	location of the store
+	workshop details price shced expectaitotn
+	able to register
+	sample workshop outputs
+
+owner
+user/customer/audience
+
+**Sketching and wireframing**
+
+website sketches
+mobile - tablet - desktop
+
+idea - sketch (getting basic concept) - wireframe (refining)- mockup - code
+
+look for patterns
+use creativity
+experience helps
+
+wireframe.cc
+google drawing
+mockups.com / moqups.com
+
+sample of website wireframes
+HOME - nksubscribe na c user log in page
+SECONDARY subsequent
+LANDING - first page na mkkita ni user
+PRODUCT PAGE
+
+>>>FLOW<<<
+
+do not use color
+do not use images
+no fonts
+
+low fidelity
+high fidelity
+
+picture
+avatar
+heading
+subheading
+
+**WEBSITE LAYOUTS**
+
+CAPSTONE PROJECT 1 - ECOMMERCE WEBSITE
+
+NAVIGATION
+Home
+Blog 
+Services
+Products Categories
+Gallery
+About
+Contact Us
+
+
+Guidelines
+own website comcept/theme
+atleast 4 web pages
+responsive (mobile first)
+
+options 
+bootstrap
+css framework
+not premade templates
+
+code quality 40% 
+- implements HTML and CSS
+
+site responseiveness 20% 
+- solid structure and layout across all devices
+
+site content 20% 
+- clear message and purpose
+- absence of incomplete pages
+- clearly organized info
+
+design 20% 
+- clear and easy to use interface
+- clever synergies of visual elemtns (typography, graphcis, media)
+- decent color harmonies
+- efficient use of space
+
+be creative. first impression matters
+avoid placeholder
+optimize files
+
+CSP1
+
+11/29/17--------------------------------------------------------------------------------
+
+
+to push newly added activities
+cd ..
+git status
+git add .
+git commit -m "update comments"
+git remote -v
+git pull gitlab master
+git push gitlab master
+
+
+
+
+
+11/30/17--------------------------------------------------------------------------------
+
+DOCUMENT > GIT
+
+
+b3nc-ilustre-rochelle
+resources
+rochelleilustre
+
+
+anitmate.css
+
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+11/29/17 
+-m "csp1 added index about home contact file"
+
+11/30/17 
+-m "csp1 marked up index.html, favicon"
+-m "csp1 added logo and brandname"
+-m "csp1 added home navigation bar, services and gallery page"
+-m "csp1 added home carousel"
