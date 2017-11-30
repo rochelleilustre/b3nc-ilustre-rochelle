@@ -1,28 +1,117 @@
 * {
+
+	margin: 0 auto;
+	padding: 0;
 	box-sizing: border-box;
 }
 
+
+
 body {
 	background-color: black;
+}
+
+.logo-container {
+	width: 100%;
+	display: inline-block;
+}
+
+.logo {
+	width: 80%;
+	min-height: 40px;
+	margin: 10px;
+	color: white;
 }
 
 .banner {
 	width: 100%;
 	min-height: 600px;
 	background-color: lightblue;
-	background-image: url('https://images.pexels.com/photos/414781/pexels-photo-414781.jpeg?w=940&h=650&auto=compress&cs=tinysrgb');
+	background-image: url('https://images.pexels.com/photos/46794/camera-photos-photograph-paper-prints-46794.jpeg?w=1260&h=750&auto=compress&cs=tinysrgb');
 	background-size: cover;
 	background-repeat: no-repeat;
-	background-position: center center;
-	opacity: 0.8;
-	border-top: 1px solid lightgrey;
-	border-bottom: 1px solid lightgrey;
+	background-position: center;
+/*	opacity: 0.5;*/
+	border-top: 2px solid lightgrey;
+	border-bottom: 2px solid lightgrey;
+/*	margin-top: 80px;
+*/	margin-bottom: 80px;
+	text-align: center;
 }
 
-.button {
+
+.quote {
+	color: white;
+	padding-top: 80px;
+	margin-bottom: 100px; 	
+	padding-left: 20px;
+	padding-right: 20px;
+}	
+
+
+h2 {
+font-family: 'Cedarville Cursive', cursive;
+}
+
+
+h1 {
+	font-family: 'Merienda One', cursive;
+}
+
+
+button {
+	width: 278px;
+	background-color: black;
+	opacity: 0.8;
+	border-radius: 10px;
+	color: white;
+}
+
+
+.login-info {
+	padding: 10px;
+	margin-bottom: 20px;
+}
+
+
+div > input {
+	width: 280px;
+	margin: 5px;
 	text-align: center;
-	margin-top: 400px;
-	
+	border-radius: 5px;
+}
+
+
+.separator-container {
+	max-width: 400px;
+	display: flex;
+	align-items: center;
+	padding-left: 50px;
+	padding-right: 50px;
+}
+
+
+.separator-text {
+	color: white;
+	padding: 10px;
+}
+
+
+.separator-line {
+	width: 25px;
+	border: 1px solid white;
+}
+
+
+#left {
+	margin-right: 0;
+	padding-right: 0;
+}
+
+
+#right {
+	margin-left: 0;
+	padding-left: 0;
 }
 
 
@@ -30,8 +119,9 @@ body {
 	content: "";
 	display: block;
 	clear: both;
-
 }
+
+
 
 /****** media queries *****/
 
@@ -40,9 +130,7 @@ body {
 
 	.banner {
 		max-width: 400px;
-		margin-top: 100px;
 	}
-
 }
 
 
@@ -51,25 +139,12 @@ body {
 @media only screen and (min-width: 401px) 
 and (max-width: 960px) {
 
-	
-
-	.banner {
-/*		min-width: 401px;
-*/		margin-top: 100px;
-	}
-
-
 }
 
 
 
 /* desktop devices */
 @media only screen and (min-width: 961px) {
-
-	.banner {
-		margin-top: 120px;
-	}
-
 
 
 }
