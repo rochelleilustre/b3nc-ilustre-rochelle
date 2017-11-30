@@ -5,6 +5,7 @@
 	box-sizing: border-box;
 }
 
+/****** index *****/
 
 
 .index {
@@ -122,6 +123,32 @@ div > input {
 	display: block;
 	clear: both;
 }
+
+/****** home section *****/
+
+
+.content-container {
+	width: 100%;
+	height: auto;
+/*	background-color: grey;*/
+	margin-top: -20px;
+	margin-bottom: 0;
+}
+
+.footer {
+	width: 100%;
+	min-height: 200px;
+	background-color: black;
+	margin-top: -20px;
+	border-top: 2px solid grey;
+}
+
+
+
+/****** gallery section *****/
+/****** services section *****/
+/****** about section *****/
+/****** contact section *****/
 
 
 
