@@ -8,7 +8,7 @@
 /****** index *****/
 
 
-.index {
+body {
 	background-color: black;
 }
 
@@ -126,6 +126,9 @@ div > input {
 
 /****** home section *****/
 
+.container-fluid {
+	border-bottom: 2px solid grey;
+}
 
 .content-container {
 	width: 100%;
