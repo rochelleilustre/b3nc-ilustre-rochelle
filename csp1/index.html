@@ -63,7 +63,7 @@
           	<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Menu <span class="caret"></span></a>
             
             	<ul class="dropdown-menu">
-  	            <li><a href="home.html">Home</a></li>
+  	            <li><a href="home.html"><span class="glyphicon glyphicon-home" aria-hidden="true"></span> Home</a></li>
   	            <li><a href="about.html">About Us</a></li>
   	            <li><a href="services.html">Services</a></li>
   	            <li><a href="contact.html">Contact Us</a></li>
@@ -78,31 +78,37 @@
   </nav><!-- end of navbar -->
 
 
+
 	<div class="banner">
   
-      <div class="quote">
+      <div class="quote container">
         <h2>The best thing about</h2>
         <h1>Memories</h1>
         <h4>...is making them</h4>
       </div><!-- end of quote -->
 
 
-      <div class="login-info">        
-        <div>
-          <input type="email" name="email" placeholder="Enter your email here">
-        </div>
-
-        <div>
-          <input type="password" name="password" placeholder="Enter your password">
-        </div>        
-
-      </div><!-- end of login-info -->
-
+     
       
-      <button id="signup">Sign Up</button>
-  
+      <div class="form-container">
+    	<form>
+	  		<div class="form-group">
+	    		<input type="email" class="form-control" id="email" placeholder="Enter your email address here">
+	    		<input type="password" class="form-control" id="pwd" placeholder="Enter your password">
+	  		
+	  
+		  	<div class="checkbox">
+		    	<label><input type="checkbox"> Remember me</label>
+		  	</div>
 
-      <div class="separator-container">
+	  		</div>
+	  	</form>	
+	  </div><!-- end of form container -->	
+
+	<a href="#" class="btn btn-info" role="button">Sign Up</a>
+       
+
+      <div class="separator-container container">
         <div id="left" class="separator-line"></div>
 
         <div class="separator-text">Already have an account?</div>
@@ -110,13 +116,14 @@
         <div id="right" class="separator-line"></div>
       </div><!-- end of separator -->
 
+	<a href="home.html" class="btn btn-info" role="button">Log In</a>
 
-      <button id="login"><a href="home.html">Log In</a></button>
+      <!-- <button id="login"><a href="home.html">Log In</a></button> -->
 
 
 
     </div><!-- end of banner -->
-
+   
 
 
 	<!-- import jquery -->

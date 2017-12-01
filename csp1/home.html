@@ -14,6 +14,11 @@
 
 	<title>Maximus Prime Photography Services - HOME</title>
 
+  <!-- font -->
+  <link href="https://fonts.googleapis.com/css?family=Muli" rel="stylesheet">
+
+  <!-- icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 	<!-- import boostrap css -->
 	<link rel="stylesheet" type="text/css" href="bootstrap-3.3.7-dist/css/bootstrap.min.css">
@@ -46,10 +51,10 @@
     <!-- Collect the nav links, forms, and other content for toggling -->
       <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       	<ul class="nav navbar-nav">
-        	<li class="active"><a href="#">Home <span class="sr-only">(current)</span></a></li>
-        	<li><a href="about.html">About</a></li>
-        	<li><a href="services.html">Services</a></li>
-        	<li><a href="contact.html">Contact Us</a></li>          
+        	<li class="active"><a href="#"><span class="glyphicon glyphicon-home" aria-hidden="true"></span> Home <span class="sr-only">(current)</span></a></li>
+        	<li><a href="#about">About</a></li>
+        	<li><a href="#services">Services</a></li>
+        	<li><a href="#contact">Contact Us</a></li>          
         	<!-- </li> -->
         </ul>
    
@@ -86,7 +91,7 @@
       <div class="carousel-inner" role="listbox">
         
         <div class="item active">
-          <img src="https://images.pexels.com/photos/160420/photo-booth-wedding-party-girls-160420.jpeg?w=940&h=650&auto=compress&cs=tinysrgb" alt="wedding">
+          <img class="img-responsive" src="https://images.pexels.com/photos/160420/photo-booth-wedding-party-girls-160420.jpeg?w=940&h=650&auto=compress&cs=tinysrgb" alt="wedding">
           
           <div class="carousel-caption">
             Wedding Party   
@@ -94,7 +99,7 @@
         </div><!-- end of item active -->
 
         <div class="item">
-          <img src="https://images.pexels.com/photos/37862/musician-rockstar-band-music-37862.jpeg?w=940&h=650&auto=compress&cs=tinysrgb" alt="band music">
+          <img class="img-responsive" src="https://images.pexels.com/photos/37862/musician-rockstar-band-music-37862.jpeg?w=940&h=650&auto=compress&cs=tinysrgb" alt="band music">
           
           <div class="carousel-caption">
             Music Band Event
@@ -102,7 +107,7 @@
         </div><!-- end of item -->
 
         <div class="item">
-          <img src="https://images.pexels.com/photos/247295/pexels-photo-247295.jpeg?w=940&h=650&auto=compress&cs=tinysrgb" alt="Bride">
+          <img class="img-responsive" src="https://images.pexels.com/photos/247295/pexels-photo-247295.jpeg?w=940&h=650&auto=compress&cs=tinysrgb" alt="Bride">
         
           <div class="carousel-caption">
             Bridal Shoot
@@ -132,21 +137,122 @@
   </div><!-- home -->
 
 
-  <div class="about">
-    
+  <div id="about" class="about container-fluid">
+    <div class="about-section container">
+      <h2 class="page-header">About</h2>
+
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse   cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse   cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse   cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse   cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+    </div><!-- end of about section -->
+
+  <div class="row">
+    <div class="col-md-4">
+      <div class="thumbnail">
+        <a href="/w3images/lights.jpg">
+        <span class="glyphicon glyphicon-user" aria-hidden="true"></span>  
+        <img src="/w3images/lights.jpg" alt="Lights" style="width:100%">
+        
+        <div class="caption">
+        <p>Lorem ipsum...</p>
+        </div><!-- caption -->
+        
+        </a>
+      </div><!-- end of thumbnail -->
+    </div><!-- end of col-md-4 -->
+
+    <div class="col-md-4">
+      <div class="thumbnail">
+        <a href="/w3images/nature.jpg">
+        <span class="glyphicon glyphicon-user" aria-hidden="true"></span>  
+        <img src="/w3images/nature.jpg" alt="Nature" style="width:100%">
+        
+        <div class="caption">
+        <p>Lorem ipsum...</p>
+        </div><!-- caption -->
+        </a>
+      </div><!-- end of thumbnail -->
+    </div><!-- end of col-md-4 -->
+
+    <div class="col-md-4">
+      <div class="thumbnail">
+        <a href="/w3images/fjords.jpg">
+        <span class="glyphicon glyphicon-user" aria-hidden="true"></span>    
+        <img src="/w3images/fjords.jpg" alt="Fjords" style="width:100%">
+        
+        <div class="caption">
+        <p>Lorem ipsum...</p>
+        </div><!-- caption -->
+        </a>
+      </div><!-- end of thumbnail -->
+    </div><!-- end of col-md-4 -->
+  </div><!-- end of row -->
+
   </div><!-- end of about -->
 
-  <div class="services">
-    
+  <div id="services" class="services container-fluid">
+    <div class="services-section container">
+      <h2 class="page-header">Services</h2>
+
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse   cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse   cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse   cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse   cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+    </div><!-- services-section -->
   </div><!-- services -->
 
-  <div class="contact">
+  <div id="contact" class="contact container-fluid">
+    <div class="contact-section container">
+      <h2 class="page-header">Contact Us</h2>
+ 
+      <form>
+
+      <div class="form-group">
+        <label for="email">Name:</label>
+        <input type="email" class="form-control" id="email">
+      </div>
+
+      <div class="form-group">
+        <label for="email">Email address:</label>
+        <input type="email" class="form-control" id="email">
+      </div>
+
+      <div class="form-group">
+        <label for="comment">Comment:</label>
+        <textarea class="form-control" rows="5" id="comment"></textarea>
+      </div>
     
+      <div class="checkbox">
+        <label><input type="checkbox"> Remember me</label>
+      </div>
+
+      <button type="submit" class="btn btn-default">Submit</button>
+    </form>
+    </div><!-- end of contact section -->
   </div><!-- contact -->
 
-	<div class="footer clear">
-		
-	</div><!-- end of footer -->
+	<div class="footer container-fluid">
+    <div class="footer-section container">
+		  <small>Copyright &copy; 2017 Rochelle Benet Ilustre</small>
+	  </div>
+
+    <div class="footer-icons container">
+      <a href="https://facebook.com">
+        <i class="fa fa-facebook-square" aria-hidden="true"></i>
+      </a>
+
+      <a href="https://instragram.com">
+        <i class="fa fa-instagram" aria-hidden="true"></i>
+      </a>
+      
+      <a href="https://pinterest.com">
+        <i class="fa fa-pinterest-square" aria-hidden="true"></i>
+      </a>
+      
+      <a href="https://youtube.com">
+        <i class="fa fa-youtube-play" aria-hidden="true"></i>
+      </a>
+    </div><!-- end of footer icons -->
+  </div><!-- end of footer -->
 
 
 

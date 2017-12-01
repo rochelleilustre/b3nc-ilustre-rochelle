@@ -35,14 +35,13 @@ body {
 .banner {
 	width: 100%;
 	min-height: 600px;
-	background-color: lightblue;
 	background-image: url('https://images.pexels.com/photos/46794/camera-photos-photograph-paper-prints-46794.jpeg?w=1260&h=750&auto=compress&cs=tinysrgb');
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-position: center;
 /*	opacity: 0.5;*/
-	border-top: 2px solid lightgrey;
-	border-bottom: 2px solid lightgrey;
+	border-top: 1px solid lightgrey;
+	border-bottom: 1px solid lightgrey;
 	margin-top: -20px;
 	margin-bottom: 80px;
 	text-align: center;
@@ -51,7 +50,7 @@ body {
 
 .quote {
 	color: white;
-	padding-top: 80px;
+	padding-top: 30px;
 	margin-bottom: 100px; 	
 	padding-left: 20px;
 	padding-right: 20px;
@@ -68,7 +67,7 @@ h1 {
 }
 
 
-button {
+.btn {
 	width: 220px;
 	background-color: black;
 	opacity: 0.8;
@@ -78,11 +77,23 @@ button {
 	list-style: none;
 }
 
-
-.login-info {
-	padding: 10px;
-	margin-bottom: 20px;
+dropdown-toggle {
+	text-align: center;
 }
+
+
+.form-group {
+	padding: 10px;
+	margin-bottom: 10px;*/
+
+}
+
+label {
+	color: white;
+	padding:; 0;
+}
+
+
 
 .logo {
 	width: 110%;
@@ -105,10 +116,15 @@ button {
 
 
 div > input {
-	width: 220px;
+
 	margin: 5px;
 	text-align: center;
 	border-radius: 5px;
+}
+
+.form-container {
+	width: 250px;
+
 }
 
 
@@ -128,7 +144,7 @@ div > input {
 
 
 .separator-line {
-	width: 25px;
+	width: 20px;
 	border: 1px solid white;
 }
 
@@ -163,18 +179,12 @@ div > input {
 	height: auto; /*631px*/
 	background-color: transparent;
 	margin-top: -20px;
-	border-top: 2px solid grey;
-	border-bottom: 2px solid grey;
-
+	border-top: 2px solid lightgrey;
+	border-bottom: 2px solid lightgrey;
+	background-color: #F0E5C9;
 }
 
 
-
-.carousel-inner {
-	
-	height: auto;
-
-}
 
 .item img {
 	padding-top: 20px;
@@ -182,25 +192,114 @@ div > input {
 }
 
 
+/*border for guides*/
 
-
-
-.footer {
-	width: 100%;
-	min-height: 100px;
-	background-color: darkgrey;
+.row,
+.form-container {
+	border: 1px solid red;
 }
 
 
+/****** end of home section *****/
+/****** end of home section *****/
 
-/****** end of home section *****/
-/****** end of home section *****/
+
+
+h2 {
+	font-family: 'Muli', sans-serif;
+	color: white;
+}
+
+p {
+	color: white;
+}
+
+.container {
+	border: 1px solid red;
+}
+
+/****** about section *****/
+/****** about section *****/
+.about {
+	background-color: black;
+}
+
+/****** end of about section *****/
+/****** end of about section *****/
+
+
+/****** services section *****/
+/****** services section *****/
+.services {
+	background-color: #F0E5C9;
+}
+/****** end of services section *****/
+/****** end of services section *****/
+
+
+/****** contact section *****/
+/****** contact section *****/
+.contact {
+	height: 600px;
+	background-color: black;
+}
+/****** contact section *****/
+/****** end of contact section *****/
+
+
+
+
 
 
 /****** gallery section *****/
-/****** services section *****/
-/****** about section *****/
-/****** contact section *****/
+/****** gallery section *****/
+
+.footer {
+	width: 100%;
+	min-height: auto;
+	background-color: darkgrey;
+	margin: 0 auto;
+}
+
+.footer-section {
+	text-align: center;
+
+}
+
+div .icons {
+	width: 50px;
+	height: 50px;
+	border-radius: 50%;
+	color: #4267b2;
+}
+
+.footer-icons {
+	font-size: 30px;
+	text-align: center;
+}
+
+.fa {
+	padding-right: 5px;
+	padding-left: 5px;
+}
+
+
+.fa-instagram {
+	color: brown;
+}
+
+.fa-pinterest-square {
+	color: darkred;
+}
+
+.fa-youtube-play {
+	color: red;
+}
+
+a {
+	text-decoration: none;
+	list-style: none;
+}
 
 
 
