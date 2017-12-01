@@ -24,6 +24,14 @@ body {
 	color: white;
 }
 
+
+
+/*.navbar {
+	border-radius: 0;
+	margin-bottom: 1px;
+}*/
+
+
 .banner {
 	width: 100%;
 	min-height: 600px;
@@ -35,8 +43,8 @@ body {
 /*	opacity: 0.5;*/
 	border-top: 2px solid lightgrey;
 	border-bottom: 2px solid lightgrey;
-/*	margin-top: 80px;
-*/	margin-bottom: 80px;
+	margin-top: -20px;
+	margin-bottom: 80px;
 	text-align: center;
 }
 
@@ -61,7 +69,7 @@ h1 {
 
 
 button {
-	width: 278px;
+	width: 220px;
 	background-color: black;
 	opacity: 0.8;
 	border-radius: 10px;
@@ -76,9 +84,28 @@ button {
 	margin-bottom: 20px;
 }
 
+.logo {
+	width: 110%;
+	margin: 0;
+	margin-right: 20px;
+	padding-top: 8px;
+
+}
+
+#img-logo {
+	margin-left: 10px;
+	margin-right: 10px;
+	width: 35px;
+	height: 35px;
+	
+}
+
+
+
+
 
 div > input {
-	width: 280px;
+	width: 220px;
 	margin: 5px;
 	text-align: center;
 	border-radius: 5px;
@@ -125,27 +152,49 @@ div > input {
 }
 
 /****** home section *****/
+/****** home section *****/
 
-.container-fluid {
-	border-bottom: 2px solid grey;
-}
+/*.container-fluid {
+	
+}*/
 
 .content-container {
 	width: 100%;
-	height: auto;
-/*	background-color: grey;*/
+	height: auto; /*631px*/
+	background-color: transparent;
 	margin-top: -20px;
-	margin-bottom: 0;
+	border-top: 2px solid grey;
+	border-bottom: 2px solid grey;
+
 }
+
+
+
+.carousel-inner {
+	
+	height: auto;
+
+}
+
+.item img {
+	padding-top: 20px;
+	vertical-align: middle;
+}
+
+
+
+
 
 .footer {
 	width: 100%;
-	min-height: 200px;
-	background-color: black;
-	margin-top: -20px;
-	border-top: 2px solid grey;
+	min-height: 100px;
+	background-color: darkgrey;
 }
 
+
+
+/****** end of home section *****/
+/****** end of home section *****/
 
 
 /****** gallery section *****/
@@ -163,6 +212,12 @@ div > input {
 	.banner {
 		max-width: 400px;
 	}
+
+	.navbar-toggle {
+		width: 50px;
+	}
+
+
 }
 
 
@@ -170,7 +225,9 @@ div > input {
 /* tablet devices */
 @media only screen and (min-width: 401px) 
 and (max-width: 960px) {
-
+	.navbar-toggle {
+		width: 50px;
+	}
 }
 
 
