@@ -12,7 +12,7 @@
 	<meta http-equiv="X-UA-compatible" content="IE=edge">
 
 
-	<title>Maximus Prime Photography Services - CONTACT</title>
+	<title>CONTACT - Maximus Prime Photography Services</title>
 
 
 	<!-- import boostrap css -->
@@ -23,19 +23,17 @@
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 
 
-		
+	
+  
 
-		<!-- <div class="logo-container">
-			<div class="logo">
-				<img id="img-logo" src="img/lens.png" alt="Maximus Prime Logo" width="50" height="50">
-				Maximus Prime
-			</div>
-		</div>-->
+	<!-- favicon -->
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
 
 
 </head>
 
-<body class="home">
+<body class="contact">
 
 	<nav class="navbar navbar-inverse">
   <div class="container-fluid">
@@ -54,12 +52,11 @@
     <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       	<ul class="nav navbar-nav">
-        	<li class="active"><a href="#">Home <span class="sr-only">(current)</span></a></li>
-        	
+        	<li><a href="home.html">Home </a></li>
         	<li><a href="about.html">About</a></li>
-        	<li><a href="#">Gallery</a></li>
-        	<li><a href="#">Services</a></li>
-        	<li><a href="contact.html">Contact Us</a></li>
+        	<li><a href="services.html">Services</a></li>
+
+        	<li class="active"><a href="contact.html">Contact Us <span class="sr-only">(current)</span></a></li>
         
          
         	</li>
@@ -89,21 +86,102 @@
 	<div></div>
 
 
+<div id="contact" class="contact container-fluid">
+    <div class="contact-section container">
+      <h2 class="page-header">Contact Us</h2>
+ 
+      <form>
+
+      <div class="form-group">
+        <label for="email">Name:</label>
+        <input type="email" class="form-control" id="email">
+      </div>
+
+      <div class="form-group">
+        <label for="email">Email address:</label>
+        <input type="email" class="form-control" id="email">
+      </div>
+
+      <div class="form-group">
+        <label for="subject">Subject:</label>
+        <input type="text" class="form-control" id="email">
+      </div>
+
+      <div class="form-group">
+        <label for="comment">Comment:</label>
+        <textarea class="form-control" rows="5" id="comment"></textarea>
+      </div>
+    
+      
+      <!-- <button type="submit" class="btn btn-default">Submit</button>-->
+
+      <!-- Trigger the modal with a button -->
+  <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Submit</button>
+
+  <!-- Modal -->
+  <div class="modal fade" id="myModal" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+            <h4 class="modal-title">Thank you for your inquiry! </h4>
+
+            We will get in touch with you as soon as we can.
+            <br>
+
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div><!---end of modal-header-->
+      </div><!--end of modal-content-->
+      
+   
+    </div><!--end of modal-dialog-->
+  </div><!-- end of modal fade-->
 
 
 
+    </form>
+    </div><!-- end of contact section -->
+
+
+  </div><!-- contact -->
+
+
+<div class="footer container-fluid">
+    <div class="footer-section container">
+      <small>Copyright &copy; 2017 Rochelle Benet Ilustre</small>
+    </div>
+
+    <div class="footer-icons container">
+      <a href="https://facebook.com">
+        <i class="fa fa-facebook-square" aria-hidden="true"></i>
+      </a>
+
+      <a href="https://instragram.com">
+        <i class="fa fa-instagram" aria-hidden="true"></i>
+      </a>
+      
+      <a href="https://pinterest.com">
+        <i class="fa fa-pinterest-square" aria-hidden="true"></i>
+      </a>
+      
+      <a href="https://youtube.com">
+        <i class="fa fa-youtube-play" aria-hidden="true"></i>
+      </a>
+    </div><!-- end of footer icons -->
+  </div><!-- end of footer -->
 
 
 	<!-- import jquery -->
-
 	<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
 
 
 
 	<!-- import boostrap js -->
-
 	<script type="text/javascript" src="bootstrap-3.3.7-dis/js/bootstrap.min.js"></script>
-
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js">
+  </script> 
 
 
 </body>
