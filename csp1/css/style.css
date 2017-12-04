@@ -19,6 +19,10 @@ body {
 	clear: both;
 }
 
+.navbar {
+	border-radius: 
+}
+
 /*border for guides*/
 
 /*.quote,
@@ -26,6 +30,7 @@ body {
 	border: 1px solid red;
 
 }*/
+
 
 /****************** index section *****************/
 
@@ -46,10 +51,11 @@ body {
 }
 
 
+
 .banner {
 	width: 100%;
-    min-height: 700px;
-    margin: 0 auto;
+	height: 600px;
+	margin: 0 auto;
     background-image: url(https://images.pexels.com/photos/35649/pexels-photo.jpg?w=1260&h=750&auto=compress&cs=tinysrgb);
     background-size: cover;
     background-repeat: no-repeat;
@@ -130,8 +136,12 @@ div > input {
 	color: white;
 	text-decoration: none;
 	list-style: none;
-	font-size: 16px;
+	font-size: 12px;
 }
+
+#btn-send {
+	text-align: center;
+}	
 
 .separator-container {
 	max-width: 400px;
@@ -260,8 +270,62 @@ p {
 
 .contact {
 	height: auto;
-	background-color: black;
+/*	background-color: green;
+*/	background-image: url('https://images.pexels.com/photos/593316/pexels-photo-593316.jpeg?w=940&h=650&auto=compress&cs=tinysrgb');
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center center;
+	margin-top: -20px;
+	color: white;
+	margin-bottom: 0;
+	padding-bottom: 0: 
 }
+
+.contact-section {
+	width: 80%;
+/*	background-color: red;
+*/	margin: 0 auto;
+	padding: 20px;
+
+}
+
+.contact-form {
+	margin: 0 auto;
+	padding-top: 30px;
+	padding-bottom: 45px;
+	background-color: grey;
+	height: auto;
+
+}
+
+.contact-info {
+	text-align: center;
+	height: auto;
+	background-color: black;
+	padding-bottom: 20px;
+}
+
+#comment {
+	height: 120px;
+}
+
+.form-group input,
+.form-control {
+	text-align: left;
+	font-size: 12px;
+	overflow: auto;
+	width: 200px;
+}
+
+#btn-send {
+	text-align: center;
+	margin-top: 0;
+	margin: 0 auto;
+	width: 200px;
+}
+
+
+
 /****************** end of contact section *****************/
 /****************** end of contact section *****************/
 
@@ -278,7 +342,11 @@ p {
 	width: 100%;
 	min-height: auto;
 	background-color: darkgrey;
-	margin: 0 auto;
+	position: fixed;
+	left: 0;
+	bottom: 0;
+	text-align: center;
+
 }
 
 .footer-section {
@@ -340,8 +408,21 @@ a {
 	}
 
 	.quote {
-		border-right: 0;
-	}	
+	border-right: 0;
+	padding-top: 10;
+	margin-top: 10px;
+	margin-bottom: 10px; 
+	}
+
+	.form-container {
+		padding-top: 10px;
+		margin-top: -170px;
+		
+	}
+
+	.btn-lg {
+	margin-top: 30px;
+}
 
 
 }
@@ -356,8 +437,17 @@ and (max-width: 960px) {
 	}
 
 	.quote {
-		border-right: 0;
-	}	
+	border-right: 0;
+	padding-top: 10;
+	margin-top: 10px;
+	margin-bottom: 10px; 
+	}
+
+	.form-container {
+		padding-top: 10px;
+		margin-top: -170px;
+		
+	}
 
 }
 

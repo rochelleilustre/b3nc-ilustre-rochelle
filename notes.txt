@@ -1077,3 +1077,10 @@ anitmate.css
 -m "csp1 added logo and brandname"
 -m "csp1 added home navigation bar, services and gallery page"
 -m "csp1 added home carousel"
+
+
+For queries or suggestions, you may contact us directly through the details below.
+
+CONTACT INFORMATION
+
+
