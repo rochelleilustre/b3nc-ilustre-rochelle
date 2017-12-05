@@ -52,3 +52,23 @@ p {
  	left: 60px;
  	z-index: 3; /*default value of z-index*/
  }
+
+ .green {
+ 	background-color: green;
+ }
+
+ .black {
+ 	background-color: black;
+ }
+
+ .greybg {
+ 	height: 200px;
+ 	width: 100%;
+ 	background-color: grey;
+ }
+
+ .orangebg {
+ 	height: 300px;
+ 	width: 100%;
+ 	background-color: orange;
+ }
