@@ -6,7 +6,7 @@
 }
 
 body {
-	background-color: #6ADCD8; /* jewelry store*/
+	background-color: /*#6ADCD8;  jewelry store*/
 }
 
 .clear:after {
@@ -31,15 +31,26 @@ body {
 	border-bottom: 3px solid #C7D0D4; /* silver of silver */
 	margin-top: -20px;
 	padding: 0;
+	color: white;
 
 }
 
 .navbar {
-	background-color: transparent;
+	background-color: #6ADCD8;
 	border: none;
 	/*height: 67px;*/
 	border-radius: 0;
+	min-height: 40px;
+	border-bottom: 3px solid #C7D0D4; /* silver of silver */
 }	
+
+.navbar-inverse .navbar-nav>.active>a {
+	background-color: transparent;
+}
+
+.navbar-nav>li>a {
+	    margin-top: 10px;
+}
 
 .logo {
 	min-height: 40px;
@@ -89,6 +100,7 @@ body {
 .form {
 	margin-top: 0;
 	padding-top: 21px;	
+
 }
 
 .quote,
@@ -144,12 +156,12 @@ label {
 
 
 .carousel-inner {
-	margin-top: 67px;
-	margin-bottom: 67px;
-	border-top: 3px solid #C7D0D4; /* silver of silver */
-	border-bottom: 3px solid #C7D0D4; /* silver of silver */
+	margin-top: 20px;
+	/*margin-bottom: 67px;*/
+	
+	
 	/*background-color: #E1FAFC;*/	/*diamond girl*/
-	background-image: url('https://cdn.pixabay.com/photo/2017/03/10/09/14/alarm-clock-2132264_960_720.jpg');
+	/*background-image: url('https://cdn.pixabay.com/photo/2017/03/10/09/14/alarm-clock-2132264_960_720.jpg');*/
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-position: center;
@@ -159,7 +171,8 @@ label {
 
 .carousel-control-left,
 .carousel-control-right {
-	height: 631px;
+	/*height: 631px;*/
+	height: auto;
 }
 
 
@@ -171,22 +184,23 @@ label {
 }
 
 .home {
-	min-height: 176px;
-	background-color: #6ADCD8; /* jewelry store*/
-	margin-top: -67px;
-	margin-bottom: 67px;
+	height: auto;
+	background-color:  #6ADCD8;  /*jewelry store*/
+/*	margin-top: -67px;
+	margin-bottom: 67px;*/
+	border-top: 3px solid #C7D0D4; /* silver of silver */
 }
 
 .features {
 	margin: 0 auto;
 	text-align: center;
 	height: auto;
-	margin-top: 20px;
+	/*margin-top: 20px;*/
 }
 
 .features, .feature1, .feature2, .book {
-	margin-top: 53px;
-	margin-bottom: 53px;
+	padding-top: 20px;
+	padding-bottom: 20px;
 }
 
 .feature2 {
@@ -202,6 +216,10 @@ label {
 	padding-bottom: 30px;
 }
 
+.book {
+    margin-top: 20px;
+}
+
 h4,
 .feature1 >h4 {
 	font-family: 'Gloria Hallelujah', cursive;
@@ -213,7 +231,7 @@ h4,
 .about {
 	min-height: 600px;
 	background-color: white;
-	margin-top: -67px;	
+	/*margin-top: -67px;	*/
 }
 
 .photographer-section {
@@ -238,6 +256,12 @@ h4,
 	padding-bottom: 0: 
 }
 
+.thumbnail a>img, .thumbnail>img {
+    margin-right: auto;
+    margin-left: auto;
+    border: 0;
+}
+
 .contact-section {
 	width: 80%;
 /*	background-color: red;
@@ -253,6 +277,15 @@ h4,
 	background-color: rgba(225, 250, 252, 0.5);	/*diamond girl E1FAFC*/
 	height: auto;
 
+
+	
+}
+
+map >iframe {
+	margin-top: 50px;
+	margin: 0;
+	width: 400px;
+	overflow-x: hidden;
 }
 
 .contact-info {
@@ -260,6 +293,15 @@ h4,
 	height: auto;
 	background-color: rgba(199, 208, 212, 0.5); /* silver of silver C7D0D4 */
 	padding-bottom: 87px;
+	padding-top: 49px;
+
+	
+	
+}
+
+.contact-details >p {
+	font-size: 1.5em;
+	padding-bottom: 11px;
 }
 
 
@@ -283,7 +325,7 @@ h4,
 	text-align: center;
 	margin-top: 0;
 	margin: 0 auto;
-	width: 200px;
+	width: 250px;
 }
 
 
@@ -297,6 +339,10 @@ h4,
 .services-offer {
 	margin-top: 40px;
 	margin-bottom: 40px;
+}
+
+.col-sm-4 >h4 {
+	color: black;
 }
 
 .panel-heading {
@@ -357,7 +403,7 @@ div .icons {
 }
 
 
-.fa-instagram {
+/*.fa-instagram {
 	color: brown;
 }
 
@@ -367,11 +413,12 @@ div .icons {
 
 .fa-youtube-play {
 	color: red;
-}
+}*/
 
 a {
 	text-decoration: none;
 	list-style: none;
+	color: white;
 }
 
 /**end of footer section**/
@@ -387,6 +434,11 @@ a {
 	.contact {
     	height: 1200px;
 	}
+
+	.feature2 {
+		border: none;
+	}
+
 }
 
 
@@ -399,6 +451,9 @@ and (max-width: 960px) {
     	height: 1200px;
 	}
 
+	.feature2 {
+		border: none;
+	}
 }
 
 
