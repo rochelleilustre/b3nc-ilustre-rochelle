@@ -6,189 +6,250 @@
 
   <!-- meta tags -->
   <meta charset="utf-8">
-
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
   <meta http-equiv="X-UA-compatible" content="IE=edge">
 
 
-  <title>TEST PAGE</title>
+  <title>GALLERY - MAXIMUS PRIME Photography and Digital Services</title>
+
+  <!-- HOME - MAXIMUS PRIME Photography and Digital Services -->
 
   <!-- fonts -->
   <link href="https://fonts.googleapis.com/css?family=Cedarville+Cursive" rel="stylesheet">
 
   <link href="https://fonts.googleapis.com/css?family=Merienda+One" rel="stylesheet">
 
-  <link href="https://fonts.googleapis.com/css?family=Patrick+Hand+SC" rel="stylesheet">
+ <link href="https://fonts.googleapis.com/css?family=Gloria+Hallelujah" rel="stylesheet">
+
 
   <!-- icons -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
+
+
   <!-- favicon -->
   <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-
-  <link rel="icon" href="favicon.ico" type="image/x-icon">
+ <link rel="icon" href="favicon.ico" type="image/x-icon">
 
   <!-- import boostrap css -->
   <link rel="stylesheet" type="text/css" href="bootstrap-3.3.7-dist/css/bootstrap.min.css">
-
 
   <!-- import custom css -->  
   <link rel="stylesheet" type="text/css" href="css/style.css">
 
 </head>
 
-<body class="gallery">
+<body class="gallery" style="overflow-x: hidden;">
 
-  <nav class="navbar navbar-inverse">
-      <div class="container-fluid">
-        <!-- Brand and toggle get grouped for better mobile display -->
-        <div class="navbar-header">
-            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-                <span class="sr-only">Toggle navigation</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-            </button>
-
-            <div class="logo">
-            <img id="img-logo" src="img/lens.png" alt="Maximus Prime Logo">Maximus Prime
-            </div><!-- end of navbar-header -->  
-            
-        </div><!-- end of navbar-header -->
-
-        <!-- Collect the nav links, forms, and other content for toggling -->
-        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-       
-            <ul class="nav navbar-nav navbar-right">
-                <li class="dropdown">
-                  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Menu <span class="caret"></span></a>
-                
-                  <ul class="dropdown-menu">
-                      <li><a href="home.html"><span class="glyphicon glyphicon-home" aria-hidden="true"></span> Home</a></li>
-                      <li><a href="about.html">About Us</a></li>
-                      <li><a href="services.html">Services</a></li>
-                      <li><a href="contact.html">Contact Us</a></li>
-                      <li role="separator" class="divider"></li>
-                      <li><a href="#">Separated link</a></li>
-                  </ul><!-- end of dropdown-menu -->
-                </li><!-- end of dropdown -->
-            </ul><!-- nav navbar-nav navbar-right -->
-
-        </div><!-- /.navbar-collapse -->
-      </div><!-- /.container-fluid -->
-    </nav><!-- end of navbar -->
+  <button onclick="topFunction()" id="myBtn" title="Go to top">Back to top</button>
 
 
-  <div class="gallery container-fluid">
-  <h2>Image Gallery</h2>
-  <p>The .thumbnail class can be used to display an image gallery.</p>
-  <p>The .caption class adds proper padding and a dark grey color to text inside thumbnails.</p>
-  <p>Click on the images to enlarge them.</p>
+<nav class="navbar navbar-inverse">
+    <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+        </button>
+
+        <div class="logo">
+        <img id="img-logo" src="img/lens4.png" alt="Maximus Prime Logo" width="50" height="50"><a href="index.html">Maximus Prime</a>
+        </div>  
+        
+      </div><!-- end of navbar-header -->
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        <ul class="nav navbar-nav">
+          <li><a href="#"><span class="glyphicon glyphicon-home" aria-hidden="true"></span> Home <span class="sr-only">(current)</span></a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#contact">Contact Us</a></li>
+          <li><a href="#services">Services</a></li>
+          <li class="active"><a href="#gallery">Gallery</a></li>
+          <li><a href="#blog">Blog</a></li>          
+          <!-- </li> -->
+        </ul>
+   
+        
+
+      </div><!-- /.navbar-collapse -->
+    </div><!-- /.container-fluid -->
+  </nav><!-- end of navbar -->
 
   
-  <div class="gallery-section container">
+
+
+  <div id="gallery" class="gallery">
+    <div class="container">
+        <!-- <div class="">
+          <h1>Gallery</h1>
+
+        </div> -->
+
+<div class="gallery-header container">
+           <img src="img/horizontal-line.png" width="150">
+        </div>
+        
+        <div class="container">
+          <div class="row gallery-section container">  
     
+    
+
+        <div class="col-md-3">
+          <div class="thumbnail">
+            <a href="#">
+              <img src="https://static.pexels.com/photos/19639/pexels-photo.jpg" alt="WEDDING album" style="width:100%">
+          
+            <div class="caption">
+              <p>WEDDING</p>
+            </div><!-- caption -->
+            
+            </a>
+          </div><!-- end of thumbnail -->
+        </div><!-- end of col-md-3 -->
+
+        <div class="col-md-3">
+          <div class="thumbnail">
+            <a href="#">
+              <img src="https://static.pexels.com/photos/289237/pexels-photo-289237.jpeg" alt="PRE-NUPTIALS album" style="width:100%">          
+            <div class="caption">
+              <p>PRE-NUPTIALS</p>
+            </div><!-- caption -->
+            
+            </a>
+          </div><!-- end of thumbnail -->
+        </div><!-- end of col-md-3 -->
+
+        <div class="col-md-3">
+          <div class="thumbnail">
+            <a href="#">
+              <img src="https://static.pexels.com/photos/265727/pexels-photo-265727.jpeg" alt="BRIDAL SHOWER album" style="width:100%">
+      
+          
+            <div class="caption">
+              <p>BRIDAL SHOWER</p>
+            </div><!-- caption -->
+            
+            </a>
+          </div><!-- end of thumbnail -->
+        </div><!-- end of col-md-3 -->
+
+        <div class="col-md-3">
+          <div class="thumbnail">
+            <a href="#">
+              <img src="https://static.pexels.com/photos/302083/pexels-photo-302083.jpeg" alt="FAMILY PORTRAIT album" style="width:100%">
+                
+            <div class="caption">
+              <p>FAMILY PORTRAIT</p>
+            </div><!-- caption -->
+            
+            </a>
+          </div><!-- end of thumbnail -->
+        </div><!-- end of col-md-3 -->
+
+      </div><!-- end of row gallery-section container -->
+      </div><!-- container -->
   
-    <div class="row gallery-image">
-
-      <div class="img1 col-md-4">
-        <div class="thumbnail">
-          <a href="wedding.html" target="_blank">
-          <img src="https://images.pexels.com/photos/160420/photo-booth-wedding-party-girls-160420.jpeg?w=940&h=650&auto=compress&cs=tinysrgb" alt="Nature" style="width:100%">
-          </a>
-
-          <div class="caption">
-            <p>Wedding</p>
-            <p>Lorem ipsum donec id elit non mi porta gravida at eget metus.</p>
-          </div>
-        </div><!-- end of thumbail -->
-      </div><!-- end of img1 col-md-4 -->
-
-      <div class="img1 col-md-4">
-        <div class="thumbnail">
-          <a href="debut.html" target="_blank">
-          <img src="https://images.pexels.com/photos/160420/photo-booth-wedding-party-girls-160420.jpeg?w=940&h=650&auto=compress&cs=tinysrgb" alt="Nature" style="width:100%">
-          </a>
-
-          <div class="caption">
-            <p>Debut</p>
-            <p>Lorem ipsum donec id elit non mi porta gravida at eget metus.</p>
-          </div>
-        </div><!-- end of thumbail -->
-      </div><!-- end of img1 col-md-4 -->
-
-      <div class="img1 col-md-4">
-        <div class="thumbnail">
-          <a href="anniversary.html" target="_blank">
-          <img src="https://images.pexels.com/photos/160420/photo-booth-wedding-party-girls-160420.jpeg?w=940&h=650&auto=compress&cs=tinysrgb" alt="Nature" style="width:100%">
-          </a>
-
-          <div class="caption">
-            <p>Anniversary</p>
-            <p>Lorem ipsum donec id elit non mi porta gravida at eget metus.</p>
-          </div>
-        </div><!-- end of thumbail -->
-      </div><!-- end of img1 col-md-4 -->
-
-    </div><!-- end of row gallery-image-->
-
-  <div class="row gallery-image">
-
-      <div class="img1 col-md-4">
-        <div class="thumbnail">
-          <a href="bridalshower.html" target="_blank">
-          <img src="https://images.pexels.com/photos/160420/photo-booth-wedding-party-girls-160420.jpeg?w=940&h=650&auto=compress&cs=tinysrgb" alt="Nature" style="width:100%">
-          </a>
-
-          <div class="caption">
-            <p>Bridal Shower</p>
-            <p>Lorem ipsum donec id elit non mi porta gravida at eget metus.</p>
-          </div>
-        </div><!-- end of thumbail -->
-      </div><!-- end of img1 col-md-4 -->
-
-      <div class="img1 col-md-4">
-        <div class="thumbnail">
-          <a href="babyshower.html" target="_blank">
-          <img src="https://images.pexels.com/photos/160420/photo-booth-wedding-party-girls-160420.jpeg?w=940&h=650&auto=compress&cs=tinysrgb" alt="Nature" style="width:100%">
-          </a>
-
-          <div class="caption">
-            <p>Baby Shower</p>
-            <p>Lorem ipsum donec id elit non mi porta gravida at eget metus.</p>
-          </div>
-        </div><!-- end of thumbail -->
-      </div><!-- end of img1 col-md-4 -->
-
-      <div class="img1 col-md-4">
-        <div class="thumbnail">
-          <a href="corporate.html" target="_blank">
-          <img src="https://images.pexels.com/photos/160420/photo-booth-wedding-party-girls-160420.jpeg?w=940&h=650&auto=compress&cs=tinysrgb" alt="Nature" style="width:100%">
-          </a>
-
-          <div class="caption">
-            <p>Corporate events</p>
-            <p>Lorem ipsum donec id elit non mi porta gravida at eget metus.</p>
-          </div>
-        </div><!-- end of thumbail -->
-      </div><!-- end of img1 col-md-4 -->
-
-    </div><!-- end of row gallery-image-->
-
-  </div><!-- end of gallery-section -->
-
-</div><!-- end of gallery-section container -->
+<!-- END GRID1 -->
 
 
 
+<!-- Portfolio Gallery Grid2 -->
+          <div class="container">
+          <div class="row gallery-section container">  
+    
+    
+
+        <div class="col-md-3">
+          <div class="thumbnail">
+            <a href="#">
+              <img src="https://static.pexels.com/photos/618550/pexels-photo-618550.jpeg" alt="CORPORATE EVENTS album" style="width:100%">
+      
+          
+            <div class="caption">
+              <p>CORPORATE EVENTS</p>
+            </div><!-- caption -->
+            
+            </a>
+          </div><!-- end of thumbnail -->
+        </div><!-- end of col-md-3 -->
+
+        <div class="col-md-3">
+          <div class="thumbnail">
+            <a href="#">
+              <img src="https://static.pexels.com/photos/206470/pexels-photo-206470.jpeg" alt="FASHION album" style="width:100%">
+               
+            <div class="caption">
+              <p>FASHION</p>
+            </div><!-- caption -->
+            
+            </a>
+          </div><!-- end of thumbnail -->
+        </div><!-- end of col-md-3 -->
+
+        <div class="col-md-3">
+          <div class="thumbnail">
+            <a href="#">
+              <img src="https://static.pexels.com/photos/48789/child-happy-kid-cute-48789.jpeg" alt="KIDS SHOWER album" style="width:100%">
+      
+      
+          
+            <div class="caption">
+              <p>KIDDIE sHOOT</p>
+            </div><!-- caption -->
+            
+            </a>
+          </div><!-- end of thumbnail -->
+        </div><!-- end of col-md-3 -->
+
+        <div class="col-md-3">
+          <div class="thumbnail">
+            <a href="#">
+              <img src="https://static.pexels.com/photos/266061/pexels-photo-266061.jpeg" alt="BABY SHOOT" style="width:100%">
+      
+                
+            <div class="caption">
+              <p>BABY SHOOT</p>
+            </div><!-- caption -->
+            
+            </a>
+          </div><!-- end of thumbnail -->
+
+
+        </div><!-- end of col-md-3 -->
+
+        
+
+      </div><!-- end of row gallery-section container -->
+
+      <div class="gallery-header container">
+           <img src="img/horizontal-line.png" width="150">
+        </div>
+      </div><!-- container -->
+  
+      
+      <div id="wedding" class="wedding"></div>
+      <div id="prenuptials" class="prenuptials"></div>
+      <div id="bridal" class="bridal"></div>
+      <div id="family" class="family"></div>
+      <div id="corporate" class="corporate"></div>
+      <div id="fashion" class="fashion"></div>
+      <div id="kiddie" class="kiddie"></div>
+      <div id="baby" class="baby"></div>
 
 
 
+  </div>  
+
+    </div> 
+  </div>  <!-- end of gallery -->
 
 
 
-<div class="footer container-fluid">
+  <div class="footer container-fluid">
     <div class="footer-section container">
       <small>Copyright &copy; 2017 Rochelle Benet Ilustre</small>
     </div>
@@ -209,6 +270,10 @@
       <a href="https://youtube.com">
         <i class="fa fa-youtube-play" aria-hidden="true"></i>
       </a>
+
+
+
+
     </div><!-- end of footer icons -->
   </div><!-- end of footer -->
 
@@ -224,11 +289,32 @@
   </script> 
 
   <script>
-  $(document).ready(function(){
-      $('[data-toggle="tooltip"]').tooltip();   
-  });
-  </script>
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        document.getElementById("myBtn").style.display = "block";
+    } else {
+        document.getElementById("myBtn").style.display = "none";
+    }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+}
+</script>
+
 
 </body>
 
 </html>
+
+<!-- reference color palette -->
+<!-- http://www.colourlovers.com/palette/444236/Diamond_Girl -->
+
+<!-- btemplate inspiration -->
+<!-- http://btemplates.com/2010/blogger-template-photo-gallery/demo/ -->
+<!-- https://www.pandadoc.com/photography-proposal-template/ -->

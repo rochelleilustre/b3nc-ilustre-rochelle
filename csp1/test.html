@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 
 <html lang="en">
@@ -10,7 +11,9 @@
   <meta http-equiv="X-UA-compatible" content="IE=edge">
 
 
-  <title>TEST PAGE</title>
+  <title>TESTING PAGE</title>
+
+  <!-- HOME - MAXIMUS PRIME Photography and Digital Services -->
 
   <!-- fonts -->
   <link href="https://fonts.googleapis.com/css?family=Cedarville+Cursive" rel="stylesheet">
@@ -23,6 +26,8 @@
   <!-- icons -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
+
+
   <!-- favicon -->
   <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
  <link rel="icon" href="favicon.ico" type="image/x-icon">
@@ -31,11 +36,14 @@
   <link rel="stylesheet" type="text/css" href="bootstrap-3.3.7-dist/css/bootstrap.min.css">
 
   <!-- import custom css -->  
-  <link rel="stylesheet" type="text/css" href="css/style1.css">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
 
 </head>
 
-<body class="test">
+<body class="gallery" style="overflow-x: hidden;">
+
+  <button onclick="topFunction()" id="myBtn" title="Go to top">Back to top</button>
+
 
 <nav class="navbar navbar-inverse">
     <div class="container-fluid">
@@ -57,452 +65,25 @@
     <!-- Collect the nav links, forms, and other content for toggling -->
       <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
         <ul class="nav navbar-nav">
-          <li class="active"><a href="#"><span class="glyphicon glyphicon-home" aria-hidden="true"></span> Home <span class="sr-only">(current)</span></a></li>
+          <li><a href="#"><span class="glyphicon glyphicon-home" aria-hidden="true"></span> Home <span class="sr-only">(current)</span></a></li>
           <li><a href="#about">About</a></li>
+          <li><a href="#contact">Contact Us</a></li>
           <li><a href="#services">Services</a></li>
-          <li><a href="#contact">Contact Us</a></li>          
+          <li class="active"><a href="#gallery">Gallery</a></li>
+          <li><a href="#blog">Blog</a></li>          
           <!-- </li> -->
         </ul>
    
-        <ul class="nav navbar-nav navbar-right">
-          <li class="dropdown">
-            <a href="#gallery" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Gallery <span class="caret"></span></a>
-            
-              <ul class="dropdown-menu">
-                <li><a href="#">Gallery 1</a></li>
-                <li><a href="#">Gallery 2</a></li>
-                <li><a href="#">Gallery 3</a></li>
-                <li role="separator" class="divider"></li>
-                <li><a href="#">Separated link</a></li>
-            </ul><!-- end of dropdown-menu -->
-
-
-          </li><!-- end of dropdown -->
-        </ul><!-- nav navbar-nav navbar-right -->
+        
 
       </div><!-- /.navbar-collapse -->
     </div><!-- /.container-fluid -->
   </nav><!-- end of navbar -->
 
-  <div class="content-container">
-
-    <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
-    <!-- Indicators -->
-      <ol class="carousel-indicators">
-        <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
-        <li data-target="#carousel-example-generic" data-slide-to="1"></li>
-        <li data-target="#carousel-example-generic" data-slide-to="2"></li>
-      </ol>
-
-    <!-- Wrapper for slides -->
-      <div class="carousel-inner" role="listbox">
-        
-        <div class="item active">
-          <img class="img-responsive" src="https://images.pexels.com/photos/160420/photo-booth-wedding-party-girls-160420.jpeg?w=940&h=650&auto=compress&cs=tinysrgb" alt="wedding">
-          
-          <div class="carousel-caption">
-            Wedding Party   
-          </div>
-        </div><!-- end of item active -->
-
-        <div class="item">
-          <img class="img-responsive" src="https://images.pexels.com/photos/37862/musician-rockstar-band-music-37862.jpeg?w=940&h=650&auto=compress&cs=tinysrgb" alt="band music">
-          
-          <div class="carousel-caption">
-            Music Band Event
-          </div>
-        </div><!-- end of item -->
-
-        <div class="item">
-          <img class="img-responsive" src="https://images.pexels.com/photos/247295/pexels-photo-247295.jpeg?w=940&h=650&auto=compress&cs=tinysrgb" alt="Bride">
-        
-          <div class="carousel-caption">
-            Bridal Shoot
-          </div>
-        </div><!-- end of item -->
-
-        <div class="item">
-          <img class="img-responsive" src="https://static.pexels.com/photos/247204/pexels-photo-247204.jpeg" width="940" height="627">
-        
-          <div class="carousel-caption">
-            Bridal Shoot
-          </div>
-        </div><!-- end of item -->
-
-        <div class="item">
-          <img class="img-responsive" src="https://images.pexels.com/photos/208153/pexels-photo-208153.jpeg?w=1260&h=750&auto=compress&cs=tinysrgb" width="940" height="627">
-        
-          <div class="carousel-caption">
-            Bridal Shoot
-          </div>
-        </div><!-- end of item -->
-
-        <div class="item">
-          <img class="img-responsive" src="https://static.pexels.com/photos/160688/family-toddler-hapy-happy-160688.jpeg" width="940" height="627">
-        
-          <div class="carousel-caption">
-            Bridal Shoot
-          </div>
-        </div><!-- end of item -->
-
-      ...
-      </div><!-- end of carousel-inner -->
-
-      <!-- Controls -->
-      <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
-        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-        <span class="sr-only">Previous</span>
-      </a>
-
-      <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
-        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-        <span class="sr-only">Next</span>
-      </a>
-    </div><!-- end of .carousel slide -->
-    
-
-  </div><!-- end of content-container-->
-
-
-  <div class="home">
-    <div class="features container">
-
-          <div class="feature1 col-lg-4 col-md-4 ">
-          <h4><span class="glyphicon glyphicon glyphicon-ok" aria-hidden="true"><h4> Capturing special moments</h4></span></h4>
-  
-          <h4><span class="glyphicon glyphicon glyphicon-ok" aria-hidden="true"><h4> Affordable photo packages</h4></span></h4>
-          </div>
-
-
-
-          <div class="feature2 col-lg-4 col-md-4">
-          <h4><span class="glyphicon glyphicon glyphicon-ok" aria-hidden="true"><h4> Quality print and layout</h4></span></h4>
-
-          <h4><span class="glyphicon glyphicon glyphicon-ok" aria-hidden="true"><h4> Offers same day edit</h4></span></h4> 
-          </div>
-
-          <div class="book col-lg-4 col-md-4">
-            
-            <a class="btn btn-primary btn-lg btn-danger" href="#" role="button">Book Now!</a>
-
-            <h4>Book your next event with us..</h4>
-          </div>
-
-        </div><!-- end of features -->
-
-  </div><!-- home -->
-
-
-  <div id="about" class="about">
-     <div class="container">
-        <div class="page-header">
-          <h1>About Us</h1>      
-        </div>
-        
-        
-
-        <h3>Who we are</h3>   
-          <p>MAXIMUS PRIME Offers photo, video and digital services.. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse   cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse   cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-
-        
-        
-    </div><!-- end of about-section container -->
-
-
-    <div class="values container">
-      <h3>Our values</h3>
-      <p>Mision: <em>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</em></p>
-
-      <p>Vision: <em>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</em></p>
-    </div>
-
-    <div class="container">
-    <div class="row photographer-section container">  
-      <h3>The Crew</h3>
-    
-
-        <div class="col-md-3">
-          <div class="thumbnail">
-            <a href="#">
-            <img src="https://images.pexels.com/photos/52496/photographer-camera-photo-photos-52496.jpeg?w=1260&h=750&auto=compress&cs=tinysrgb" alt="..." class="img-thumbnail">
-            
-            <div class="caption">
-            <p>Lorem ipsum...</p>
-            </div><!-- caption -->
-            
-            </a>
-          </div><!-- end of thumbnail -->
-        </div><!-- end of col-md-4 -->
-
-        <div class="col-md-3">
-          <div class="thumbnail">
-            <a href="#">
-            <img src="https://static.pexels.com/photos/41664/camera-digital-equipment-female-41664.jpeg" alt="..." class="img-thumbnail">
-            
-            <div class="caption">
-            <p>Lorem ipsum...</p>
-            </div><!-- caption -->
-            </a>
-          </div><!-- end of thumbnail -->
-        </div><!-- end of col-md-4 -->
-
-        <div class="col-md-3">
-          <div class="thumbnail">
-            <a href="#">
-            <img src="https://static.pexels.com/photos/52985/photographer-camera-photo-photos-52985.jpeg" alt="..." class="img-thumbnail">
-            
-            <div class="caption">
-            <p>Lorem ipsum...</p>
-            </div><!-- caption -->
-            </a>
-          </div><!-- end of thumbnail -->
-        </div><!-- end of col-md-4 -->
-
-        <div class="col-md-3">
-          <div class="thumbnail">
-            <a href="#">
-            <img src="https://static.pexels.com/photos/669010/pexels-photo-669010.jpeg" alt="..." class="img-thumbnail">
-            
-            <div class="caption">
-            <p>Lorem ipsum...</p>
-            </div><!-- caption -->
-            </a>
-          </div><!-- end of thumbnail -->
-        </div><!-- end of col-md-4 -->
-
-      </div><!-- end of row photographer-section container -->
-      </div>
-   
-    </div> 
-  </div><!-- end of about -->
   
 
 
-  <div id="contact" class="contact">
-    <div class="container">
-        <div class="page-header">
-          <h1>Contact Us</h1>  
-        </div>
-
-        <p>For queries or suggestions, you may contact us directly through the details below.</p>  
-        
-<div class="contact-info col-lg-6">
-
-      <div class="row">
-        
-        
-        <div class="col-lg-6">
-        <p>176 C Scout Fuentebella Ext. Kamuning QC</p>
-        <p>+639267164808</p>
-        </div>
-
-        <div class="col-lg-6">
-          <p>maximusprime@gmail.com</p>
-          <p>(02) 9253293</p>
-        </div>
-
-      </div>
-
-      <div>
-      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3860.4422539129055!2d121.04056251509249!3d14.630818989783206!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3397b7b04f545b9b%3A0xc4a5473ddd351594!2s176+Scout+Fuentebella+Ext%2C+Diliman%2C+Quezon+City%2C+Metro+Manila!5e0!3m2!1sen!2sph!4v1512392777323" width="400" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
-      </div>
-
-      </div><!-- end of contact-info col-lg-6 -->
-
-
-      <div class="contact-form col-lg-6">
-      <form>
-
-      <div class="form-group">
-        
-        <input type="text" class="form-control" id="fname" placeholder="Your name..">
-      </div>
-
-      <div class="form-group">
-     
-        <input type="text" class="form-control" id="lname" placeholder="Your last name..">
-      </div>
-
-      <div class="form-group">
-        
-        <input type="email" class="form-control" id="email" placeholder="Your email address..">
-      </div>
-
-      <div class="form-group">
-        
-        <input type="text" class="form-control" id="email" placeholder="Subject..">
-      </div>
-
-      <div class="form-group">
-        
-        <textarea class="form-control" rows="5" id="comment" placeholder="Write something.."></textarea>
-
-        <br>
-
-        <button id="btn-send" type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Send</button>
-      </div>
-    
-      
-     
-
-
-    </form>
-  </div><!-- end of contact form -->
-    
-    </div> 
-  </div><!-- end of contact -->  
   
-
-
-  <div id="services" class="services">
-    <div class="container">
-       <div class="page-header">
-          <h1>Services</h1>
-       </div>
-       
-       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse   cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse   cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p> 
-
-        <div id="services" class="services container-fluid">
-    <div class="services-section container">
-      
-
-      
-
-      
-<!-- Container (Services Section) -->
-
-<div class=" container-fluid text-center">
-  <hr>
-  <div class="services-offer">
-  <h2>What we offer</h2>
-  
-  <br>
-  <div class="row">
-    <div class="col-sm-4">
-      <span class="glyphicon glyphicon-off logo-small"></span>
-      <h4>QUALITY</h4>
-      <p>Lorem ipsum dolor sit amet..</p>
-    </div>
-    <div class="col-sm-4">
-      <span class="glyphicon glyphicon-heart logo-small"></span>
-      <h4>PASSION</h4>
-      <p>Lorem ipsum dolor sit amet..</p>
-    </div>
-    <div class="col-sm-4">
-      <span class="glyphicon glyphicon-lock logo-small"></span>
-      <h4>JOB DONE</h4>
-      <p>Lorem ipsum dolor sit amet..</p>
-    </div>
-  </div>
-  <br><br>
-  <div class="row">
-    <div class="col-sm-4">
-      <span class="glyphicon glyphicon-leaf logo-small"></span>
-      <h4>GREEN</h4>
-      <p>Lorem ipsum dolor sit amet..</p>
-    </div>
-    <div class="col-sm-4">
-      <span class="glyphicon glyphicon-certificate logo-small"></span>
-      <h4>CERTIFIED</h4>
-      <p>Lorem ipsum dolor sit amet..</p>
-    </div>
-    <div class="col-sm-4">
-      <span class="glyphicon glyphicon-wrench logo-small"></span>
-      <h4 style="color:#303030;">HARD WORK</h4>
-      <p>Lorem ipsum dolor sit amet..</p>
-    </div>
-  </div>
-  </div><!-- end of services-offer -->
-
-  <hr>
-
-  <!-- Container (Pricing Section) -->
-<div class="pricing container-fluid">
-  <div class="text-center">
-    <h2>Pricing</h2>
-    <p>Choose from our affordable packages that works for you</p>
-  </div>
-  <div class="row">
-    <div class="col-sm-4 col-xs-12">
-      <div class="panel text-center"> <!-- panel-default -->
-        <div class="panel-heading">
-          <h1>Basic</h1>
-        </div>
-        <div class="panel-body">
-          <p><strong>20</strong> Lorem</p>
-          <p><strong>15</strong> Ipsum</p>
-          <p><strong>5</strong> Dolor</p>
-          <p><strong>2</strong> Sit</p>
-          <p><strong>Endless</strong> Amet</p>
-        </div>
-        <div class="panel-footer">
-          <h3>$19</h3>
-          <h4>per month</h4>
-          <button class="btn btn-lg">Sign Up</button>
-        </div>
-      </div>      
-    </div>     
-    <div class="col-sm-4 col-xs-12">
-      <div class="panel text-center"> <!-- panel-default -->
-        <div class="panel-heading">
-          <h1>Pro</h1>
-        </div>
-        <div class="panel-body">
-          <p><strong>50</strong> Lorem</p>
-          <p><strong>25</strong> Ipsum</p>
-          <p><strong>10</strong> Dolor</p>
-          <p><strong>5</strong> Sit</p>
-          <p><strong>Endless</strong> Amet</p>
-        </div>
-        <div class="panel-footer">
-          <h3>$29</h3>
-          <h4>per month</h4>
-          <button class="btn btn-lg">Sign Up</button>
-        </div>
-      </div>      
-    </div>       
-    <div class="col-sm-4 col-xs-12">
-      <div class="panel text-center"> <!-- panel-default -->
-        <div class="panel-heading">
-          <h1>Premium</h1>
-        </div>
-        <div class="panel-body">
-          <p><strong>100</strong> Lorem</p>
-          <p><strong>50</strong> Ipsum</p>
-          <p><strong>25</strong> Dolor</p>
-          <p><strong>10</strong> Sit</p>
-          <p><strong>Endless</strong> Amet</p>
-        </div>
-        <div class="panel-footer">
-          <h3>$49</h3>
-          <h4>per month</h4>
-          <button class="btn btn-lg">Sign Up</button>
-        </div>
-      </div>      
-    </div>    
-  </div>
-</div>
-
-    </div><!-- services-section -->
-
-    </div>  
-
-</div>
-
-  </div><!-- end of services -->  
-  
-
-
-  <div class="gallery">
-    <div class="container">
-        <div class="page-header">
-          <h1>Gallery</h1>      
-        </div>
-        
-        <p>This is some text.</p>      
-        <p>This is another text.</p>      
-    </div> 
-  </div>  <!-- end of gallery -->
 
 
 
@@ -527,6 +108,10 @@
       <a href="https://youtube.com">
         <i class="fa fa-youtube-play" aria-hidden="true"></i>
       </a>
+
+
+
+
     </div><!-- end of footer icons -->
   </div><!-- end of footer -->
 
@@ -541,6 +126,24 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js">
   </script> 
 
+  <script>
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        document.getElementById("myBtn").style.display = "block";
+    } else {
+        document.getElementById("myBtn").style.display = "none";
+    }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+}
+</script>
 
 
 </body>
@@ -552,3 +155,4 @@
 
 <!-- btemplate inspiration -->
 <!-- http://btemplates.com/2010/blogger-template-photo-gallery/demo/ -->
+<!-- https://www.pandadoc.com/photography-proposal-template/ -->
