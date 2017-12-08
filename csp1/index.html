@@ -6,7 +6,7 @@
 
   <!-- meta tags -->
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
   <meta http-equiv="X-UA-compatible" content="IE=edge">
 
 
@@ -84,7 +84,7 @@
           </div>
           
           <div class="btn-section">
-          <a href="home.html" id="btn-signup" class="btn btn-info" role="button">Sign Up</a>
+          <a href="home.html" id="btn-signup" class="btn btn-info" role="button" onclick="myFunction()">Sign Up</a>
 
           <div class="separator-container container">
                 <div id="left" class="separator-line"></div>
@@ -102,7 +102,9 @@
   </div>
 
 
-  
+  <div class="footer-section container">
+      <small>Copyright &copy; 2017 Rochelle Benet Ilustre</small>
+    </div>
 
 
 
@@ -116,6 +118,11 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js">
   </script> 
 
+  <script>
+function myFunction() {
+    alert("Thank you for signing up!");
+}
+</script>
 
 
 </body>

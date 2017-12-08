@@ -6,7 +6,7 @@
 
   <!-- meta tags -->
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
   <meta http-equiv="X-UA-compatible" content="IE=edge">
 
 
@@ -37,6 +37,8 @@
 
 <body class="blog">
 
+  <button onclick="topFunction()" id="myBtn" title="Go to top">Back to top</button>
+
 <nav class="navbar navbar-inverse">
     <div class="container-fluid">
     <!-- Brand and toggle get grouped for better mobile display -->
@@ -57,11 +59,11 @@
     <!-- Collect the nav links, forms, and other content for toggling -->
       <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
         <ul class="nav navbar-nav">
-          <li ><a href="#"><span class="glyphicon glyphicon-home" aria-hidden="true"></span> Home <span class="sr-only">(current)</span></a></li>
-          <li><a href="#about">About</a></li>
-          <li><a href="#contact">Contact Us</a></li>          
-          <li><a href="#services">Services</a></li>
-          <li><a href="#gallery">Gallery</a></li>
+          <li ><a href="home.html"><span class="glyphicon glyphicon-home" aria-hidden="true"></span> Home <span class="sr-only">(current)</span></a></li>
+          <li><a href="home.html">About</a></li>
+          <li><a href="home.html">Contact Us</a></li>          
+          <li><a href="home.html">Services</a></li>
+          <li><a href="home.html">Gallery</a></li>
           <li class="active"><a href="#blog">Blog</a></li>
           <!-- </li> -->
         </ul>
@@ -160,14 +162,9 @@
       </div>
 
       <div class="media-body">
-        <h4><a href="#">Kevin Durant</a></h4>
+        <h4><a href="#"><b>Kevin Durant</b></a></h4>
         <p><a href="#">27 November 2017 7:20 PM</a></p>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-        consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-        cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-        proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        <p>The experience I had with Classic Photographers was more than I could ever ask for. In choosing our photographer, the selection process was so simple and easy to browse and my husband and I are overly joyed with having Landon! He made the engagement shoot so much fun and exciting and he was honestly our main guide on the day of the wedding too!</p>
           <p>
           <button class="btn btn-success col-xs-12 col-md-4">
             <span class="glyphicon glyphicon-thumbs-up"></span> Upvote
@@ -194,14 +191,9 @@
       </div>
 
       <div class="media-body">
-        <h4><a href="">Stephen Grey</a></h4>
+        <h4><a href=""><b>Stephen Grey</b></a></h4>
         <p><a href="">27 November 2017 7:20 PM</a></p>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-        consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-        cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-        proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        <p>We chose Classic Photographers for our engagement and wedding pictures. We were so happy with the pictures and were so pleased with our pictures. We look forward to the wedding.</p>
 
           <p>
           <button class="btn btn-success col-xs-12 col-md-4">
@@ -229,14 +221,9 @@
       </div>
 
       <div class="media-body">
-        <h4><a href="">Clay Thompson</a></h4>
+        <h4><a href=""><b>Clay Thompson</b></a></h4>
         <p><a href="">27 November 2017 7:20 PM</a></p>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-        consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-        cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-        proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        <p>We were able to see our photos within a week after the wedding and we are LOVING each and every shot! I also loved the little chatbox on their website where someone was always available to answer any questions I had! Overall such a great experience planning wise and I would recommend this company to anyone and everyone!</p>
           <p>
           <button class="btn btn-success col-xs-12 col-md-4">
             <span class="glyphicon glyphicon-thumbs-up"></span> Upvote
@@ -334,7 +321,24 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js">
   </script> 
 
+  <script>
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
 
+function scrollFunction() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        document.getElementById("myBtn").style.display = "block";
+    } else {
+        document.getElementById("myBtn").style.display = "none";
+    }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+}
+</script>
 
 </body>
 
