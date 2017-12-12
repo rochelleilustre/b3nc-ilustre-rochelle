@@ -1089,3 +1089,45 @@ http://btemplates.com/2010/blogger-template-photo-gallery/demo/
 
 
 https://rochelleilustre.github.io/b3nc-ilustre-rochelle/csp1/index.html
+
+
+12/11/17--------------------------------------------------------------------------------
+
+deployment of csp1 to github
+
+discovery & ideation: Web Developer Portfolio
+Sketch & wireframing (optional)
+mobile first development of the project
+
+sample web developer portfolio and format: tinyurl.com/tuitt-webdev-portfolio
+
+csp1 must be linked to web developer portfolio
+
+deployment of version 1 of web developer portfolio to github
+
+provide url of portfolio site tinyurl.com/b3nc-webdev-portfolio
+
+My webdev portfolio
+
+12/12/17--------------------------------------------------------------------------------
+
+JavaScript (scripting language)
+- used to make web pages interactive
+
+developer.mozilla.org
+
+DOM { objects, properties, methods, events 
+
+DOM selectors:
+getElementByID(id)
+getElementsByTagName(name)
+getElementsByClassName(name)
+
+Events
+mouse events
+keyboard events
+form events
+clipboard events
+
+animate.css
+
