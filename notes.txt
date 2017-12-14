@@ -1131,3 +1131,78 @@ clipboard events
 
 animate.css
 
+12/13/17--------------------------------------------------------------------------------
+
+
+JavaScript Programming
+
+similar in PHP
+
+*syntax
+
+hidden comments
+// single line comment
+/**/ multiline comment
+
+*variable
+var
+memory location -> container of data/info -> we can access the data/info stored in a var -> volatile storage, non-persistent
+
+string -> text, alpha-numeric, symbols
+
+*array
+- data structure 
+- collection of items of same type (data type)
+
+
+
+20% front-end
+80% back-end
+
+*expressions
+
++ 
+- 
+*
+/
+% modulus (number / number -> remainder)
+
+arithmitic expression
+longhand | shorthand
+x = x+2 |x += 2
+x = x-2 |x -= 2
+
+
+increment & decrement
+
+x = x+1 | x++
+x = x-1 | x--
+
+++x | --x -> immediatly use the new value of x
+x++ | x-- -> use current value of x then increase it by one
+--x ->
+
+return value
+real value
+
+*string concatenate
+
+*comparison operators
+
+*logical operators
+
+*numeric to string
+
+*switch case
+
+*loops
+
+*while
+
+*do while
+
+*continue in loops
+
+*functions
+
+*function with parameters
