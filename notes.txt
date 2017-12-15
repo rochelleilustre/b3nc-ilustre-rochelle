@@ -1206,3 +1206,18 @@ real value
 *functions
 
 *function with parameters
+
+*function with return value
+
+
+1. user clicks on a button
+2. button will return a number
+3. store the value to a variable
+4. user clicks on another button
+5. button will return addition
+6. user clicks on another button
+7. button will return another number
+8. store the value to a variable
+9. user clicks on equal button
+10. return the sum to user
+
