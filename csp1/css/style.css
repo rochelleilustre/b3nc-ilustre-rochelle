@@ -468,12 +468,14 @@ a {
 	color: black;
 }
 
-.well >form {
-	border: 1px solid red;
-}
-
+/*.well >form,
 .leave {
-	margin-bottom: 150px;	
+	border: 1px solid red;
+}*/
+
+.well, .panel {
+    border-radius: 0;
+    margin-bottom: 150px;
 }
 
 .gallery-label {
