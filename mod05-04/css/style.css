@@ -1,0 +1,18 @@
+* {
+	margin: 0;
+	border: 0;
+}
+
+
+body {
+	width: 80%;
+	margin: 0 auto;
+	text-align: center;
+	padding: 50px;
+}
+
+input {
+	border: 1px solid;
+	margin: 50px;
+	text-align: center;
+}

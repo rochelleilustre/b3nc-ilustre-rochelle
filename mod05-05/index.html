@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+
+	<input type="number" id="num" max="100" min="1" placeholder="Enter amount">
+	<input type="number" id="num" max="100" min="1" placeholder="%">
+	<button onclick="getNum()">Go!</button>
+	<p id="show">Show result here</p>
+
+
+	<script type="text/javascript">
+		function getNum() {
+			var num = parseInt(document.getElementById("num").value);
+			document.getElementById("show").innerHTML = num + 10;
+		}
+	</script>
+
+</body>
+</html>

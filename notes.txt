@@ -1221,3 +1221,17 @@ real value
 9. user clicks on equal button
 10. return the sum to user
 
+01/03/17--------------------------------------------------------------------------------
+
+patatap
+paper.js
+
+alert();
+confirm();
+prompt();
+
+Camel Case Notation
+
+onclick //event
+
+x++ >>> x = x + 1
