@@ -1235,3 +1235,23 @@ Camel Case Notation
 onclick //event
 
 x++ >>> x = x + 1
+
+01/04/17--------------------------------------------------------------------------------
+
+basic while loop 1-10
+
+sum of all even numbers 0-10
+
+sum of all even numbers 0-50
+sum all odd numbers 0-5
+
+
+var x = 0
+
+sum even = 0
+sum odd = 0
+
+x 
+
+sum even = sum even + x
+else sum odd + x

@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>LOOP add all integers</title>
+</head>
+<body>
+
+	<!-- <input type="number" id="sum">
+
+	<button>Calculate Sum</button>
+
+	<p id="sum">The result is </p> -->
+
+	<div class="container">
+		<h1>SAMPLE JS</h1>
+
+		<input type="number" id="num">
+		<button onclick="dRaw()">Draw!</button>
+
+		<div id="loopDisplay"></div>
+	</div>
+
+	<script type="text/javascript">
+		/*function calculateSum(){
+		var sum = document.getElementByID("num").value;
+		document.getElementByID("result").innerHTML = num;
+		}
+*/
+		/*var sum = 0;   //basic while loop 1-10 = 55
+
+		var x = 0;
+		while (x <= 10) {
+			sum = sum + x;
+			x++;
+		}
+		alert(sum);*/
+
+		/*var sum = 0;   //sum of all even numbers 0-10 = 30
+
+		var x = 0;
+		while (x <= 10)  
+			if (x % 2==0) {
+			sum += x;
+			
+		}
+		alert("The sum of even nos is " + sum);*/
+
+
+		/*var sumOdd = 0; //sum of odd and even from 0-50 in WHILE LOOP
+		var sumEven = 0;
+
+		var x = 0; //var declaration
+		while (x<=50){ //condition
+			if (x%2==0){
+					sumEven += x;
+			} else{
+					sumOdd += x;
+			}
+
+			x++; //var modification	
+		}*/
+
+
+		/*var sumOdd = 0; //sum of odd and even from 0-50 in FOR LOOP
+		var sumEven = 0;
+
+		for (var x=0; x<=50; x++){ //declaration condition modification
+			if (x%2==0){
+					sumEven += x;
+			} else{
+					sumOdd += x;
+			}
+		}
+
+		alert("Even sum: " + sumEven + " Odd sum: " + sumOdd);*/
+
+
+		/*for loop
+
+		loop 0 -20
+		multiple of 3 and 5
+		multiple of 3 but not of 5
+		multiple of 5 but not of 3
+		not a multiple of 3 or 5*/
+
+		
+		
+		/*for (var x = 0; x <=20; x++) {
+			if(x%3==0 && x%5==0)
+				console.log(x + " is a multiple of 3 AND 5")
+
+			else if(x%3==0 && x%5!=0)
+				console.log(x + " is a multiple of 3 but not of 5")
+			
+			else if(x%3!=0 && x%5==0)
+				console.log(x + " is a multiple of 3 but not of 5")
+
+			else(x%3!=0 && x%5!=0)
+				console.log(x + " is not a multiple of 3 OR 5")
+		}*/
+
+		/*for (var x=0; x<20; x++) {*/
+			/*console.log("*")*/
+			/*document.getElementById("loopDisplay").innerHTML += " * "
+		}*/
+
+
+
+		/*for (var x=0; x<20; x++) {*/
+			/*console.log("*")*/
+		/*	document.getElementById("loopDisplay").innerHTML += " *<br> "
+		}*/
+		
+		function dRaw(){
+			document.getElementById("loopDisplay").innerHTML = ""
+			var num = document.getElementById('input').value
+		
+			for (var x=0; x<num; x++) {
+			document.getElementById("loopDisplay").innerHTML += " * "
+			}
+
+			for (var x=0; x<num; x++) {
+			document.getElementById("loopDisplay").innerHTML += " * <br> "
+			}
+		}
+
+	</script>
+
+</body>
+</html>
