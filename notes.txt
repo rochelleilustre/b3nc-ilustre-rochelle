@@ -1239,13 +1239,13 @@ x++ >>> x = x + 1
 01/04/17--------------------------------------------------------------------------------
 
 basic while loop 1-10
-
+---------
 sum of all even numbers 0-10
-
+--------
 sum of all even numbers 0-50
 sum all odd numbers 0-5
 
-
+----------
 var x = 0
 
 sum even = 0
@@ -1255,3 +1255,214 @@ x
 
 sum even = sum even + x
 else sum odd + x
+------------
+for loop
+
+loop 0 -20
+is a multiple of 3 and 5
+is NOT a multiple of 5 or 3
+is a multiple of 3 but not of 5
+is a multiple of 5 but not of 3
+
+var x=0;
+for (x=0; x<20; x++)
+
+if (x % 3)
+
+01/05/17--------------------------------------------------------------------------------
+
+
+**10x pop up from nos 0-10
+
+var i; //define i
+	for (i = 0; i <= 10; i++) {
+	alert("Number is " + i);
+}
+----------------------------
+
+**5x pop up 
+
+var i; //define i
+	for (i = 0; i <= 10; i++) {
+		if (i == 5)
+			break;
+		alert("Number is " + i);
+}
+
+----------------------------
+
+**pop up from 0-10 but skipped nos 5
+
+var i; //define i //counter
+	for (i = 0; i <= 10; i++) {
+		if (i == 5)
+			continue;
+		alert("Number is " + i);
+}
+
+----------------------------
+
+loop 1-10
+append string to var text
+**prints text to 100x
+
+
+<p id="myName"></p>
+
+var text = ""; //empty string
+var c; //counter
+	for(c=1; c <= 100; c++){ // initialize value;  increment
+		text = text + "Juana Dela Cruz <br>";
+}
+document.getElementById("myName").innerHTML = text;
+
+----------------------------
+
+**prints text to 5x
+
+<p id="myName"></p>
+
+var text = ""; //empty string
+		var c; //counter
+		for(c=1; c <= 100; c++){ // initialize value;  increment
+			if(c == 10)
+				break; //stop of counter is equal to 10
+			text = text + "Juana Dela Cruz <br>";
+		}
+		document.getElementById("myName").innerHTML = text;
+
+----------------------------
+
+**even nos
+
+<p id="myName"></p>
+
+var text = ""; //empty string
+		var c; //counter
+		for(c=1; c <= 20; c++){ // initialize value;  increment
+			if(c % 2 == 0)//even nos //modulus integer division then take remainder
+				//break; //stop of counter is equal to 10
+				continue;
+			text = text + c + " Juana Dela Cruz <br>";
+			//text += "Juana Dela Cruz <br>";//shorthand
+		}
+		document.getElementById("myName").innerHTML = text;
+
+OUTPUT
+1 Juana Dela Cruz 
+3 Juana Dela Cruz 
+5 Juana Dela Cruz 
+7 Juana Dela Cruz 
+9 Juana Dela Cruz 
+11 Juana Dela Cruz 
+13 Juana Dela Cruz 
+15 Juana Dela Cruz 
+17 Juana Dela Cruz 
+19 Juana Dela Cruz
+
+----------------------------
+
+function printMyName(){
+			var text= "";
+			var yourName = "Juan Dela Cruz";
+			var counter;
+			for(counter = 1; counter <= 20; counter += 1) {
+				text = text + counter + " " + yourName + "<br>";
+			}
+			document.getElementById("myName").innerHTML = text;
+		}
+
+		printMyName();
+
+OUTPUT
+1 Juan Dela Cruz
+2 Juan Dela Cruz
+3 Juan Dela Cruz
+4 Juan Dela Cruz
+5 Juan Dela Cruz
+6 Juan Dela Cruz
+7 Juan Dela Cruz
+8 Juan Dela Cruz
+9 Juan Dela Cruz
+10 Juan Dela Cruz
+11 Juan Dela Cruz
+12 Juan Dela Cruz
+13 Juan Dela Cruz
+14 Juan Dela Cruz
+15 Juan Dela Cruz
+16 Juan Dela Cruz
+17 Juan Dela Cruz
+18 Juan Dela Cruz
+19 Juan Dela Cruz
+20 Juan Dela Cruz
+
+----------------------------
+
+<p id="myName1"></p>
+<p id="myName2"></p>
+
+function printMyName(yourName, element){
+			var text= "";
+			//var yourName = "Juan Dela Cruz";
+			var counter;
+			for(counter = 1; counter <= 5; counter += 1) {
+				text = text + counter + " " + yourName + "<br>";
+			}
+			document.getElementById(element).innerHTML = text;
+		}
+
+		printMyName("John Smith", "myName1");
+		printMyName("Jane Doe", "myName2");
+
+OUTPUT
+1 John Smith
+2 John Smith
+3 John Smith
+4 John Smith
+5 John Smith
+
+1 Jane Doe
+2 Jane Doe
+3 Jane Doe
+4 Jane Doe
+5 Jane Doe
+
+
+----------------------------
+
+----------------------------
+
+----------------------------
+----------------------------
+
+
+
+
+
+----------------------------
+
+JQUERY
+
+Jan 11 thurs	mm departure
+Jan 20 sat	WWC GA 	- accenture BGC
+Jan 28 sun	triathlon race ni janjan
+Feb 3  sun	my paez - bulacan - binyag
+
+
+
+
+https://jquery.com/download/
+Download the compressed, production jQuery 3.2.1
+CDN content deliver network
+
+**Jquery events:
+click
+hover
+keypress
+
+api.jquery.com
+submit
+
+
+**HTML / CSS methods
+
