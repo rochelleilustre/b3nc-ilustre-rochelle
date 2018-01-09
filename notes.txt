@@ -1476,3 +1476,59 @@ TO DO LIST
 https://www.heroku.com/
 
 01/09/17--------------------------------------------------------------------------------
+
+PHP
+
+backend
+**client-server achitecture
+APACHE is a web server
+
+server computer = aka "web host"
+**web server application
+
+XAMPP 
+local development
+sw pkg for web server setup
+X- cross platform (win, osx, linux)
+A- apache
+M- mysql/mariaDB
+P- php
+P- Perl/pyton
+
+wamp windows
+os
+lamp linux
+
+xampp ctrl panel.exe > start
+
+copy file to htdocs
+
+get ip add 
+ipconfig /all
+IPv4 Address. . . . . . . . . . . : 192.168.0.130(Preferred)
+
+
+127.0.0.1 IP add local
+
+**server-side scriptin
+
+PHP
+--web based programming language
+--hypertext preprocessor
+--generate dynamic page content
+--CRUD
+--collect form data
+--send and rcv cookies
+--add, del, modify data in db
+--can be used ctrl user-access
+--can encrypt data
+
+
+<?php ?> delimiter
+
+http://php.net/manual/en/function.date.php
+
+**variables
+**numeric variables
+**arrays
+**constants
