@@ -1532,3 +1532,21 @@ http://php.net/manual/en/function.date.php
 **numeric variables
 **arrays
 **constants
+
+
+01/10/17--------------------------------------------------------------------------------
+
+bit.ly/wwcodeanniv
+
+**expressions, control, statements and loops
+
+capstone 2
+2 weeks
+
+**expressions
+**arithmetic operator
+**BEDMAS or PENDAS 
+Braces/Parenthesis, Division/Multiplication, Addition/Subtraction
+**conditionals and loops
+**relational operators
+**comparison operator
