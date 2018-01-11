@@ -1550,3 +1550,84 @@ Braces/Parenthesis, Division/Multiplication, Addition/Subtraction
 **conditionals and loops
 **relational operators
 **comparison operator
+
+01/11/18--------------------------------------------------------------------------------
+
+mod06-04 PHP Programming - Expressions, Control Statements, and Loops
+
+mod06-05 
+
+
+
+
+
+	<!-- // Activity 1 
+	for ($counter = 1; $counter <= 10; $counter ++) {
+	
+		if ($counter == 10)
+		 	echo $counter;
+		else
+			echo $counter. '-';
+	} -->
+	
+	
+
+	
+
+	<!-- // Activity 2  -->
+
+
+	<!-- for ($row = 1; $row <=10; $row++) { //row
+			for ($col = 1; $col <= 10; $col++) { //col
+				echo ' * ' ;
+		}
+
+			echo '<br>';
+	} -->
+
+	
+
+	<!-- // Activity 3  -->
+		
+		for ($row = 1; $row <=10; $row++) { //row
+			for ($col = 1; $col <= 10; $col++) { //column
+				echo '<span class="box">' . $row * $col . '</span>';
+			}
+			
+			echo "<br>";
+		}
+
+		// Activity 4
+
+		for ($row = 1; $row <=10; $row++) { //row
+			for ($col = 1; $col <= $row; $col++) { //col
+				echo ' * ' ;
+			}
+
+			echo '<br>';
+		}
+
+
+// Activity 5
+
+		for ($row = 10; $row >=1; $row--) { //row
+			for ($col = 1; $col <= $row; $col++) { //col
+				echo ' * ' ;
+			}
+
+			echo '<br>';
+		}
+
+
+divisible 3 fixx
+divisible by 5 buzz
+
+
+
+
+
+
+for ($counter = 1; $counter <= 50; $counter++){
+			echo $counter;
+			echo '<br>';
+	}
