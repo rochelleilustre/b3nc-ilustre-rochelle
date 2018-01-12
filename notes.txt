@@ -1631,3 +1631,36 @@ for ($counter = 1; $counter <= 50; $counter++){
 			echo $counter;
 			echo '<br>';
 	}
+
+
+
+01/12/18--------------------------------------------------------------------------------
+
+if ($row % 2 == 0){
+	echo "Black";
+}
+else if ($col % 2 == 0){
+	echo "Black";
+}
+else if ($row % 2 == 1) {
+	echo "White";
+}
+else if ($row % 2 == 1) {
+	echo "White";
+}
+https://www.w3resource.com/php-exercises/php-basic-exercise-31.php
+
+**ARRAYS
+
+indexed arrays
+associative arrays
+multi-dimensional array
+
+count()
+
+**FOREACH
+
+
+functions
+post
+get
