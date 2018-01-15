@@ -1664,3 +1664,20 @@ count()
 functions
 post
 get
+
+01/15/17--------------------------------------------------------------------------------
+
+mod06-07
+
+VARIABLE SCOPE
+local
+global
+static
+superglobal
+
+accepts parameters : length and width of rectangle
+return area of the rectangle
+
+**including and requiring file
+
+include_once
