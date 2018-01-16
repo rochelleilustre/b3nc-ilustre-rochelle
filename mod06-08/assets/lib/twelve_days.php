@@ -23,14 +23,28 @@ function getLyrics($day){
 		'Twelve drummers drumming',
 	);
 
-		$arrlength = count ($days);
+		
 
-		for ($x = 0; $x < $arrlength; $x++) {
-			echo "On the " . $days[$x] . " day of Christmas my true love gave to me, ". " <br> " . $gifts[$x];
-			echo "<br><br>";
+		for ($x = 0; $x < count ($days); $x++) {
+
+			echo '<div id= "day' . $x . '">';
+			echo "On the " . $days[$x] . " day of Christmas . <br> my true love gave to me, " . " <br> ";
+
+			
+			if ($x == 0)
+				echo $gifts[$x] . '<br><br>';
+
+			else 
+				for ($y = $x; $y>=0; $y--){
+					if($y ==0)
+						echo 'And' ." ". $gifts[$y] . '<br><br>';
+					else
+						echo $gifts[$y] . '<br>';
+
+			}
+
+			echo '</div>';
 		}
 
-			if ($ = 11; $x > 0)	{
-				
-			}
+			
 } 

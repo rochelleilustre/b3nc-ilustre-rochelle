@@ -1681,3 +1681,17 @@ return area of the rectangle
 **including and requiring file
 
 include_once
+
+
+01/16/17--------------------------------------------------------------------------------
+
+
+if ($x == 0)
+	echo $gifts [$x] . '<br>';
+else 
+	for ($y = $x; $y >=0; $y--){
+		if($y ==0)
+			echo 'And' ." ". $gifts[$y] . '<br>';
+	else
+		echo $gifts[$y] . '<br>';
+}

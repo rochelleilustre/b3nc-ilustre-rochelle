@@ -1,0 +1,39 @@
+* {
+	margin: 0;
+	border:0 ;
+}
+
+body {
+	background-image: url('https://static.pexels.com/photos/214239/pexels-photo-214239.jpeg');
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+}
+
+.top {
+	background-color: red;
+	color: white;
+	padding-top: 30px;
+	padding-bottom: 20px;
+}
+
+#day {
+	width: 50%;
+	margin: 0 auto;
+	text-align: center;
+	padding: 50px;
+}
+
+.btn {
+	width: 100%;
+	margin: 0 auto;
+	text-align: center;
+	margin: 20px;
+}
+
+h1,
+.btn {
+	text-align: center;
+}
+
+
+

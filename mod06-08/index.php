@@ -16,22 +16,48 @@ require_once 'assets/lib/twelve_days.php';
 
 	<title><?php echo getTitle(); ?> Lyrics</title>
 
-	<link rel="stylesheet" type="text/css" href="assets/lib/css/style.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
 
 </head>
 <body>
 
+
+	<div class="top">
 	<h1><?php echo getTitle(); ?></h1>
+
+	<div class="btn">
+
+	<button type="button" onclick="hideShow()">Hide or Show</button>	
+		
+	<!-- <button type="button" onclick="hideMe()">Hide Lyrics</button>
+
+	<button type="button" onclick="showMe()">Show Lyrics</button> -->
+
+	<button type="button" onclick="singIt()">Sing it</button>
+	</div>
+
+
+	</div>
+
+	<hr>
+
+	<div id="day">
 
 	<?php 
 
-		echo getLyrics(0,0); 
-
-
+		echo getLyrics(0); 
 
 	?>
 
-	<script type="text/javascript"></script>
+	</div>
+
+
+
+	
+		
+	
+
+	<script type="text/javascript" src="assets/js/script.js"></script>
 
 </body>
 </html>
