@@ -1695,3 +1695,45 @@ else
 	else
 		echo $gifts[$y] . '<br>';
 }
+
+
+01/17/17--------------------------------------------------------------------------------
+
+GET POST UPDATE
+
+using address bar (GET)
+using forms (GET or POST)
+
+variable
+
+query string
+-data from the url
+-key/value pair
+-denited by ?
+
+mkdir mod06-09/
+cd mod06-09/
+ls
+touch index.php
+subl .
+
+
+key value
+http://localhost/rochelle-ilustre/mod06-09/?=username=ilustre
+
+******ALWAYS VALIDATE USER INPUT
+
+http://localhost/mod06-09/index.php/?=username=ilustre&password=123
+
+CTRL SHIFT R hard reload
+
+POST
+
+01/18/17--------------------------------------------------------------------------------
+
+SESSIONS
+
+$_SESSION
+session_start()
+session_unset()
+session_destroy()
