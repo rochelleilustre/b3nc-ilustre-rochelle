@@ -19,10 +19,11 @@ include 'partials/head.php';
 	</header>
 
 	<main class="wrapper">
-		<h1>Home</h1>
 
 		<h3>Welcome <?php echo $_SESSION['current_user']; ?></h3>
 		
+		<h1>Home</h1>
+
 		<h5><?php echo $_SESSION['message']; ?></h5>
 
 	</main><!-- end of wrapper -->

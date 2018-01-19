@@ -1737,3 +1737,31 @@ $_SESSION
 session_start()
 session_unset()
 session_destroy()
+
+01/19/17--------------------------------------------------------------------------------
+JSON --- JavaScript Object Notation
+-- syntax for storing and exchanging data.
+
+**syntax
+{key:value}
+
+
+[	
+	{
+		"name":"Gru",
+		"age": 30,
+		"minions":["dave", "stuart", "kevin"]
+	},
+
+	{
+		"name":"Gru",
+		"age": 30,
+		"minions":["dave", "stuart", "kevin"]
+	},
+
+	{
+		"name":"Gru",
+		"age": 30,
+		"minions":["dave", "stuart", "kevin"]
+	}
+]

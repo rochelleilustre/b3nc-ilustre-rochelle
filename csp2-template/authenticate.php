@@ -2,11 +2,15 @@
 
 session_start();
 
-$users = [
-	['username' => 'admin', 'password' => 'abc123'],
-	['username' => 'chellie', 'password' => 'ABC*()'],
-	['username' => 'user1', 'password' => 'abc123ABC*()']
-];
+// $users = [
+// 	['username' => 'admin', 'password' => 'abc123'],
+// 	['username' => 'chellie', 'password' => 'ABC*()'],
+// 	['username' => 'user1', 'password' => 'abc123ABC*()']
+// ];
+
+//require 'assets/users.php';
+$file = file_get_contents('assets/users.json');
+$users = json_decode($file, true);
 
 $isLoginSuccessful = false; // monitor Login status
 
@@ -28,6 +32,7 @@ foreach ($users as $user) {
 			// echo 'Password is correct.';
 			//header('location: home.php'); //will reroute to home.php
 			$isLoginSuccessful = true;
+			// $_SESSION['role'] = $user['role']; //get role of current user
 			break;
 	} 
 
@@ -47,8 +52,9 @@ else {
 
 if (isset($_SESSION['current_user']) && $isLoginSuccessful)
 	$_SESSION['message'] = 'Login was successful.';
+else 
+	$_SESSION['message'] = 'Login was unsuccessful.';
 
-//else 
-	//$_SESSION['message'] = 'Login was unsuccessful.';
+
 
 

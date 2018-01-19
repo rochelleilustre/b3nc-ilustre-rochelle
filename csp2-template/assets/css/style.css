@@ -24,4 +24,10 @@ h1,
 	border-radius: 0;
 }
 
-
+table,
+th,
+td,
+tr {
+	padding: 15px;
+	border: 1px solid black;
+}

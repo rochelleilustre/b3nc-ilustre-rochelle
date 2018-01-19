@@ -40,10 +40,10 @@ include 'partials/head.php';
 
 		<form method="POST" action="authenticate.php">
 		<label>Username</label>
-		<input type="text" name="username" id="username" placeholder="Username">
+		<input type="text" name="username" id="username" placeholder="Username"><br>
 		
 		<label>Password</label>
-		<input type="password" name="password" id="password" placeholder="Password">
+		<input type="password" name="password" id="password" placeholder="Password"><br>
 		
 		<input type="submit" name="submit" value="Log In">
 		
