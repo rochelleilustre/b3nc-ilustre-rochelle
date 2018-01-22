@@ -21,18 +21,18 @@ include 'partials/head.php';
 		<h1>Register</h1>
 
 		<form method="POST" action="registration.php">
-		<label>Username</label>
-		<input type="text" name="username" id="username" placeholder="Username">
-		
-		<label>Password</label>
-		<input type="password" name="password" id="password" placeholder="Password">
+			<label>Username</label>
+			<input type="text" name="username" id="username" placeholder="Username"><br>
+			
+			<label>Password</label>
+			<input type="password" name="password" id="password" placeholder="Password"><br>
 
-		<label>Confirm Password</label>
-		<input type="password" name="confirmPassword" id="confirmPassword" placeholder="Password">
+			<label>Confirm Password</label>
+			<input type="password" name="confirmPassword" id="confirmPassword" placeholder="Password"><br>
+			
+			<input type="submit" name="submit" value="Register">
 		
-		<input type="submit" name="submit" value="Register">
-		
-	</form>
+		</form>
 
 	</main><!-- end of wrapper -->
 

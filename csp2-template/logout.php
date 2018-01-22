@@ -1,6 +1,8 @@
 <?php
 
-session_unset('message');
+session_start();
+
+//session_unset('message');
 
 session_destroy();
 
