@@ -14,6 +14,19 @@
     <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav navbar-right">
+
+        <?php
+
+        if(isset($_SESSION['current_user'])) {
+          echo '
+            <li>
+              <a href="#">' . ucfirst($_SESSION['current_user']) . '</a>
+            </li>
+          ';
+        }
+
+        ?>
+
         <li>
           <a href="about.php">About</a>
         </li>
@@ -26,25 +39,56 @@
           <a href="catalog.php">Catalog</a>
         </li>
 
-        <li>
-          <a href="profile.php">Profile</a>
-        </li>
+        
 
-        <li>
-          <a href="settings.php">Settings</a>
-        </li>
+        <?php
 
-        <li>
-          <a href="login.php">Log In</a>
-        </li>
+        if(isset($_SESSION['current_user'])){
+          echo'
+            <li>
+              <a href="profile.php">Profile</a>
+            </li>
+          ';
 
-        <li>
-          <a href="logout.php">Log Out</a>
-        </li>
+          if($_SESSION['role'] == 'admin') {
+            echo '
+              <li>
+                <a href="settings.php">Settings</a>
+              </li>
+            ';
+          }
+        }
 
-        <li>
-          <a href="register.php">Register</a>
-        </li>
+        
+
+        ?>
+
+        
+
+        <?php
+        if(isset($_SESSION['current_user'])){
+          echo '
+            <li>
+              <a href="logout.php">Log Out</a>
+            </li>
+          ';
+        } else {
+          echo '
+            <li>
+              <a href="login.php">Log In</a>
+            </li>
+
+            <li>
+              <a href="register.php">Register</a>
+            </li>
+
+
+          ';
+        }
+
+        ?>
+
+        
 
        <!--  <li class="dropdown">
           <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>

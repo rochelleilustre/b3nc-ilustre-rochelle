@@ -2,6 +2,10 @@
 
 session_start();
 
+if(!isset($_SESSION['current_user'])){
+	header('location: login.php');
+}
+
 function getTitle(){
 	echo 'Home';
 }
@@ -22,7 +26,7 @@ include 'partials/head.php';
 		
 		<?php
 		if(isset($_SESSION['current_user'])) {
-			echo '<h3>Welcome' . $_SESSION['current_user'] . '!</h3>';
+			echo '<h3>Welcome ' . $_SESSION['current_user'] . '!</h3>';
 		}
 		?>
 

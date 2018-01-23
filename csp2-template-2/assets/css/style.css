@@ -10,7 +10,7 @@ body {
 /*content*/
 .wrapper {
 	width: 80vw;
-	height: 84vh;
+	min-height: 84vh;
 	background-color: #fff;
 	margin: 0 auto;
 }
@@ -23,6 +23,17 @@ h1 {
 #registerForm {
 	width: 40%;
 	margin: 0 auto;
+}
+
+table,
+thead,
+tbody,
+th,
+tr,
+td {
+	border: 1px solid black;
+	padding: 15px;
+	border-collapse: collapse;
 }
 
 .main-footer {
