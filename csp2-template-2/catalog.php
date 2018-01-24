@@ -7,6 +7,12 @@ function getTitle(){
 }
 
 include 'partials/head.php';
+
+$file = file_get_contents('assets/items.json');
+$items = json_decode($file, true);
+
+//var_dump($items);
+
 ?>
 
 </head>
@@ -19,6 +25,26 @@ include 'partials/head.php';
 	<main class="wrapper">
 
 		<h1>Catalog Page</h1>
+
+		<div class="items-wrapper">
+
+			<?php 
+
+			foreach($items as $item) {
+				echo '
+				<div class="item-container">
+					<h3>'.$item['name'].'</h3>
+					<img src="'.$item['image'].'" alt="Mock data">
+					<p>PHP '.$item['price'].'</p>
+					<p>'.$item['description'].'</p>
+				</div><!-- end of item-container -->
+
+				';
+			}
+
+			
+			?>
+		</div><!-- end of items-wrapper -->
 		
 	</main>
 

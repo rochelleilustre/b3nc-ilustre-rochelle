@@ -1805,3 +1805,7 @@ With so many choices to choose from, I decided to create a starter project websi
 *list all items in 'catalog' module
 
 AJAX
+
+01/24/17--------------------------------------------------------------------------------
+
+password

@@ -2,16 +2,17 @@
 
 session_start();
 
-if (isset($_SESSION['current_user'])){
-	if($_SESSION['role'] == 'admin')
+if (isset($_SESSION['current_user'])) {
+	if ($_SESSION['role'] != 'admin')
 		header('location: home.php');
 }
 
-function getTitle(){
+function getTitle() {
 	echo 'User Page';
 }
 
 include 'partials/head.php';
+
 ?>
 
 </head>
@@ -24,7 +25,6 @@ include 'partials/head.php';
 	<main class="wrapper">
 
 		<h1>User Page</h1>
-
 		<?php
 
 		$id = $_GET['id'];
@@ -32,50 +32,39 @@ include 'partials/head.php';
 		$file = file_get_contents('assets/users.json');
 		$users = json_decode($file, true);
 
-		foreach ($users as $key => $user) {
-			if($key == $id){
-				break;
-			}
-		}
-
 		?>
-
 		<table>
-				<tr>
+			<tr>
 				<td>Username</td>
-				<td><?php echo $users[$id]['username']; ?> </td>
-				</tr>
-
-				<tr>
+				<td><?php echo $users[$id]['username']; ?></td>
+			</tr>
+			<tr>
 				<td>Password</td>
-				<td><?php echo $users[$id]['password']; ?> </td>
-				</tr>
-
-				<tr>
+				<td><?php echo $users[$id]['password']; ?></td>
+			</tr>
+			<tr>
 				<td>Email</td>
-				<td><?php echo $users[$id]['email']; ?> </td>
-				</tr>
-				
-
-				<tr>
+				<td><?php echo $users[$id]['email']; ?></td>
+			</tr>
+			<tr>
 				<td>Role</td>
-				<td><?php echo $users[$id]['role']; ?> </td>
-				</tr>
+				<td><?php echo $users[$id]['role']; ?></td>
+			</tr>
 		</table>
 
 		<button class="btn btn-primary">Edit</button>
 		<button class="btn btn-danger">Delete</button>
 
-		
 	</main>
 
 	<!-- main footer -->
 	<?php include 'partials/main_footer.php'; ?>
 
 <?php
-include 'partials/foot.php';
-?>
 
+include 'partials/foot.php';
+
+?>
 
 </body>
 </html>
