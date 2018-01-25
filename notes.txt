@@ -1809,3 +1809,34 @@ AJAX
 01/24/17--------------------------------------------------------------------------------
 
 password
+
+01/25/17--------------------------------------------------------------------------------
+
+AJAX(old) --> fetch api(new)
+
+PWA (progressive web application)
+
+CRUD APP
+create
+retrieve
+update
+delete
+
+database: json(nosql) --> rdbms, e.g. mysql(sql)
+
+maria db(open source version of mysql)
+
+mysql (partially open source)
+
+oracle(proprietary db sw)
+
+
+
+Add item > reroute to catalog
+
+
+
+name 
+image
+price
+description
