@@ -1840,3 +1840,5 @@ name
 image
 price
 description
+
+<input class="form-control" type= "text" value="'.$users[$id]['role'].'">
