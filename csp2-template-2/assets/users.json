@@ -2,37 +2,43 @@
     {
         "username": "admin",
         "password": "admin",
-        "email": "admin@tuitt.com",
+        "email": "admin@gmail.com",
         "role": "admin"
     },
     {
-        "username": "user3_modified",
+        "username": "billy",
+        "password": "billy",
+        "email": "user@yahoo.com",
+        "role": "admin"
+    },
+    {
+        "username": "user1",
+        "password": "user1",
+        "email": "user1@bluebottle.com",
+        "role": "user"
+    },
+    {
+        "username": "user3",
         "password": "user3",
-        "email": "user3@twitter.com",
+        "email": "user3@abc.com",
         "role": "user"
     },
     {
         "username": "user4",
         "password": "user4",
-        "email": "user3@gmail.com",
+        "email": "user4@google.com",
         "role": "user"
     },
     {
-        "username": "admin2",
-        "password": "admin2",
-        "email": "admin2@gmail.com",
-        "role": "admin"
+        "username": "user5",
+        "password": "123",
+        "email": "user5@google.com",
+        "role": "user"
     },
     {
-        "username": "user5_modified",
-        "password": "user5",
-        "email": "user5@gmail.com",
-        "role": "admin"
-    },
-    {
-        "username": "admin",
-        "password": "admin",
-        "email": "admin2@gmail.com",
+        "username": "user6",
+        "password": "user6",
+        "email": "user6@gmail.com",
         "role": "user"
     }
 ]

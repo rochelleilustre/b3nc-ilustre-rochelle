@@ -2,15 +2,16 @@
 
 session_start();
 
-if (isset($_SESSION['current_user'])){
+if (isset($_SESSION['current_user'])) {
 	header('location: home.php');
 }
 
-function getTitle(){
-	echo 'Welcome to Kraff Beer Philippines!';
+function getTitle() {
+	echo 'Welcome to Kraff Beeer Philippines!';
 }
 
 include 'partials/head.php';
+
 ?>
 
 </head>
@@ -30,9 +31,10 @@ include 'partials/head.php';
 	<?php include 'partials/main_footer.php'; ?>
 
 <?php
-include 'partials/foot.php';
-?>
 
+include 'partials/foot.php';
+
+?>
 
 </body>
 </html>

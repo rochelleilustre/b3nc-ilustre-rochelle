@@ -2,15 +2,15 @@
 
 session_start();
 
-if(!isset($_SESSION['current_user'])){
+if (!isset($_SESSION['current_user']))
 	header('location: login.php');
-}
 
-function getTitle(){
+function getTitle() {
 	echo 'Home';
 }
 
 include 'partials/head.php';
+
 ?>
 
 </head>
@@ -25,9 +25,11 @@ include 'partials/head.php';
 		<h1>Home Page</h1>
 		
 		<?php
-		if(isset($_SESSION['current_user'])) {
+
+		if (isset($_SESSION['current_user'])) {
 			echo '<h3>Welcome ' . $_SESSION['current_user'] . '!</h3>';
 		}
+
 		?>
 
 	</main>
@@ -36,9 +38,10 @@ include 'partials/head.php';
 	<?php include 'partials/main_footer.php'; ?>
 
 <?php
-include 'partials/foot.php';
-?>
 
+include 'partials/foot.php';
+
+?>
 
 </body>
 </html>

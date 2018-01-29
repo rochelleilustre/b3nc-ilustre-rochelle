@@ -1842,3 +1842,27 @@ price
 description
 
 <input class="form-control" type= "text" value="'.$users[$id]['role'].'">
+
+
+01/29/17--------------------------------------------------------------------------------
+
+agenda for tonight:
+	- for 'items' page:
+	DONE	- create feature to 'edit' details of the item
+	DONE	- create feature to 'delete' the item
+		- no authorization yet (admin or user can do this)
+		- create 'profile' page for current user:
+		- user can edit personal details
+		- user cannot change role settings
+		- add new field for users.json to store user profile images
+
+
+edit_profile.php
+update_profile.php
+
+
+
+register.php > registration.php > login.php > home.php > settings.php 
+
+catalog.php > add new item (create_new_item.php) > createnewitem.php
+

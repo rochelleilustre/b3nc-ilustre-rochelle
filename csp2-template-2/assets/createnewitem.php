@@ -1,28 +1,26 @@
 <?php
 
-$name = $_POST['name'];
-$description = $_POST['description'];
-$image = $_POST['image'];
-$price = $_POST['price'];
-
-//echo $userName. ' ' . $passWord . ' ' . $email;
-
 $file = file_get_contents('items.json');
 $items = json_decode($file, true);
 
-$newProduct = array(
-	'name' => $name, 
-	'description' => $description, 
-	'image' => 'assets/img'. $image, 
-	'price' => '$price'
+$product_name = $_POST['product_name'];
+$image = $_POST['image'];
+$price = $_POST['price'];
+$description = $_POST['description'];
+$category = $_POST['category'];
+
+$new_item = array(
+	"name" => $product_name,
+	"image" => 'assets/images/' . $image,
+	"price" => $price,
+	"description" => $description,
+	"category" => $category
 );
 
-array_push($items, $newProduct);
+array_push($items, $new_item);
 
-$jsonFile = fopen('items.json', 'w');
+$json_file = fopen('items.json', 'w');
+fwrite($json_file, json_encode($items, JSON_PRETTY_PRINT));
+fclose($json_file);
 
-fwrite($jsonFile, json_encode($items, JSON_PRETTY_PRINT));
-
-fclose($jsonFile);
-
-header('location: ../create_new_item.php');
+header('location: ../catalog.php');

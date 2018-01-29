@@ -2,11 +2,12 @@
 
 session_start();
 
-function getTitle(){
+function getTitle() {
 	echo 'About';
 }
 
 include 'partials/head.php';
+
 ?>
 
 </head>
@@ -26,9 +27,10 @@ include 'partials/head.php';
 	<?php include 'partials/main_footer.php'; ?>
 
 <?php
-include 'partials/foot.php';
-?>
 
+include 'partials/foot.php';
+
+?>
 
 </body>
 </html>

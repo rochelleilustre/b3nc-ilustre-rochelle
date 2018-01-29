@@ -1,5 +1,1 @@
-//console.log("JS connected");
-
-// $('#username').keypress(function() {
-	
-// });
+// console.log('custom js is working!');
