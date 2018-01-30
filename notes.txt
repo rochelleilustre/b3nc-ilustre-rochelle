@@ -1866,3 +1866,52 @@ register.php > registration.php > login.php > home.php > settings.php
 
 catalog.php > add new item (create_new_item.php) > createnewitem.php
 
+01/30/17--------------------------------------------------------------------------------
+
+users.json
+"image": "/assets/images/user/"
+
+cart: 
+	- total
+		-id
+		-quantity
+		-subtotal
+
+$_SESSION['cart'] = {
+	"total" => 0.00,
+	"items" => {
+		"id": 0,
+		"quantity": 10,
+		"subtotal": 500.00
+	}
+};
+
+SCHEDULE:
+FEB 19 to MARCH 16 	start of capstone 2 
+{ pre-requisite
+	- documentation, 
+	- sketches of core UI (user interface)
+	- erd (entity relationship diagram) aka database design
+
+{ CSP2 core requirements: 
+	- CRUUD (create(registration), retrieve, update, delete)
+		- CRUD for admin settings
+		- CRUD for user profile
+		- CRUD for items
+	- cart feature
+	- checkout feature
+	- filter option for items
+	- authentication (sign in) feature
+	- authorization (admin privileges) feature	 
+		- role, etc.
+	- mysql database
+
+if we'll have the time:
+	- paypal api
+	- facebook api (sso)
+	- 2fa
+
+MARCH 19 		live web dev portfolio &  capstone 1
+MARCH 19-28 		capstone 2 presentation
+APRIL 20 		capstone 3 presentation
+MAY 1 graduation
