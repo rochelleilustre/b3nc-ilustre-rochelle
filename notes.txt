@@ -1915,3 +1915,17 @@ MARCH 19 		live web dev portfolio &  capstone 1
 MARCH 19-28 		capstone 2 presentation
 APRIL 20 		capstone 3 presentation
 MAY 1 graduation
+
+01/31/17--------------------------------------------------------------------------------
+
+<a href="catalog.php?category=<?php echo $items[$id]['category']; ?>&search=">
+
+
+render all items in session cart
+	render quantity
+	render subtotal (per item)
+render gross total of items currently in cart
+
+items.json
+	price
+	product name
