@@ -1904,10 +1904,12 @@ FEB 19 to MARCH 16 	start of capstone 2
 	- authentication (sign in) feature
 	- authorization (admin privileges) feature	 
 		- role, etc.
-	- mysql database
+	- relational database (mysql)
+	- order history for admin
+	- order history for users
 
 if we'll have the time:
-	- paypal api
+	- paypal api, paymaya api
 	- facebook api (sso)
 	- 2fa
 
@@ -1929,3 +1931,106 @@ render gross total of items currently in cart
 items.json
 	price
 	product name
+
+02/02/17--------------------------------------------------------------------------------
+
+DATABASE
+
+DBMS Database Management Systems
+
+RDBMS Relational Database Management Systems
+
+MySQL
+
+object and attribute
+one to one
+One to many relationship
+	add foreign key column
+
+many to many relationship
+	crete another table
+
+ERD entity relationship diagram
+converting ERD to tables
+
+database design fundamentals
+
+kraff beer - database
+table:
+	-items	
+		-id (primary key)
+		-name
+		-price
+		-description
+		-category_id (foreign key)
+
+	-categories
+		-id (primary key) red
+		-name
+
+	-users
+		-id (primary key) red
+		-username
+		-password
+		-email
+
+	-orders
+		-id (primary key) red
+		-user_id (foreign key) blue
+		-item_id (foreign key) blue
+		-quantity
+		-subtotal
+		
+normalization
+
+record = row
+field = column
+
+version 1 json 
+version 2 sql
+
+
+order_details (pivot table)
+	-fk : product_code
+	-fk : order_number
+
+products
+	-pk : product_code
+	-fk : product_line
+
+product_lines
+	-pk : product_line
+	-fk : none
+
+orders
+	-pk : order_number
+	-fk : customer_number
+
+payments
+	-pk : check_number 
+	-fk : customer_number
+
+customers
+	-pk : customer_number
+	-fk : sales_rep_emp_numb
+
+employees
+	-pk : employee_number
+	-fk : office_code
+
+offices
+	-pk : office_code
+	-fk : none
+
+many-to-many
+one-to-one
+one-to-many
+
+orders <- one-to-many -> order_details
+order_details <- many-to-one -> products
+products <- many-to-one -> product_line
+customers <- one-to-many -> orders
+customers <- one-to-many -> payments
+customers <- many-to-one -> employees
+offices <- one-to-many -> employees
+
