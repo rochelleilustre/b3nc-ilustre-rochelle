@@ -2034,3 +2034,184 @@ customers <- one-to-many -> payments
 customers <- many-to-one -> employees
 offices <- one-to-many -> employees
 
+02/05/17--------------------------------------------------------------------------------
+
+git branch
+git merge
+
+//git branch [branch name]
+git branch version0.1.0
+git branch
+
+//git checkout [branch name]
+git checkout version0.1.0
+
+//check available branch
+git branch
+
+
+git branch
+git status
+git checkout master
+git merge version0.1.0
+git log
+
+//delete branch
+git branch -d version0.1.0
+
+
+
+php -s localhost:8000
+
+
+------
+
+SQL structured query language
+
+language:
+data definition language (DDL) -describe the data
+data manipulation language (DML) -modify the contents
+
+MARIA DB (open source of MySQL) exact copy of MySQL
+
+data types:
+-numeric
+-string
+-date and time
+-binary
+
+string data types
+-char(s)
+-varchar(s)
+-text
+
+numeric data types
+-tinyint
+-smallint
+-int
+-decimal
+-double
+
+date and time data types
+-date
+-time
+-datetime/datestamp
+
+binary data types
+-tinyblob
+-blob
+-mediumblob
+-longblob
+
+c:\xampp\mysql\bin\
+environment variables
+path > edit environment variable
+
+show databases;
+quit;
+C:\Users\Night3>mysql -h localhost -u root -p
+C:\Users\Night3>mysql -h localhost -u root todos > todos-dump.sql
+C:\Users\Night3>mysql -h localhost -u root movies > movies-dump.sql
+
+cmd
+cd c:\xampp\mysql\bin
+c:\xampp\mysql\bin>dir
+c:\xampp\mysql\bin>help
+c:\xampp\mysql\bin>cls //to clear
+
+//load apache and mysql
+c:\xampp\mysql\bin>mysql.exe -h localhost -u root
+
+//to check available databases
+MariaDB [(none)]> show databases;
+
+//CREATE DATABASE <database name>;
+//USE <database name>;
+CREATE DATABASE movies;
+USE movies;
+SELECT DATABASE();
+
+CREATE TABLE users (
+    -> id INT NOT NULL AUTO_INCREMENT,
+    -> username VARCHAR(50) NOT NULL UNIQUE,
+    -> password VARCHAR(50) NOT NULL,
+    -> PRIMARY KEY (id)
+    -> );
+
+SHOW TABLE;
+DESCRIBE users;
+
+CREATE TABLE artists (
+    -> id INT AUTO_INCREMENT NOT NULL,
+    -> name VARCHAR(255) NOT NULL UNIQUE,
+    -> PRIMARY KEY (id)
+    -> );
+
+SHOW TABLE;
+DESCRIBE artists;
+
+CREATE TABLE albums (
+    -> id INT AUTO_INCREMENT NOT NULL,
+    -> name VARCHAR(255) NOT NULL,
+    -> year YEAR(4),
+    -> artists_id INT,
+    -> PRIMARY KEY (id),
+    -> FOREIGN KEY (artists_id)
+    -> REFERENCES artists (id)
+    -> );
+SHOW TABLE;
+DESCRIBE albums;
+
+CREATE TABLE playlists (
+    -> id INT AUTO_INCREMENT NOT NULL,
+    -> date_created TIMESTAMP
+    -> DEFAULT CURRENT_TIMESTAMP,
+    -> user_id INT,
+    -> PRIMARY KEY(id),
+    -> FOREIGN KEY(user_id)
+    -> REFERENCES users(id)
+    -> ON UPDATE CASCADE
+    -> ON DELETE RESTRICT
+    -> );
+SHOW TABLE;
+DESCRIBE playlists;
+
+
+DDL
+-create table
+-alter tbale
+	add col
+	drop col
+	rename col
+
+column options
+-DEFAULT <default value>
+-AUTO_INCREMENT
+-NOT NULL
+-UNIQUE
+
+FOREIGN KEYS (columns)
+REFERENCES table (primary key of table)
+ON DELETE <RESTRICT, CASCADE OR SET NULL>
+ON UPDATE <RESTRICT, CASCADE OR SET NULL>
+
+
+
+
+
+mock data 
+15 items (images)
+
+ricky-csp2.atwebpages.com/shop.php
+www.manilaoutdoors.com
+comexonline.000webhostapp.com/index.php
+boxedup.rf.gd
+goodlifecrewmanila.co
+tanglaw.epizy.com/home.php
+timestation.ml/shop.php
+
+CRAZY domains
+
+
+02/06/17--------------------------------------------------------------------------------
+
