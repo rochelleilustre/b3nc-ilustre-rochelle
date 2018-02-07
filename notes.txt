@@ -2103,15 +2103,11 @@ binary data types
 -mediumblob
 -longblob
 
-c:\xampp\mysql\bin\
-environment variables
-path > edit environment variable
 
-show databases;
-quit;
-C:\Users\Night3>mysql -h localhost -u root -p
-C:\Users\Night3>mysql -h localhost -u root todos > todos-dump.sql
-C:\Users\Night3>mysql -h localhost -u root movies > movies-dump.sql
+
+
+
+
 
 cmd
 cd c:\xampp\mysql\bin
@@ -2138,7 +2134,7 @@ CREATE TABLE users (
     -> PRIMARY KEY (id)
     -> );
 
-SHOW TABLE;
+SHOW TABLES;
 DESCRIBE users;
 
 CREATE TABLE artists (
@@ -2147,7 +2143,7 @@ CREATE TABLE artists (
     -> PRIMARY KEY (id)
     -> );
 
-SHOW TABLE;
+SHOW TABLES;
 DESCRIBE artists;
 
 CREATE TABLE albums (
@@ -2159,7 +2155,7 @@ CREATE TABLE albums (
     -> FOREIGN KEY (artists_id)
     -> REFERENCES artists (id)
     -> );
-SHOW TABLE;
+SHOW TABLES;
 DESCRIBE albums;
 
 CREATE TABLE playlists (
@@ -2173,7 +2169,7 @@ CREATE TABLE playlists (
     -> ON UPDATE CASCADE
     -> ON DELETE RESTRICT
     -> );
-SHOW TABLE;
+SHOW TABLES;
 DESCRIBE playlists;
 
 
@@ -2215,3 +2211,50 @@ CRAZY domains
 
 02/06/17--------------------------------------------------------------------------------
 
+c:\xampp\mysql\bin\
+environment variables
+path > edit environment variable
+
+show databases;
+quit;
+C:\Users\Night3>mysql -h localhost -u root -p
+C:\Users\Night3>mysql -h localhost -u root todos > todos-dump.sql
+C:\Users\Night3>mysql -h localhost -u root movies > movies-dump.sql
+C:\Users\Night3>mysqldump -h localhost -u root movies > movies-dump.sql
+todos-dump.sql
+
+copy movies-dump.sql to Ilustre folder then push to gitlab
+drop database movies; //to delete movies database
+
+MariaDB [(none)]> create database music_store;
+MariaDB [(none)]> show databases;
+MariaDB [(none)]> quit;
+
+> (greater than)export
+< (less than)import
+
+C:\Users\Night3>mysql -h localhost -u root music_store < movies-dump.sql
+
+C:\Users\Night3>mysql -h localhost -u root
+
+MariaDB [(none)]> show databases;
+MariaDB [(none)]> use music_store;
+
+
+CREATE TABLE songs_playlists(
+song_id INT,
+playlist_id INT,
+FOREIGN KEY(song_id)
+REFERENCES songs(id)
+ON UPDATE CASCADE
+ON DELETE RESTRICT,
+FOREIGN KEY(playlist_id)
+REFERENCES playlists(id)
+ON UPDATE CASCADE
+ON DELETE RESTRICT
+);
+
+SHOW TABLES;
+DESCRIBE songs_playlists;
+
+tinyurl.com/tuitt-b3nc-rdbms-act
