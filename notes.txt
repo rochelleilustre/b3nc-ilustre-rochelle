@@ -2261,7 +2261,7 @@ tinyurl.com/tuitt-b3nc-rdbms-act
 
 02/07/17--------------------------------------------------------------------------------
 
-http://dbdesigner.net/designer/schema/
+http://dbdesigner.net/designer
 
 
 
@@ -2321,3 +2321,119 @@ ALTER TABLE `order_items` ADD CONSTRAINT `order_items_fk1` FOREIGN KEY (`order_i
 ALTER TABLE `orders` ADD CONSTRAINT `orders_fk0` FOREIGN KEY (`customer_id`) REFERENCES `customers`(`id`);
 
 ALTER TABLE `orders` ADD CONSTRAINT `orders_fk1` FOREIGN KEY (`staff_id`) REFERENCES `staff`(`id`);
+
+
+mysql -h localhost -root restaurant > restaurant.sql
+-----------------------
+
+db name: kraffbeer.sql
+table for users
+	username
+	password
+	email
+	role (admin, staff, customer)
+	image
+	first name
+	last name
+	address
+	contact
+	
+
+table for items
+	name
+	description
+	price
+	category (category 1, category 2, etc.)
+	stocks
+		
+table for orders
+	reference/transaction number
+	total
+	status (pending, processing, shipping, received, cancelled)
+
+table for order_items
+	subtotal
+	quantity
+
+export: mysqldump -h localhost -u root database_name > file.sql
+import: mysql -h localhost -u root database_name < file.sql
+
+feb 19 and 20 concept and design
+
+02/08/17--------------------------------------------------------------------------------
+
+username, email, name, reference number - unique
+
+
+DATA MANIPULATION LANGUAGE
+
+SQL commands
+create new row
+retreive row
+udpate row
+delete row
+
+INSERT
+INSERT INTO table (column1, column2, column3, ...)
+VALUES(val1, val2, val3, ...)
+
+SELECT * (album)
+select * from albums;
+select * from songs;
+
+UPDATE
+UPDATE table
+SET column1 = newval1, column2=newval2
+WHERE column3='val3'
+
+MariaDB [music_store]> select * from artists;
+MariaDB [music_store]> update artists set name = 'Parokya ni Edgar' where id = '1';
+MariaDB [music_store]> select * from artists;
+
+MariaDB [music_store]> update artists set name = 'Rivermaya' where id = '1';
+MariaDB [music_store]> select * from artists;
+
+//show title and genre from album songs
+MariaDB [music_store]> select title, genre from songs;
+
+//display title of all opm songs
+select title from songs where genre='OPM';
+
+multiple conditions
+
+we can use AND and OR keyword for multiple 
+
+//title and length of OPM that are more than 4mins
+60*4=240
+select title, length from songs where genre='OPM'and length>'240' ;
+
+//update length of kundiman to 240 sec
+update songs set length='240' where id='2';
+
+removing the where clause will update all rows
+UPDATE table
+SET column1 = newval1, column2=newval2
+
+DELETE
+DELETE from table where column = val
+//column=val desc the rows to be deleted
+
+//delete all OPM songs that are more than 4 mins
+delete from songs where genre='OPM' and length>'240';
+
+roles:
+	admin
+	staff
+	customer
+
+statuses:
+	pending
+	processing
+	shipping
+	received
+	cancelled
+
+categories:
+	Beer Type 1
+	Beer Type 2
+	Beer Type 3

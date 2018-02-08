@@ -1,0 +1,446 @@
+Microsoft Windows [Version 10.0.16299.192]
+(c) 2017 Microsoft Corporation. All rights reserved.
+
+C:\Users\Night3>mysql
+Welcome to the MariaDB monitor.  Commands end with ; or \g.
+Your MariaDB connection id is 6
+Server version: 10.1.21-MariaDB mariadb.org binary distribution
+
+Copyright (c) 2000, 2016, Oracle, MariaDB Corporation Ab and others.
+
+Type 'help;' or '\h' for help. Type '\c' to clear the current input statement.
+
+MariaDB [(none)]> show databases;
++--------------------+
+| Database           |
++--------------------+
+| information_schema |
+| test               |
++--------------------+
+2 rows in set (0.00 sec)
+
+MariaDB [(none)]> quit;
+Bye
+
+C:\Users\Night3>mysql -h localhost -u root
+Welcome to the MariaDB monitor.  Commands end with ; or \g.
+Your MariaDB connection id is 7
+Server version: 10.1.21-MariaDB mariadb.org binary distribution
+
+Copyright (c) 2000, 2016, Oracle, MariaDB Corporation Ab and others.
+
+Type 'help;' or '\h' for help. Type '\c' to clear the current input statement.
+
+MariaDB [(none)]> show databases;
++--------------------+
+| Database           |
++--------------------+
+| information_schema |
+| music_store        |
+| mysql              |
+| performance_schema |
+| phpmyadmin         |
+| restaurant         |
+| test               |
++--------------------+
+7 rows in set (0.00 sec)
+
+MariaDB [(none)]> use restaurant
+Database changed
+MariaDB [restaurant]> use restaurant;
+Database changed
+MariaDB [restaurant]> show tables;
++----------------------+
+| Tables_in_restaurant |
++----------------------+
+| customer_account     |
+| customer_login       |
++----------------------+
+2 rows in set (0.00 sec)
+
+MariaDB [restaurant]> create table menu (
+    -> id INT(11) NOT NULL AUTO_INCREMENT,
+    -> category_id INT (11) NOT NULL,
+    -> description varchar(255) NOT NULL AUTO_INCREMENT,
+    -> price DECIMAL NOT NULL,
+    -> PRIMARY KEY (id)
+    -> );
+ERROR 1063 (42000): Incorrect column specifier for column 'description'
+MariaDB [restaurant]> create table menu (
+    -> category_id INT (11) NOT NULL,
+    -> description varchar(255) NOT NULL,
+    -> price DECIMAL NOT NULL,
+    -> PRIMARY KEY(id)
+    -> );
+ERROR 1072 (42000): Key column 'id' doesn't exist in table
+MariaDB [restaurant]> create table menu (
+    -> id INT(11) NOT NULL AUTO_INCREMENT,
+    -> category_id INT (11) NOT NULL,
+    -> description varchar(255) NOT NULL,
+    -> price DECIMAL NOT NULL,
+    -> PRIMARY KEY (id)
+    -> );
+Query OK, 0 rows affected (0.22 sec)
+
+MariaDB [restaurant]> CREATE TABLE customers (
+    -> id INT(11) NOT NULL AUTO_INCREMENT,
+    -> first_name varchar(255) NOT NULL,
+    -> last_name varchar(255) NOT NULL,
+    -> delivery_address varchar(255) NOT NULL,
+    -> username varchar(255) NOT NULL UNIQUE,
+    -> password varchar(255) NOT NULL,
+    -> PRIMARY KEY (id)
+    -> );
+Query OK, 0 rows affected (0.30 sec)
+
+MariaDB [restaurant]> CREATE TABLE categories (
+    -> id INT (11) NOT NULL,
+    -> name varchar(255) NOT NULL,
+    -> PRIMARY KEY (id)
+    -> );
+Query OK, 0 rows affected (0.20 sec)
+
+MariaDB [restaurant]> CREATE TABLE staff (
+    -> id INT(11) NOT NULL,
+    -> username varchar(255) NOT NULL,
+    -> password varchar(255) NOT NULL,
+    -> PRIMARY KEY (id)
+    -> );
+Query OK, 0 rows affected (0.26 sec)
+
+MariaDB [restaurant]> CREATE TABLE order_items (
+    -> id INT (11) NOT NULL,
+    -> menu_id INT(11) NOT NULL,
+    -> quantity INT(11) NOT NULL,
+    -> order_id INT(11) NOT NULL,
+    -> PRIMARY KEY (id)
+    -> );
+Query OK, 0 rows affected (0.39 sec)
+
+MariaDB [restaurant]> CREATE TABLE orders (
+    -> id INT (11) NOT NULL AUTO_INCREMENT,
+    -> customer_id INT(11) NOT NULL,
+    -> staff_id INT(11) NOT NULL,
+    -> PRIMARY KEY (id)
+    -> );
+Query OK, 0 rows affected (0.36 sec)
+
+MariaDB [restaurant]> show tables;
++----------------------+
+| Tables_in_restaurant |
++----------------------+
+| categories           |
+| customer_account     |
+| customer_login       |
+| customers            |
+| menu                 |
+| order_items          |
+| orders               |
+| staff                |
++----------------------+
+8 rows in set (0.00 sec)
+
+MariaDB [restaurant]> drop table customer_account;
+Query OK, 0 rows affected (0.26 sec)
+
+MariaDB [restaurant]> drop table customer_login;
+Query OK, 0 rows affected (0.10 sec)
+
+MariaDB [restaurant]> show tables;
++----------------------+
+| Tables_in_restaurant |
++----------------------+
+| categories           |
+| customers            |
+| menu                 |
+| order_items          |
+| orders               |
+| staff                |
++----------------------+
+6 rows in set (0.00 sec)
+
+MariaDB [restaurant]> quit;
+Bye
+
+C:\Users\Night3>mysql -h localhost -u root restaurant < restaurant-dump.sql
+The system cannot find the file specified.
+
+C:\Users\Night3>mysql -h localhost -u root restaurant < restaurant.sql
+The system cannot find the file specified.
+
+C:\Users\Night3>dir
+ Volume in drive C is OS
+ Volume Serial Number is 848E-EB5F
+
+ Directory of C:\Users\Night3
+
+06/02/2018  06:53 PM    <DIR>          .
+06/02/2018  06:53 PM    <DIR>          ..
+07/02/2018  06:51 PM             9,827 .bash_history
+24/10/2017  06:19 PM                67 .gitconfig
+22/01/2018  05:28 PM             6,086 .viminfo
+24/01/2018  06:47 PM    <DIR>          3D Objects
+18/01/2018  05:38 PM    <DIR>          Contacts
+18/01/2018  05:38 PM    <DIR>          Desktop
+22/01/2018  05:40 PM    <DIR>          Documents
+07/02/2018  06:51 PM    <DIR>          Downloads
+18/01/2018  05:38 PM    <DIR>          Favorites
+30/01/2018  09:37 AM    <DIR>          Links
+06/02/2018  06:55 PM             5,157 movies-dump.sql
+18/01/2018  05:38 PM    <DIR>          Music
+30/01/2018  09:37 AM    <DIR>          OneDrive
+18/01/2018  05:38 PM    <DIR>          Pictures
+18/01/2018  05:38 PM    <DIR>          Saved Games
+18/01/2018  05:38 PM    <DIR>          Searches
+06/02/2018  06:52 PM                 0 todos-dump.sql
+18/01/2018  05:38 PM    <DIR>          Videos
+               5 File(s)         21,137 bytes
+              15 Dir(s)  445,717,213,184 bytes free
+
+C:\Users\Night3>mysql
+Welcome to the MariaDB monitor.  Commands end with ; or \g.
+Your MariaDB connection id is 8
+Server version: 10.1.21-MariaDB mariadb.org binary distribution
+
+Copyright (c) 2000, 2016, Oracle, MariaDB Corporation Ab and others.
+
+Type 'help;' or '\h' for help. Type '\c' to clear the current input statement.
+
+MariaDB [(none)]> quit;
+Bye
+
+C:\Users\Night3>dir
+ Volume in drive C is OS
+ Volume Serial Number is 848E-EB5F
+
+ Directory of C:\Users\Night3
+
+06/02/2018  06:53 PM    <DIR>          .
+06/02/2018  06:53 PM    <DIR>          ..
+07/02/2018  06:51 PM             9,827 .bash_history
+24/10/2017  06:19 PM                67 .gitconfig
+22/01/2018  05:28 PM             6,086 .viminfo
+24/01/2018  06:47 PM    <DIR>          3D Objects
+18/01/2018  05:38 PM    <DIR>          Contacts
+18/01/2018  05:38 PM    <DIR>          Desktop
+22/01/2018  05:40 PM    <DIR>          Documents
+07/02/2018  07:29 PM    <DIR>          Downloads
+18/01/2018  05:38 PM    <DIR>          Favorites
+30/01/2018  09:37 AM    <DIR>          Links
+06/02/2018  06:55 PM             5,157 movies-dump.sql
+18/01/2018  05:38 PM    <DIR>          Music
+30/01/2018  09:37 AM    <DIR>          OneDrive
+18/01/2018  05:38 PM    <DIR>          Pictures
+18/01/2018  05:38 PM    <DIR>          Saved Games
+18/01/2018  05:38 PM    <DIR>          Searches
+06/02/2018  06:52 PM                 0 todos-dump.sql
+18/01/2018  05:38 PM    <DIR>          Videos
+               5 File(s)         21,137 bytes
+              15 Dir(s)  445,717,196,800 bytes free
+
+C:\Users\Night3>cd documents
+
+C:\Users\Night3\Documents>cd ilustre
+
+C:\Users\Night3\Documents\Ilustre>dir
+ Volume in drive C is OS
+ Volume Serial Number is 848E-EB5F
+
+ Directory of C:\Users\Night3\Documents\Ilustre
+
+07/02/2018  07:29 PM    <DIR>          .
+07/02/2018  07:29 PM    <DIR>          ..
+03/01/2018  09:12 PM    <DIR>          csp1
+19/01/2018  09:32 PM    <DIR>          csp2-template
+01/02/2018  08:44 PM    <DIR>          csp2-template-2
+02/11/2017  06:13 PM    <DIR>          dom-activity-1
+08/11/2017  07:47 PM    <DIR>          markdown-getting-started
+24/10/2017  06:12 PM    <DIR>          mod00-01
+25/10/2017  07:00 PM    <DIR>          mod01-01
+26/10/2017  07:49 PM    <DIR>          mod02-01
+27/10/2017  08:22 PM    <DIR>          mod02-02
+02/11/2017  07:18 PM    <DIR>          mod02-03
+03/11/2017  06:26 PM    <DIR>          mod02-04
+06/11/2017  07:01 PM    <DIR>          mod02-05
+07/11/2017  08:15 PM    <DIR>          mod02-06
+09/11/2017  08:47 PM    <DIR>          mod02-07
+09/11/2017  08:45 PM    <DIR>          mod02-08
+13/11/2017  06:35 PM    <DIR>          mod02-09
+13/11/2017  07:20 PM    <DIR>          mod02-10
+14/11/2017  07:12 PM    <DIR>          mod02-11
+20/11/2017  08:59 PM    <DIR>          mod02-12
+21/11/2017  08:52 PM    <DIR>          mod02-13
+22/11/2017  07:06 PM    <DIR>          mod02-14
+23/11/2017  06:33 PM    <DIR>          mod02-15
+24/11/2017  06:09 PM    <DIR>          mod02-16
+24/11/2017  07:05 PM    <DIR>          mod02-17
+24/11/2017  08:42 PM    <DIR>          mod02-18
+27/11/2017  06:43 PM    <DIR>          mod02-19
+12/12/2017  07:05 PM    <DIR>          mod05-01
+12/12/2017  08:59 PM    <DIR>          mod05-02
+03/01/2018  05:47 PM    <DIR>          mod05-03
+03/01/2018  07:35 PM    <DIR>          mod05-04
+03/01/2018  08:51 PM    <DIR>          mod05-05
+04/01/2018  05:50 PM    <DIR>          mod05-06
+09/01/2018  09:31 PM    <DIR>          mod06-01
+10/01/2018  09:25 PM    <DIR>          mod06-02
+10/01/2018  09:25 PM    <DIR>          mod06-03
+11/01/2018  07:18 PM    <DIR>          mod06-04
+11/01/2018  09:36 PM    <DIR>          mod06-05
+12/01/2018  09:12 PM    <DIR>          mod06-06
+15/01/2018  09:24 PM    <DIR>          mod06-07
+15/01/2018  09:24 PM    <DIR>          mod06-08
+13/12/2017  06:44 PM    <DIR>          mod07-01
+13/12/2017  09:03 PM    <DIR>          mod07-02
+14/12/2017  07:35 PM    <DIR>          mod07-03
+14/12/2017  08:11 PM    <DIR>          mod07-04
+14/12/2017  08:44 PM    <DIR>          mod07-05
+15/12/2017  06:13 PM    <DIR>          mod07-06
+05/01/2018  06:06 PM    <DIR>          mod07-08
+05/01/2018  08:21 PM    <DIR>          mod07-09
+08/01/2018  09:18 PM    <DIR>          mod07-10
+06/02/2018  06:55 PM             5,157 movies-dump.sql
+07/02/2018  07:24 PM            45,857 notes.txt
+07/11/2017  06:19 PM    <DIR>          quiz
+08/11/2017  06:33 PM               311 README.md
+07/02/2018  06:37 PM            75,852 restaurant.png
+07/02/2018  07:29 PM             1,565 restaurant_mysql_create.sql
+               5 File(s)        128,742 bytes
+              52 Dir(s)  445,717,196,800 bytes free
+
+C:\Users\Night3\Documents\Ilustre>mysql -h localhost -u root restaurant < restaurant_mysql_create.sql
+ERROR 1050 (42S01) at line 1: Table 'menu' already exists
+
+C:\Users\Night3\Documents\Ilustre>mysql
+Welcome to the MariaDB monitor.  Commands end with ; or \g.
+Your MariaDB connection id is 10
+Server version: 10.1.21-MariaDB mariadb.org binary distribution
+
+Copyright (c) 2000, 2016, Oracle, MariaDB Corporation Ab and others.
+
+Type 'help;' or '\h' for help. Type '\c' to clear the current input statement.
+
+MariaDB [(none)]> use restaurant;
+ERROR 1044 (42000): Access denied for user ''@'localhost' to database 'restaurant'
+MariaDB [(none)]> quit;
+Bye
+
+C:\Users\Night3\Documents\Ilustre>mysql -h localhost -u root
+Welcome to the MariaDB monitor.  Commands end with ; or \g.
+Your MariaDB connection id is 11
+Server version: 10.1.21-MariaDB mariadb.org binary distribution
+
+Copyright (c) 2000, 2016, Oracle, MariaDB Corporation Ab and others.
+
+Type 'help;' or '\h' for help. Type '\c' to clear the current input statement.
+
+MariaDB [(none)]> show databases;
++--------------------+
+| Database           |
++--------------------+
+| information_schema |
+| music_store        |
+| mysql              |
+| performance_schema |
+| phpmyadmin         |
+| restaurant         |
+| test               |
++--------------------+
+7 rows in set (0.00 sec)
+
+MariaDB [(none)]> use restaurant;
+Database changed
+MariaDB [restaurant]> show tables;
++----------------------+
+| Tables_in_restaurant |
++----------------------+
+| categories           |
+| customers            |
+| menu                 |
+| order_items          |
+| orders               |
+| staff                |
++----------------------+
+6 rows in set (0.00 sec)
+
+MariaDB [restaurant]> drop restaurant;
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'restaurant' at line 1
+MariaDB [restaurant]> drop database restaurant;
+Query OK, 6 rows affected (0.61 sec)
+
+MariaDB [(none)]> quit;
+Bye
+
+C:\Users\Night3\Documents\Ilustre>mysql -h localhost -u root restaurant < restaurant_mysql_create.sql
+ERROR 1049 (42000): Unknown database 'restaurant'
+
+C:\Users\Night3\Documents\Ilustre>mysql
+Welcome to the MariaDB monitor.  Commands end with ; or \g.
+Your MariaDB connection id is 13
+Server version: 10.1.21-MariaDB mariadb.org binary distribution
+
+Copyright (c) 2000, 2016, Oracle, MariaDB Corporation Ab and others.
+
+Type 'help;' or '\h' for help. Type '\c' to clear the current input statement.
+
+MariaDB [(none)]> quit;
+Bye
+
+C:\Users\Night3\Documents\Ilustre>mysql -h localhost -u root
+Welcome to the MariaDB monitor.  Commands end with ; or \g.
+Your MariaDB connection id is 14
+Server version: 10.1.21-MariaDB mariadb.org binary distribution
+
+Copyright (c) 2000, 2016, Oracle, MariaDB Corporation Ab and others.
+
+Type 'help;' or '\h' for help. Type '\c' to clear the current input statement.
+
+MariaDB [(none)]> create database restaurant;
+Query OK, 1 row affected (0.00 sec)
+
+MariaDB [(none)]> quit;
+Bye
+
+C:\Users\Night3\Documents\Ilustre>mysql -h localhost -u root restaurant < restaurant_mysql_create.sql
+
+C:\Users\Night3\Documents\Ilustre>mysql -h localhost -u root
+Welcome to the MariaDB monitor.  Commands end with ; or \g.
+Your MariaDB connection id is 16
+Server version: 10.1.21-MariaDB mariadb.org binary distribution
+
+Copyright (c) 2000, 2016, Oracle, MariaDB Corporation Ab and others.
+
+Type 'help;' or '\h' for help. Type '\c' to clear the current input statement.
+
+MariaDB [(none)]> show databases;
++--------------------+
+| Database           |
++--------------------+
+| information_schema |
+| music_store        |
+| mysql              |
+| performance_schema |
+| phpmyadmin         |
+| restaurant         |
+| test               |
++--------------------+
+7 rows in set (0.00 sec)
+
+MariaDB [(none)]> show tables;
+ERROR 1046 (3D000): No database selected
+MariaDB [(none)]> use restaurant;
+Database changed
+MariaDB [restaurant]> show tables;
++----------------------+
+| Tables_in_restaurant |
++----------------------+
+| categories           |
+| customers            |
+| menu                 |
+| order_items          |
+| orders               |
+| staff                |
++----------------------+
+6 rows in set (0.00 sec)
+
+MariaDB [restaurant]>
