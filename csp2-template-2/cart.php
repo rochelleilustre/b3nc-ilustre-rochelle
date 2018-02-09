@@ -78,7 +78,7 @@ include 'partials/head.php';
 		</table>';
 
 		?>	
-
+	<h2></h2>
 	</main>
 
 	<!-- main footer -->

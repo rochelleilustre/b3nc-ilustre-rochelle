@@ -2437,3 +2437,50 @@ categories:
 	Beer Type 1
 	Beer Type 2
 	Beer Type 3
+
+02/09/17--------------------------------------------------------------------------------
+
+connecting to database
+CRUUD operations
+sending SQL statments using mysqli
+	$result = mysqli_query($conn, $sql_query)
+	
+insert into items (product_name, price, description, stocks, category_id, image) values ('Cerveza Negra', '200', 'Cerveza Negra, a full-bodied dark lager with rich caramel tones made from roasted pilsen malt from Europe and other top quality ingredients. The right balance of bitterness and sweetness, and a creamy, frothy head entice drinkers to soak in its unique flavors', '500', '1', 'http://lorempixel.com/300/300');
+
+insert into items (product_name, price, description, stocks, category_id, image) values ('San Mig Light', '300.25', "San Mig Light is the country's leading low calorie beer with only 100 calories per 330ml serving. That's why you'll feel so light as you enjoy its full beer flavor that hits just right", '500', '2', 'http://lorempixel.com/300/300');
+
+insert into items (product_name, price, description, stocks, category_id, image) values ('Gold Eagle Beer', '400.1', "The ultimate reward to a hard day's work is Gold Eagle Beer. It is moderately light bodied, yet flavorful, hopped just enough to give a little bite on the finish bringing out an over-all easy drinking character. Relax and enjoy the moment with this beer. Its alcohol content is 3.5% by weight and 4.55% by volume", '500', '3', 'http://lorempixel.com/300/300');
+
+insert into items (product_name, price, description, stocks, category_id, image) values ('Brew Kettle', '500', 'Brew Kettle Belgian Witbier Style Beer is an aromatic and refreshing brew with hints of white wheat and orange, giving it a crisp and smooth taste. Light-bodied and easy to drink, garnish your bottle of Brew Kettle with an orange slice and savor that full flavored experience. An inspired and enjoyable beer brewed to be different with you in mind', '500', '3', 'http://lorempixel.com/300/300');
+
+insert into items (product_name, price, description, stocks, category_id, image) values ("Fat Pauly's Ales & Lagers", '600.21', "Fat Pauly's Hand-crafted Ales & Lagers is a proud local brand that makes fresh home-brewed beers using both the finest imported brew grade malt and some local indegenous ingredients such as Timoga Spring waters, and wild Putyukan Honey", '500', '3', 'http://lorempixel.com/300/300');
+
+insert into items (product_name, price, description, stocks, category_id, image) values ("Palaw'An", '700', "An old but popular German-style beer with our equally famous Palawan honey from the Southern Palawan tribe, Palaw'an. Pale color, light body and smooth mouthfeel with a subtle floral character", '500', '1', 'http://lorempixel.com/300/300');
+
+
+insert into users (email, image, username, password, first_name, last_name, address, contact, role_id) values ('admin@gmail.com', 'http://lorempixel.com/300/300', 'admin', 'admin', 'Firstname', 'Lastname', 'Quezon city', 'Philippines', '1');
+
+insert into users (email, image, username, password, first_name, last_name, address, contact, role_id) values ('user@yahoo.com', 'http://lorempixel.com/300/300', 'billy', 'billy', 'Firstname', 'Lastname', 'Quezon city', 'Philippines', '3');
+
+insert into users (email, image, username, password, first_name, last_name, address, contact, role_id) values ('user1@bluebottle.com', 'http://lorempixel.com/300/300', 'user1', 'user1', 'Firstname', 'Lastname', 'Quezon city', 'Philippines', '3');
+
+insert into users (email, image, username, password, first_name, last_name, address, contact, role_id) values ('user3@abc.com', 'http://lorempixel.com/300/300', 'user3', 'user3', 'Firstname', 'Lastname', 'Quezon city', 'Philippines', '3');
+
+insert into users (email, image, username, password, first_name, last_name, address, contact, role_id) values ('user4@google.com', 'http://lorempixel.com/300/300', 'user4', 'user4', 'Firstname', 'Lastname', 'Quezon city', 'Philippines', '3');
+
+insert into users (email, image, username, password, first_name, last_name, address, contact, role_id) values ('user5@google.com', 'http://lorempixel.com/300/300', 'user5', '123', 'Firstname', 'Lastname', 'Quezon city', 'Philippines', '3');
+
+insert into users (email, image, username, password, first_name, last_name, address, contact, role_id) values ('user6@gmail.com', 'http://lorempixel.com/300/300', 'user6', 'user6', 'Firstname', 'Lastname', 'Quezon city', 'Philippines', '3');
+
+insert into users (email, image, username, password, first_name, last_name, address, contact, role_id) values ('admin2@gmail.com', 'http://lorempixel.com/300/300', 'admin3', 'admin', 'Firstname', 'Lastname', 'Quezon city', 'Philippines', '3');
+
+
+
+
+
+
+
+
+
+
+

@@ -60,6 +60,8 @@ $_SESSION['item_count'] = array_sum($_SESSION['cart']);
 
 $result2 = '<strong style="color:red;">('.$_SESSION['item_count'].')</strong>';
 
+$result3 = $_SESSION['cart'];
 
-$result = [$result1,$result2];
+$result = [$result1,$result2,$result3];
+
 echo json_encode($result);

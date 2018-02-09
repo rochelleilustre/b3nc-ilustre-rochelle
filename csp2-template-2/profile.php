@@ -28,7 +28,7 @@ include 'partials/head.php';
 		<h1>Profile Page</h1>
 		<?php
 
-		$id = $_GET['id'];
+		$id = $_SESSION['userIndex'];
 
 		$file = file_get_contents('assets/users.json');
 		$users = json_decode($file, true);

@@ -19,7 +19,7 @@
         if (isset($_SESSION['current_user'])) {
           echo '
             <li>
-              <a href="#">' . ucfirst($_SESSION['current_user']) . '</a>
+              <a href="profile.php">' . ucfirst($_SESSION['current_user']) . '</a>
             </li>
           ';
         }
@@ -53,11 +53,7 @@
         <?php
 
         if (isset($_SESSION['current_user'])) {
-          echo '
-            <li>
-              <a href="profile.php">Profile</a>
-            </li>
-          ';
+          
 
           if ($_SESSION['role'] == 'admin') {
             echo '

@@ -14,7 +14,7 @@ $users = json_decode($file, true);
 
 $isLogInSuccessful = false;
 
-foreach ($users as $user) {
+foreach ($users as $key => $user) {
     // echo $user['username'] . ' ' . $user['password'];
 
     if ($userName == $user['username'] && $passWord == $user['password']) {
@@ -22,6 +22,7 @@ foreach ($users as $user) {
         $isLogInSuccessful = true;
         $_SESSION['current_user'] = $user['username'];
         $_SESSION['role'] = $user['role'];
+        $_SESSION['userIndex'] = $key;
         break;
     }
 }

@@ -1,5 +1,7 @@
 <?php
 
+require 'connect.php'; //Database connection
+
 function getTitle() {
 	echo 'Register';
 }
