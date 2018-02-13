@@ -2476,11 +2476,472 @@ insert into users (email, image, username, password, first_name, last_name, addr
 
 
 
+02/12/17--------------------------------------------------------------------------------
+
+connect to DB
+
+$username = "root";
+$password = "";
+$dbname = "dbname";
+
+$conn = mysqli_connect($host, username, $password, $dbname);
+
+if (!$conn) {
+
+}
+
+CRUD operations
+$result = mysqli_query ($conn, $sql_query);
+
+INSERT INTO
+
+SELECT statement in PHP
+$result = mysqli_query ($conn, $sql_query);
+$row = mysqli_fetch_assoc($result);
+
+UPDATE statement in PHP
+
+DELETE statement in PHP
+
+IMPORTING and EXPORTING database
+http://localhost/phpmyadmin/
+
+SELECT from multiple 
+
+select albums.name, songs.title from albums join songs on (albums.id = songs.album_id);
+
++-------+---------------+
+| name  | title         |
++-------+---------------+
+| Psy 6 | Gangnam Style |
+| Trip  | Kungdiman     |
++-------+---------------+
+2 rows in set (0.00 sec)
+
+select a.name, s.title from albums a join songs s on (a.id = s.album_id);
+
++-------+---------------+
+| name  | title         |
++-------+---------------+
+| Psy 6 | Gangnam Style |
+| Trip  | Kungdiman     |
++-------+---------------+
+
+select. a.name, s.title from albums a, songs s where s.id =s.album_id;
++-------+---------------+
+| name  | title         |
++-------+---------------+
+| Psy 6 | Gangnam Style |
+| Trip  | Gangnam Style |
+| Psy 6 | Kungdiman     |
+| Trip  | Kungdiman     |
++-------+---------------+
+
+select albums.name, songs.title from albums join songs on (albums.id = songs.album_id);
++-------+---------------+
+| name  | title         |
++-------+---------------+
+| Psy 6 | Gangnam Style |
+| Trip  | Kungdiman     |
++-------+---------------+
+
+select albums.name, songs.title, songs.genre, albums.year from albums join songs on (albums.id = songs.album_id);
++-------+---------------+-------+------+
+| name  | title         | genre | year |
++-------+---------------+-------+------+
+| Psy 6 | Gangnam Style | k-pop | 2012 |
+| Trip  | Kungdiman     | OPM   | 1996 |
++-------+---------------+-------+------+
+
+select * from albums join 
+
+id
+
+OUTER JOINS
+
+left join
+right join
+--------------
+
+reference: erd_model.jpg
+
+Who are the customers who are from the Philippines
+select customers.customerName, customers.country from customers
+ANSWER: SELECT customerName FROM customers WHERE country = 'Philippines';
+
+Who is the contact person of LA Rochelle Gifts customer?
+SELECT contactLastName, contactFirstName FROM customers WHERE customerName = 'LA Rochelle Gifts';
+ANSWER: select contacFirstName, contactLastName from customers WHERE customerName = 'LA Rochelle Gifts';
+
+How much is the manufacturer suggested retail price(MSRP) of The Titanic products?
+SELECT MSRP from products WHERE productName = 'The Titanic';
+
+Who uses the jfirrelli@classicmodelcars.com email?
+SELECT customerName from employees WHERE email = 'jfirrelli@classicmodelcars.com';
+ANSWER: SELECT contactFirstName, contactLastName from employees WHERE email = 'jfirrelli@classicmodelcars.com';
+
+Who are the customers that does not have a state?
+SELECT customerName from customers WHERE state = NULL;
+
+LIKE
+
+02/13/17--------------------------------------------------------------------------------
+
+First name and last names of employees who has office in Tokyo?
+SELECT contactFirstName, contactLastName FROM employees WHERE offices.country = 'Japan' AND offices.city= 'Tokyo';
+ANSWER: 
+--w/o using alias
+SELECT firstName, lastName FROM employees JOIN offices 
+ON (employees.officeCode = offices.officeCode) 
+where offices.city='Tokyo';
+or
+--using alias
+SELECT e.firstName, e.lastName FROM eployees e JOIN offices o 
+ON(e.officeCode = o.officeCode) 
+WHERE o.city ='Tokyo';
+
+Who are the customers being served by Leslie Thompson?
+--w/o using alias
+SELECT customerName FROM customers JOIN employees 
+ON (customers.salesRepEmployeeNumber = employees.employeeNumber) 
+WHERE firstName = 'Leslie' 
+AND lastName = 'Thompson';
+
+--using alias
+SELECT customerName FROM customers JOIN employees 
+ON (customers.salesRepEmployeeNumber = employees.employeeNumber) 
+WHERE firstName = 'Leslie' AND lastName = 'Thompson';
+
+ANSWER:
+--w/o using alias
+SELECT customerName FROM customers JOIN employees 
+ON (customer.salesRepEmployeeNumber = employees.employeeNumber) 
+WHERE employees.firstName = 'Leslie' 
+AND employees.lastName = 'Thompson';
+
+--using alias
+SELECT c.customerName FROM customers c JOIN employees e 
+ON (c.salesRepEmployeeNumber = e.employeeNumber) 
+WHERE e.firstName = 'Leslie' AND e.lastName = 'Thompson';
+
+What products (productName) did the customer Baane Mini imports ordered?
+SELECT productName FROM products JOIN productlines 
+ON (products.productScale = productlines.productline) 
+WHERE customers.customerName = 'Baane Mini';
+
+ANSWER:
+--using alias
+SELECT p.productName FROM products p JOIN ordersdetails od 
+ON (p.productCode = od.productCode) JOIN orders o 
+ON (od.orderNumber = o.orderNumber) JOIN customers c 
+ON (o.customerNumber = c.customerNumber) 
+WHERE c.customerName = 'Baane Mini Imports';
+
+List of employees who are in the same country with the customers they serve?
+SELECT firstName, lastName FROM employees JOIN customers
+ON (customers.salesRepEmployeeNumber = employees.employeeNumber)
+WHERE customers.state = employees.officeCode 
+AND offices.state = customers.state;
+
+ANSWER:
+SELECT firstName, lastName FROM employees e JOIN offices o 
+ON o.officeCode = e.officeCode JOIN customers c 
+ON c.salesRepEmployeeNumber = e.employeeNumber
+WHERE c.country = o.country;
+
+Who are the employees who report to Anthony Bow?
+SELECT firstName, lastName FROM employees e JOIN offices o
+ON (e.reportsTo = e.officeCode)
+WHERE e.firstName = 'Anthony' AND e.lastName = 'Bow';
+ANSWER:
+
+Update the extension column for all the Sales Rep employees to X003.
+UPDATE employees 
+SET extension = 'x003' 
+WHERE jobtitle = 'Sales Rep';
+
+++++++++++
+
+ADVANCE SELECT
+
+LIKE 
+WHERE <column> LIKE <pattern> to compare string patterns.
+_
+%
 
 
 
 
+PET
+name	owner	specie	sex
+Buffy	Harold	dog	f
+Bowser	Diane	dog	m
+
+Find names beggining with 'B',
+SELECT * FROM pet WHERE name LIKE 'B%';
+
+music_store;
+select * from albums where name LIKE 'T%';
+
+Find names ending in 'fy';
+SELECT * FROM pet WHERE name LIKE '%fy';
+
+Fine names containing 'w';
+SELECT * FROM pet WHERE name LIKE '%w%';
+
+Find names with five letters in name
+SELECT 
+
+LIKE BINARY (case sensitive)
 
 
+Customers names without the letter 'A';
+SELECT * FROM customers WHERE customerName LIKE BINARY '[!A]'%;
+ANSWER: 
+SELECT customerName FROM customers WHERE customerName NOT LIKE BINARY '%A%';
+
+Who is the customer who specied something like '...Malutong...' in their order?
+SELECT customerName FROM customers JOIN orders WHERE comments LIKE BINARY 'Malutong...%';
+ANSWER:
+SELECT c.customerName FROM customers c JOIN orders o 
+ON (c.customerNumber = o.customerNumber)
+WHERE o.comments LIKE '%Malutong%';
+
+Which productline contains the "State of the art" product description;
+SELECT productLine FROM products WHERE productDescription LIKE 'State of the art%';
+ANSWER:
+SELECT productLine FROM products 
+WHERE productDescription 
+LIKE '%State of the art%';
 
 
+SORTING RESULTS
+
+ORDER BY
+
+title		year	star
+Star wars	1977	Carrie Fisher
+Star wars	2015	Carrie Fisher
+Star wars	2015	Daisy
+Star wars	1977	Carrie Fisher
+Star wars	2015	Carrie Fisher
+
+SELECT * FROM movie_casts ORDER BY star, year;
+
+MariaDB [kraff_beeer]> describe items;
++--------------+---------------+------+-----+---------+----------------+
+| Field        | Type          | Null | Key | Default | Extra          |
++--------------+---------------+------+-----+---------+----------------+
+| id           | int(11)       | NO   | PRI | NULL    | auto_increment |
+| product_name | varchar(255)  | NO   |     | NULL    |                |
+| price        | decimal(10,2) | NO   |     | NULL    |                |
+| description  | varchar(255)  | NO   |     | NULL    |                |
+| stocks       | int(11)       | NO   |     | NULL    |                |
+| category_id  | int(11)       | NO   | MUL | NULL    |                |
+| image        | varchar(255)  | YES  |     | NULL    |                |
++--------------+---------------+------+-----+---------+----------------+
+7 rows in set (0.04 sec)
+
+MariaDB [kraff_beeer]> select id, product_name, price from items order by id, price;
++----+---------------------------+--------+
+| id | product_name              | price  |
++----+---------------------------+--------+
+|  5 | Cerveza Negra             | 200.00 |
+|  6 | Cerveza Negra             | 200.00 |
+|  7 | San Mig Light             | 300.25 |
+|  8 | Gold Eagle Beer           | 400.10 |
+|  9 | Brew Kettle               | 500.00 |
+| 10 | Fat Pauly's Ales & Lagers | 600.21 |
+| 11 | Palaw'An                  | 700.00 |
++----+---------------------------+--------+
+7 rows in set (0.00 sec)
+
+MariaDB [kraff_beeer]> select id, product_name, price from items order by id, product_name;
++----+---------------------------+--------+
+| id | product_name              | price  |
++----+---------------------------+--------+
+|  5 | Cerveza Negra             | 200.00 |
+|  6 | Cerveza Negra             | 200.00 |
+|  7 | San Mig Light             | 300.25 |
+|  8 | Gold Eagle Beer           | 400.10 |
+|  9 | Brew Kettle               | 500.00 |
+| 10 | Fat Pauly's Ales & Lagers | 600.21 |
+| 11 | Palaw'An                  | 700.00 |
++----+---------------------------+--------+
+7 rows in set (0.00 sec)
+
+MariaDB [kraff_beeer]> select id, product_name, price from items order by product_name;
++----+---------------------------+--------+
+| id | product_name              | price  |
++----+---------------------------+--------+
+|  9 | Brew Kettle               | 500.00 |
+|  5 | Cerveza Negra             | 200.00 |
+|  6 | Cerveza Negra             | 200.00 |
+| 10 | Fat Pauly's Ales & Lagers | 600.21 |
+|  8 | Gold Eagle Beer           | 400.10 |
+| 11 | Palaw'An                  | 700.00 |
+|  7 | San Mig Light             | 300.25 |
++----+---------------------------+--------+
+7 rows in set (0.00 sec)
+
+MariaDB [kraff_beeer]> select id, product_name, price from items order by product_name, price;
++----+---------------------------+--------+
+| id | product_name              | price  |
++----+---------------------------+--------+
+|  9 | Brew Kettle               | 500.00 |
+|  5 | Cerveza Negra             | 200.00 |
+|  6 | Cerveza Negra             | 200.00 |
+| 10 | Fat Pauly's Ales & Lagers | 600.21 |
+|  8 | Gold Eagle Beer           | 400.10 |
+| 11 | Palaw'An                  | 700.00 |
+|  7 | San Mig Light             | 300.25 |
++----+---------------------------+--------+
+7 rows in set (0.00 sec)
+
+MariaDB [kraff_beeer]> describe users;
++------------+--------------+------+-----+---------+----------------+
+| Field      | Type         | Null | Key | Default | Extra          |
++------------+--------------+------+-----+---------+----------------+
+| id         | int(11)      | NO   | PRI | NULL    | auto_increment |
+| email      | varchar(255) | NO   | UNI | NULL    |                |
+| image      | varchar(255) | NO   |     | NULL    |                |
+| username   | varchar(255) | NO   | UNI | NULL    |                |
+| password   | varchar(255) | NO   |     | NULL    |                |
+| first_name | varchar(255) | NO   |     | NULL    |                |
+| last_name  | varchar(255) | NO   |     | NULL    |                |
+| address    | varchar(255) | NO   |     | NULL    |                |
+| contact    | varchar(255) | NO   |     | NULL    |                |
+| role_id    | int(11)      | NO   | MUL | NULL    |                |
++------------+--------------+------+-----+---------+----------------+
+10 rows in set (0.11 sec)
+
+MariaDB [kraff_beeer]> select username, email, role_id from users order by role_id;
++----------+----------------------+---------+
+| username | email                | role_id |
++----------+----------------------+---------+
+| admin    | admin@gmail.com      |       1 |
+| billy    | user@yahoo.com       |       3 |
+| user1    | user1@bluebottle.com |       3 |
+| user3    | user3@abc.com        |       3 |
+| user4    | user4@google.com     |       3 |
+| user5    | user5@google.com     |       3 |
+| user6    | user6@gmail.com      |       3 |
+| admin3   | admin2@gmail.com     |       3 |
+| user7    | user7@gmail.com      |       3 |
++----------+----------------------+---------+
+9 rows in set (0.00 sec)
+
+MariaDB [kraff_beeer]> select username, email, role_id from users order by role_id, username;
++----------+----------------------+---------+
+| username | email                | role_id |
++----------+----------------------+---------+
+| admin    | admin@gmail.com      |       1 |
+| admin3   | admin2@gmail.com     |       3 |
+| billy    | user@yahoo.com       |       3 |
+| user1    | user1@bluebottle.com |       3 |
+| user3    | user3@abc.com        |       3 |
+| user4    | user4@google.com     |       3 |
+| user5    | user5@google.com     |       3 |
+| user6    | user6@gmail.com      |       3 |
+| user7    | user7@gmail.com      |       3 |
++----------+----------------------+---------+
+9 rows in set (0.00 sec)
+
+MariaDB [kraff_beeer]> select username, email, role_id from users order by username;
++----------+----------------------+---------+
+| username | email                | role_id |
++----------+----------------------+---------+
+| admin    | admin@gmail.com      |       1 |
+| admin3   | admin2@gmail.com     |       3 |
+| billy    | user@yahoo.com       |       3 |
+| user1    | user1@bluebottle.com |       3 |
+| user3    | user3@abc.com        |       3 |
+| user4    | user4@google.com     |       3 |
+| user5    | user5@google.com     |       3 |
+| user6    | user6@gmail.com      |       3 |
+| user7    | user7@gmail.com      |       3 |
++----------+----------------------+---------+
+9 rows in set (0.00 sec)
+
+MariaDB [kraff_beeer]> select username, email, role_id from users order by role_id desc;
++----------+----------------------+---------+
+| username | email                | role_id |
++----------+----------------------+---------+
+| billy    | user@yahoo.com       |       3 |
+| user1    | user1@bluebottle.com |       3 |
+| user3    | user3@abc.com        |       3 |
+| user4    | user4@google.com     |       3 |
+| user5    | user5@google.com     |       3 |
+| user6    | user6@gmail.com      |       3 |
+| admin3   | admin2@gmail.com     |       3 |
+| user7    | user7@gmail.com      |       3 |
+| admin    | admin@gmail.com      |       1 |
++----------+----------------------+---------+
+9 rows in set (0.00 sec)
+
+MariaDB [kraff_beeer]> select username, email, role_id from users order by username desc, role_id;
++----------+----------------------+---------+
+| username | email                | role_id |
++----------+----------------------+---------+
+| user7    | user7@gmail.com      |       3 |
+| user6    | user6@gmail.com      |       3 |
+| user5    | user5@google.com     |       3 |
+| user4    | user4@google.com     |       3 |
+| user3    | user3@abc.com        |       3 |
+| user1    | user1@bluebottle.com |       3 |
+| billy    | user@yahoo.com       |       3 |
+| admin3   | admin2@gmail.com     |       3 |
+| admin    | admin@gmail.com      |       1 |
++----------+----------------------+---------+
+9 rows in set (0.00 sec)
+
+MariaDB [kraff_beeer]> select username, email, role_id from users order by role_id desc, username;
++----------+----------------------+---------+
+| username | email                | role_id |
++----------+----------------------+---------+
+| admin3   | admin2@gmail.com     |       3 |
+| billy    | user@yahoo.com       |       3 |
+| user1    | user1@bluebottle.com |       3 |
+| user3    | user3@abc.com        |       3 |
+| user4    | user4@google.com     |       3 |
+| user5    | user5@google.com     |       3 |
+| user6    | user6@gmail.com      |       3 |
+| user7    | user7@gmail.com      |       3 |
+| admin    | admin@gmail.com      |       1 |
++----------+----------------------+---------+
+9 rows in set (0.00 sec)
+
+
+DISTINCT
+
+SELECT title, year, star FROM movie_casts WHERE title = 'Star Wars' AND year = 2015;
+
+IN, ANY, ALL
+
+
+what are the songs that are in album 2,3 or 4?
+
+WHERE column ANY (val, val2, val3);
+
+equivalent to 
+
+WHERE (column>val1) OR (column=val2) OR (column > val3);
+
+--------------
+
+List the all the unique countries of the customers.
+ANSWER: SELECT DISTINCT country FROM customers;
+
+List all the unique order status.
+SELECT DISTINCT status FROM orders;
+ANSWER: SELECT DISTINCT status FROM orders;
+
+[IN, ANY, ALL]
+list of customers who are in USA, FRANCE, CANADA, UK and ITALY.
+SELECT customerName FROM customers WHERE country IN (USA, FRANCE, CANADA, UK, ITALY);
+ANSWER:
+SELECT customerName FROM customers WHERE country IN ('USA', 'FRANCE', 'CANADA', 'UK', 'ITALY');
+or
+SELECT customerName FROM customers WHERE country ANY('USA', 'FRANCE', 'CANADA', 'UK', 'ITALY');
+
+SUB QUERIES and ABBR
