@@ -2945,3 +2945,82 @@ or
 SELECT customerName FROM customers WHERE country ANY('USA', 'FRANCE', 'CANADA', 'UK', 'ITALY');
 
 SUB QUERIES and ABBR
+
+02/14/17--------------------------------------------------------------------------------
+
+
+https://smsgateway.me/
+
+SUBQUERIES
+
+Shirts table 		| 	Materials table
+id	size	price	|	id	shirt_id	material
+1	S	450	|	1	3		cotton
+2	M	500	|	2	1		cotton
+3	L	500	|	3	4		chino
+4	XL	600	|	4	2		denim
+	
+
+SELECT shirt_id FROM materials WHERE material = 'denim'
+
+SELECT size FROM Shirts WHERE id = (SELECT shirt_id FROM materials WHERE material = 'denim')
+
+How much are the cotton shirts and their sizes?
+SELECT price, size FROM Shirts WHERE id = (SELECT shirt_id FROM Materials WHERE material = 'cotton');
+ANSWER:
+SELECT price, size FROM Shirts WHERE id IN (SELECT shirt_id FROM Materials WHERE material= 'cotton');
+
+
+
+Who is the producer of star wars?
+SELECT producerC# FROM Movies WHERE id IN (SELECT cert# FROM MovieExec WHERE title='Star wars');
+ANSWER:
+SELECT name FROM MovieExec WHERE cert# = (SELECT producerC# FROM Movies WHERE title = 'Star Wars');
+
+Who are the producer of Harrison Ford's Movies?
+SELECT name FROM MovieExec WHERE cert# = (SELECT producerC# FROM Movies WHERE title = 'Harrison Ford');
+ANSWER:
+SELECT name FROM MovieExec WHERE cert# IN 
+(SELECT producerC# FROM Movies WHERE title IN 
+(SELECT movieTitle FROM starsIn WHERE starName = 'Harrison Ford'));
+
+Movie title that appear more than once (movies with multiple years)?
+SELECT movieTitle FROM starsIn WHERE movieYear IN (SELECT year FROM Movies )
+
+AGGREGATION OPERATORS
+COUNT()
+SUM()
+MIN()
+MAX()
+AVG()
+
+
+How many stars
+SELECT * FROM movie_casts WHERE title = 'Star Wars' AND year = 2015;
+
+How many stars are there in the movie Star
+
+What is the average length of 
+
+
+
+HAVING clause
+What genre has an average length of more than 300 seconds?
+SELECT AVG(length), genre FROM songs GROUP BY genre HAVING AVG(length)>300;
+
+[aggregation, group by, having]
+
+Find the average speed of PC's.
+SELECT AVG(speed) FROM pc;
+
+Find the average speed of laptops costing over $1000.
+SELECT AVG(speed) FROM laptops GROUP BY price HAVING(decimal)>1000;
+ANSWER:
+SELECT AVG(speed) FROM laptop GROUP BY price HAVING price > '1000.00';
+
+Find the number of battleship classes.
+SELECT COUNT(class) FROM classes WHERE type = 'battleship';
+ANSWER: 
+SELECT COUNT (DISTINCT class) FROM classes WHERE type ='battleship';
+
+
