@@ -3023,4 +3023,5 @@ SELECT COUNT(class) FROM classes WHERE type = 'battleship';
 ANSWER: 
 SELECT COUNT (DISTINCT class) FROM classes WHERE type ='battleship';
 
+02/15/17--------------------------------------------------------------------------------
 
