@@ -7,7 +7,11 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
 	<meta http-equiv="X-UA-compatible" content="IE=edge">
 
+<<<<<<< HEAD
 	<title>SHALLOW performance apparell</title>
+=======
+	<title>SCENT OF ADALINE</title>
+>>>>>>> f8df4111082b02c64b26e85883b9be506dfda572
 
 	<!-- fav icon -->
 	<link rel="shortcut icon" type="image/x-icon" href="apple-icon-114x114.png">
