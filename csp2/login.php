@@ -22,7 +22,24 @@ include 'partials/head.php'
 	<main class="wrapper container">
 		
 	<h1>LOG IN PAGE</h1>
-	
+
+		<div class="login-section">
+			<form id="loginForm" class="form-group" method="POST" action="">
+				<div class="form-group">
+			    	<input type="email" class="form-control" id="email" placeholder="EMAIL">
+			  	</div>
+
+			  	<div class="form-group">
+			    	<input type="password" class="form-control" id="pwd" placeholder="PASSWORD">
+			  	</div>
+
+			  	<div class="checkbox">
+			    	<label><input type="checkbox"> Remember me</label>
+			  	</div>
+			  
+			  	<button type="submit" class="btn btn-info">Submit</button>
+			</form>
+		</div><!-- end of login-section -->
 	</main>
 
 	<!-- main footer -->
