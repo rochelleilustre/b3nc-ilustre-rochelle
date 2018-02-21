@@ -3,7 +3,7 @@
 include 'partials/head.php';
 
 function getTitle(){
-	echo 'CSP2 E-COMMERCE WEBSITE';
+	echo 'CSP2 E-COMMERCE WEBSITE | LOG IN';
 }
 
 include 'partials/head.php'
@@ -20,9 +20,9 @@ include 'partials/head.php'
 	<?php include 'partials/main_header.php' ?>
 
 	<main class="wrapper container">
-	<div>	
-	<h1>INDEX PAGE</h1>
-	</div>
+		
+	<h1>LOG IN PAGE</h1>
+	
 	</main>
 
 	<!-- main footer -->
