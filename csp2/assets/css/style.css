@@ -22,6 +22,8 @@ body {
 }
 
 
+
+
 #loginForm {
 	width: 95%;
 	margin: 0 auto;
@@ -43,6 +45,8 @@ body {
 }
 
 
+
+
 .main-footer {
 	color: #F1F4DF;
 	background-color: #171717;
@@ -50,3 +54,19 @@ body {
 	text-align: center;
 }
 
+.jumbotron {
+	color: brown;
+	/*background: url('https://cdn.pixabay.com/photo/2017/10/03/12/07/bottle-2812214_960_720.jpg');*/
+	background: url(../images/main-banner.jpg);
+	background-size: cover;
+	background-position: center bottom;
+	background-attachment: fixed;
+	height: 400px;
+}
+
+.jumbotron>h1,p{
+	margin-right: 50px;
+	text-align: right;
+	font-family: 'Gloria Hallelujah', cursive;
+
+}

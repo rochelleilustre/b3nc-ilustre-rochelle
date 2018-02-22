@@ -32,10 +32,10 @@
         <li class="active"><a href="#">BRAND</a></li>
         <li><a href="#">MEN</a></li>
         <li><a href="#">WOMEN</a></li>
-        <li><a href="#">UNISEX</a></li>
-
-        
-      </ul>
+        <li><a href="#">UNISEX</a></li>      
+      </ul>  
+  
+      
       <form class="navbar-form navbar-right">
         <div class="form-group">
           <input type="text" class="form-control" placeholder="Search">
@@ -43,5 +43,8 @@
         <button type="submit" class="btn btn-default">Submit</button>
       </form>
 
-      </div><!-- /.container-fluid -->
+</div>
+   
+
+  </div><!-- /.container-fluid -->
 </nav>

@@ -9,6 +9,7 @@
 
 	<title>SCENT OF ADALINE | <?php getTitle(); ?></title>
 
+	<link href="https://fonts.googleapis.com/css?family=Gloria+Hallelujah" rel="stylesheet">
 
 	<!-- fav icon -->
 	<link rel="shortcut icon" type="image/x-icon" href="apple-icon-114x114.png">

@@ -22,6 +22,8 @@ include 'partials/head.php'
 	<main class="wrapper container">
 		
 	<h1>HOME PAGE</h1>
+
+	  
 	
 	</main>
 
