@@ -14,8 +14,9 @@
     
 
       <ul class="nav navbar-nav navbar-right">
-        <li><a href="home.php">Home</a></li>
         <li><a href="mycart.php">My Cart</a></li>
+        <li><a href="catalog.php">Catalog</a></li>
+        <li><a href="about.php">About</a></li>
         <li><a href="login.php">Log In</a></li>
         <li><a href="register.php">Register</a></li>
         
@@ -40,7 +41,7 @@
         <div class="form-group">
           <input type="text" class="form-control" placeholder="Search">
         </div>
-        <button type="submit" class="btn btn-default">Submit</button>
+        <button type="submit" class="btn btn-default">Search</button>
       </form>
 
 </div>

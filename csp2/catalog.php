@@ -22,7 +22,11 @@ include 'partials/head.php'
 	<main class="wrapper container">
 	<div>	
 	<h1>CATALOG PAGE</h1>
+
+
 	</div>
+
+	
 	</main>
 
 	<!-- main footer -->

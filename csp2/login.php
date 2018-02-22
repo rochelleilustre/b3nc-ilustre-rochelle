@@ -37,7 +37,7 @@ include 'partials/head.php'
 			    	<label><input type="checkbox"> Remember me</label>
 			  	</div>
 			  
-			  	<button type="submit" class="btn btn-info">Submit</button>
+			  	<button type="submit" class="btn btn-info">LOGIN</button>
 			</form>
 		</div><!-- end of login-section -->
 	</main>
