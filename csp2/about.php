@@ -3,7 +3,7 @@
 include 'partials/head.php';
 
 function getTitle(){
-	echo 'CSP2 E-COMMERCE WEBSITE';
+	echo 'ABOUT US | CSP2 E-COMMERCE WEBSITE';
 }
 
 include 'partials/head.php'
@@ -20,7 +20,7 @@ include 'partials/head.php'
 	<?php include 'partials/main_header.php' ?>
 
 	<main class="wrapper container">
-	<div>	
+	<div class="container">	
 	<h1>ABOUT PAGE</h1>
 	</div>
 	</main>

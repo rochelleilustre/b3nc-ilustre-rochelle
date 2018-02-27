@@ -3,6 +3,7 @@ They are usually unboxed or in a simple brown or white box.
 Testers are always fresh, new, and completely full but sometimes they do not have a cap.
 
 
+<<<<<<< HEAD
 BRAND
 ('Acqua Di Gio'),
 ('Burberry'),
@@ -72,6 +73,75 @@ PRODUCTS (product_name, price, volume_id, gender_id, brand_id, stocks_id, packag
 ('Katy Perry Purr 100ml TB (Out of Stock)'), ('550'), ('100ml'), ('Women'), ('Katy Perry'), ('Out of Stock'), ('Tester Box'), 
 ('Lanvin Eclat 100ml TB'), ('550'), ('100ml'), ('Women'), ('Lanvin'), ('In Stock'), ('Tester Box'), 
 ('Lanvin Eclat 100ml OB'), ('750'), ('100ml'), ('Women'), ('Lanvin'), ('In Stock'), ('Original Box');
+=======
+GENDER (3)
+1	Men
+2	Women
+3	Unisex
+	
+PACKAGING (2)
+1	Original Box
+2	Tester Box
+	
+STOCK (2)
+1	In Stock
+2	Out of Stock
+
+VOLUME (9)	
+1	100 ml
+2	125 ml
+3	150 ml
+
+BRAND (34)		
+('Acqua Di Gio'),
+('Burberry'),
+('Bvlgari'),
+('Calvin Klein'),
+('Carolina Herrera'),
+('Chanel'),
+('Christian Dior'),
+('Clinique'),
+('Dior'),
+('Dolce & Gabbana'),
+('Donna Karan'),
+('Elizabeth Arden'),
+('Escada'),
+('Estee Lauder'),
+('Giorgio Armani'),
+('Gucci'),
+('Hermes'),
+('Hugo Boss'),
+('Issey Miyake'),
+('Jo Malone'),
+('Katy Perry'),
+('Kenzo'),
+('Lacoste'),
+('Lancome'),
+('Lanvin'),
+('Louis Vuitton'),
+('Marc Jacobs'),
+('Mont Blanc'),
+('Paris Hilton'),
+('Ralph Lauren'),
+('Salvatore Ferragamo'),
+('Tommy Hilfiger'),
+('Versace'),
+('Yves Saint Laurent');
+
+PRODUCTS (product_name, price, volume_id, gender_id, brand_id, stocks_id, packaging_id, image)
+('212 Men 100ml TB	550	1	1	5	1	2	assets/images/212men.jpg')
+('212 Men 100ml OB	750	1	1	5	1	1	assets/images/212men.jpg
+('212 Sexy Men 100ml OB	750	1	1	5	1	1	assets/images/212sexymen.jpg
+('Acqua Di Gio 100ml TB	550	1	1	1	1	2	assets/images/212men.jpg
+('Acqua Di Gio 100ml OB	750	1	1	1	1	1	assets/images/212men.jpg
+('Bvlgari Aqva Marine 100ml TB	550	1	1	3	1	2	assets/images/bvlgari-omnia-amethyste.jpg
+('Bvlgari Aqva 100ml TB	550	1	1	3	1	2	assets/images/bvlgari-omnia-amethyste.jpg
+('Bvlgari Blv 100ml TB	550	1	1	3	1	2	assets/images/bvlgari-omnia-amethyste.jpg
+('Bvlgari Extreme 100ml OB	750	1	1	3	1	1	assets/images/bvlgari-omnia-amethyste.jpg
+('Bvlgari Man 100ml OB	750	1	1	3	1	1	assets/images/bvlgari-omnia-amethyste.jpg
+('Bvlgari Man Extreme 100ml OB	750	1	1	3	1	1	assets/images/bvlgari-omnia-amethyste.jpg
+('Bvlgari Man in Black 100ml OB	750	1	1	3	1	1	assets/images/bvlgari-omnia-amethyste.jpg
+>>>>>>> 107d77a78923b4ffc0fbb21b83f61bc51a8184c0
 
 IMAGES
 ('assets/images/212men.png')
@@ -92,7 +162,13 @@ USERS (email, image, username, password, first_name, last_name, contact, role)
 ('email', 'image', 'username', 'password', 'first_name', 'last_name', 'contact', 'role'),
 
 GENDER (name)
+<<<<<<< HEAD
 ('men'), ('women'), ('unisex');
+=======
+('men'), 	1
+('women'), 	2
+('unisex');	3
+>>>>>>> 107d77a78923b4ffc0fbb21b83f61bc51a8184c0
 
 MY CART (product_id, quantity, subtotal, buyer_id, date)
 ('product_id', 'quantity', 'subtotal', 'buyer_id', 'date'), 
