@@ -3,7 +3,7 @@
 include 'partials/head.php';
 
 function getTitle(){
-	echo 'CSP2 E-COMMERCE WEBSITE | LOG IN';
+	echo 'LOGIN | CSP2 E-COMMERCE WEBSITE';
 }
 
 include 'partials/head.php'
@@ -19,12 +19,25 @@ include 'partials/head.php'
 	<!-- main header -->
 	<?php include 'partials/main_header.php' ?>
 
-	<main class="wrapper container">
+	<main class="wrapper ">
 		
+	<div class="container">	
 	<h1>LOG IN PAGE</h1>
 
-		<div class="login-section">
-			<form id="loginForm" class="form-group" method="POST" action="">
+
+
+
+
+
+	<form id="loginForm" class="form-group" method="POST" action="">
+
+	<div id="login-sec">
+				
+		<div id="form-header">
+			<h4>Login to your account</h4>
+		</div>
+
+		<hr>
 				<div class="form-group">
 			    	<input type="email" class="form-control" id="email" placeholder="EMAIL">
 			  	</div>
@@ -39,7 +52,12 @@ include 'partials/head.php'
 			  
 			  	<button type="submit" class="btn btn-info">LOGIN</button>
 			</form>
-		</div><!-- end of login-section -->
+
+	
+	</div>
+
+	</div>
+		
 	</main>
 
 	<!-- main footer -->

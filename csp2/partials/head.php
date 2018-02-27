@@ -9,6 +9,14 @@
 
 	<title>SCENT OF ADALINE | <?php getTitle(); ?></title>
 
+	<link rel="stylesheet" href="animate.min.css">
+
+	<link rel="stylesheet"
+  	href="https://cdn.jsdelivr.net/npm/animate.css@3.5.2/animate.min.css">
+  	<!-- or -->
+  	<link rel="stylesheet"
+  	href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+
 	<link href="https://fonts.googleapis.com/css?family=Gloria+Hallelujah" rel="stylesheet">
 
 	<!-- fav icon -->

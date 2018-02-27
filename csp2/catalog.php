@@ -3,7 +3,7 @@
 include 'partials/head.php';
 
 function getTitle(){
-	echo 'CSP2 E-COMMERCE WEBSITE';
+	echo 'CATALOG | CSP2 E-COMMERCE WEBSITE';
 }
 
 include 'partials/head.php'
@@ -20,13 +20,96 @@ include 'partials/head.php'
 	<?php include 'partials/main_header.php' ?>
 
 	<main class="wrapper container">
-	<div>	
-	<h1>CATALOG PAGE</h1>
-
-
+	<div class="page container-fluid">	
+		<h1>CATALOG PAGE</h1>
 	</div>
 
-	
+	<div class="container-fluid product">
+		<div class="col-md-2"><!-- Left Side Bar --></div>
+			
+		<div class="col-md-8 feature">
+			<h2>Feature Products</h2>
+			<br><br>
+			<div class="row" id="feature-1stcol">
+			<div class="col-md-3">
+				<h4>HUGO BOSS</h4>
+				<img src="assets/images/hugojustdiff.jpg" width="250" alt="hugojustdiff">
+				<p class="list-price text-danger">List price <s>php54.99</s></p>
+				<p>Our price: php40.00</p>
+				<button type="button" class="btn btn-sm btn-success" data-toggle="modal" data-target="#details-1">Details</button>
+			</div>
+
+					<div class="col-md-3">
+						<h4>BVLGARI</h4>
+						<img src="assets/images/bvlgari-omnia-amethyste.jpg" width="250" alt="bvlgari-omnia-amethyste">
+						<p class="list-price text-danger">List price <s>php54.99</s></p>
+						<p>Our price: php40.00</p>
+						<button type="button" class="btn btn-sm btn-success" data-toggle="modal" data-target="#details-1">Details</button>
+					</div>
+
+					<div class="col-md-3">
+						<h4>CLINIQUE HAPPY</h4>
+						<img src="assets/images/cliniquehappy.jpg" width="250" alt="cliniquehappy">
+						<p class="list-price text-danger">List price <s>php54.99</s></p>
+						<p>Our price: php40.00</p>
+						<button type="button" class="btn btn-sm btn-success" data-toggle="modal" data-target="#details-1">Details</button>
+					</div>
+
+					<div class="col-md-3">
+						<h4>D & G</h4>
+						<img src="assets/images/DGlightblue.jpg" width="250" alt="DGlightblue">
+						<p class="list-price text-danger">List price <s>php54.99</s></p>
+						<p>Our price: php40.00</p>
+						<button type="button" class="btn btn-sm btn-success" data-toggle="modal" data-target="#details-1">Details</button>
+					</div>
+				</div><!-- end of .row #feature-1stcol -->
+
+				
+
+				<div class="row" id="feature-2ndcol">
+					<div class="col-md-3">
+						<h4>TOMMY</h4>
+						<img src="assets/images/tommygirl.jpg" width="250" alt="tommygirl">
+						<p class="list-price text-danger">List price <s>php54.99</s></p>
+						<p>Our price: php40.00</p>
+						<button type="button" class="btn btn-sm btn-success" data-toggle="modal" data-target="#details-1">Details</button>
+					</div>
+
+					<div class="col-md-3">
+						<h4>212</h4>
+						<img src="assets/images/212men.png" width="250" alt="212men">
+						<p class="list-price text-danger">List price <s>php54.99</s></p>
+						<p>Our price: php40.00</p>
+						<button type="button" class="btn btn-sm btn-success" data-toggle="modal" data-target="#details-1">Details</button>
+					</div>
+
+					<div class="col-md-3">
+						<h4>BVLGARI</h4>
+						<img src="assets/images/bvlgariblv.jpg" width="250" alt="bvlgariblv">
+						<p class="list-price text-danger">List price <s>php54.99</s></p>
+						<p>Our price: php40.00</p>
+						<button type="button" class="btn btn-sm btn-success" data-toggle="modal" data-target="#details-1">Details</button>
+					</div>
+
+					<div class="col-md-3">
+						<h4>Calvin Klein</h4>
+						<img src="assets/images/ck-eternity-for-men.jpg" width="250" alt="ck-eternity-for-men">
+						<p class="list-price text-danger">List price <s>php54.99</s></p>
+						<p>Our price: php40.00</p>
+						<button type="button" class="btn btn-sm btn-success" data-toggle="modal" data-target="#details-1">Details</button>
+					</div>
+				</div><!-- end of .row #feature-2ndcol -->
+
+		</div> <!-- end of col-md-8 feature -->
+			
+		<div class="col-md-2"><!-- Right Side Bar --></div>
+
+
+		</div>
+
+
+
+		</div><!-- end of container-fluid -->
 	</main>
 
 	<!-- main footer -->

@@ -3,7 +3,7 @@
 include 'partials/head.php';
 
 function getTitle(){
-	echo 'CSP2 E-COMMERCE WEBSITE | MY CART';
+	echo 'MY CART | CSP2 E-COMMERCE WEBSITE';
 }
 
 include 'partials/head.php'
@@ -19,10 +19,11 @@ include 'partials/head.php'
 	<!-- main header -->
 	<?php include 'partials/main_header.php' ?>
 
-	<main class="wrapper container">
+	<main class="wrapper">
 		
-	<h1>MY CART PAGE</h1>
-	
+	<div class="container">	
+		<h1>MY CART PAGE</h1>
+	</div>
 	</main>
 
 	<!-- main footer -->

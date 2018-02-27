@@ -19,12 +19,20 @@ include 'partials/head.php'
 	<!-- main header -->
 	<?php include 'partials/main_header.php' ?>
 
-	<main class="wrapper container">
+	<main class="wrapper">
 		
-	<h1>LOG IN PAGE</h1>
+	<div class="container">
+	<h1>REGISTER PAGE</h1>
 
-		<div class="login-section">
+		
+		<div id="login-sec">
 			<form id="loginForm" class="form-group" method="POST" action="">
+
+				<div id="form-header">
+					<h4>Register new account</h4>
+				</div>
+
+				<hr>
 
 				<div class="form-group">
 					<label>Username</label>
@@ -46,11 +54,12 @@ include 'partials/head.php'
 			    	<input type="password" class="form-control" id="pwd" placeholder="email@domain.com">
 			  	</div>
 
-			  	
+			 	
 			  
 			  	<button type="submit" class="btn btn-info">REGISTER</button>
 			</form>
-		</div><!-- end of login-section -->
+			</div> 
+		</div>
 	</main>
 
 	<!-- main footer -->
