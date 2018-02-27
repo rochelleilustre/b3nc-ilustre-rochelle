@@ -1,6 +1,6 @@
 <?php
 
-include 'partials/head.php';
+
 
 function getTitle(){
 	echo 'LOGIN | CSP2 E-COMMERCE WEBSITE';
@@ -29,7 +29,11 @@ include 'partials/head.php'
 
 
 
+<<<<<<< HEAD
 	<form id="loginForm" class="form-group" method="POST" action="">
+=======
+	<form id="loginForm" class="form-group" method="POST" action="assets/authenticate.php">
+>>>>>>> 3e281fa01a64e6fc342d57e445e315fc75978c56
 
 	<div id="login-sec">
 				
@@ -39,7 +43,7 @@ include 'partials/head.php'
 
 		<hr>
 				<div class="form-group">
-			    	<input type="email" class="form-control" id="email" placeholder="EMAIL">
+			    	<input type="username" class="form-control" id="username" placeholder="USERNAME">
 			  	</div>
 
 			  	<div class="form-group">
