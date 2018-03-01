@@ -58,7 +58,7 @@ include 'assets/functions.php';
   <div class="dropdown">
       <button class="dropbtn">MEN <span class="caret"></span></button>
       <div class="dropdown-content">
-        <ul>         
+        <ul id="men" class="bscrollbar">         
             <?php getMen(); ?>  
         </ul>
 
@@ -70,7 +70,7 @@ include 'assets/functions.php';
       <button class="dropbtn">WOMEN <span class="caret"></span></button>
       <div class="dropdown-content">
         
-        <ul>
+        <ul id="women" class="bscrollbar">
             <?php getWomen(); ?>  
         </ul>
 
@@ -82,7 +82,7 @@ include 'assets/functions.php';
       <button class="dropbtn">UNISEX <span class="caret"></span></button>
       <div class="dropdown-content">
         
-        <ul>
+        <ul id="unisex" class="bscrollbar">
             <?php getUnisex(); ?>  
         </ul>
 

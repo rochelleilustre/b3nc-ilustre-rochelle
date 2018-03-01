@@ -123,19 +123,24 @@ body {
 }
 
 
-#login-sec {
-	width: 60%;
+#login-sec,
+.insert-product {
+	width: 50%;
 	margin: 0 auto;
 	padding: 20px;
 	background-color: #D1D9DD;
 	margin-top: 50px;
+	margin-bottom: 50px;
 }
 
 #form-header {
 	margin-bottom: 20px;	
 }
 
-	
+tr,
+td {
+	padding: 3px;
+}	
 
 
 .btn {
@@ -209,16 +214,20 @@ ul>li {
 	height: auto;
 	background-color: black;
 	float: left;
+	padding-bottom: 20px;
+	margin-top: 80px;
 }
 
 #sidebar-title {
 	background-color: white;
 	color: black;
 	font-size: 22px;
-	padding: 10px;
 	text-align: center;
 	width: 100%;
+	margin-top: 20px;
 }
+
+
 
 #cats,
 #brands {
@@ -241,12 +250,26 @@ ul>li {
 	margin: 5px;
 }
 
+#filter {
+	width: 170px;
+	
+}
+
 #cats a:hover,
 #brands a:hover {
 	color: orange;
 	font-weight: bolder;
-
 }
+
+#brands,
+#men,
+#women,
+#unisex {
+	height: 400px;
+	overflow: scroll;
+	overflow-x: hidden;
+}
+
 
 /****************** media queries *****************/
 

@@ -1,7 +1,5 @@
 <?php
 
-include 'partials/head.php';
-
 function getTitle(){
 	echo 'INDEX of CSP2 E-COMMERCE WEBSITE';
 }
