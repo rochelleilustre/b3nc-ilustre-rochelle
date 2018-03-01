@@ -203,6 +203,51 @@ ul>li {
 }
 
 
+/*catalog*/
+.left-side-bar {
+	width: 200px;
+	height: auto;
+	background-color: black;
+	float: left;
+}
+
+#sidebar-title {
+	background-color: white;
+	color: black;
+	font-size: 22px;
+	padding: 10px;
+	text-align: center;
+	width: 100%;
+}
+
+#cats,
+#brands {
+	text-align: center;
+}
+
+#cats li,
+#brands li {
+	list-style: none;
+	margin: 5px;
+	
+}
+
+#cats a,
+#brands a {
+	color: grey;
+	text-align: center;
+	text-decoration: none;
+	padding: 5px;
+	margin: 5px;
+}
+
+#cats a:hover,
+#brands a:hover {
+	color: orange;
+	font-weight: bolder;
+
+}
+
 /****************** media queries *****************/
 
 /* mobile devices */
