@@ -1,9 +1,5 @@
 <?php
 
-session_start();
-
-require 'connect.php';
-
 include 'partials/head.php';
 
 function getTitle(){
@@ -25,16 +21,13 @@ include 'partials/head.php'
 
 	<main class="wrapper container">
 	<div class="container">	
-	<h1>`INSERT` NEW PRODUCT PAGE</h1>
+	<h1>CREATE NEW ITEM PAGE</h1>
 	</div>
 
 	<div class="insert-product container">
-		<form action="insert_product.php" method="POST" enctype="multipart/form-data">
+		<form action="assets/createnewitem.php" method="POST">
 			
 			<table align="center">
-				<tr>
-			    	<th colspan="7"><h2>Insert New Product</h2></th>
-			  	</tr>
 
 			  	<tr>
 			    	<td>Product Name: </td>
@@ -182,33 +175,3 @@ include 'partials/head.php'
 </body>
 </html>
 
-<?php
-
-	if (isset($_POST['insert_post'])) {
-
-		$product_name = $_POST['product_name'];
-		$product_price = $_POST['product_price'];
-		$product_volume = $_POST['product_volume'];
-		$product_cat = $_POST['product_cat'];
-		$product_brand = $_POST['product_brand'];
-		$product_availability = $_POST['product_availability'];
-		$product_packaging = $_POST['product_packaging'];
-		
-		$product_image = $_FILES['product_image']['name'];
-		$product_image_tmp = $_FILES['product_image']['tmp_name'];
-
-		move_uploaded_file($product_image_tmp, 'assets/images/$product_image');
-
-		echo $insert_product = "INSERT INTO product(product_name, price, volume_id, categories_id, brand_id, stocks_id, packaging_id, image) VALUES ('$product_name', '$product_price', '$product_volume', '$product_cat', '$product_brand', '$product_availability', '$product_packaging', '$product_image')";
-
-		$insert_pro = mysqli_query($conn, $insert_product);
-
-		if ($insert_pro) {
-
-			// echo "<script>alert('Product has been added')</script>";
-			// echo "<script>window.open('insert_product.php', '_self')</script>";
-		}
-
-	}
-
-?>

@@ -1,14 +1,14 @@
 <?php
 
-	$con = mysqli_connect("localhost", "root", "", "csp2");
+	$conn = mysqli_connect("localhost", "root", "", "csp2");
 
 
 	// get categories to the db
 	// post it to catalog.php .left-side-bar
 	function getCats() {
-		global $con;
+		global $conn;
 		$get_cats = "select * from categories";
-		$run_cats = mysqli_query($con, $get_cats);
+		$run_cats = mysqli_query($conn, $get_cats);
 
 		while ($row_cats = mysqli_fetch_array($run_cats)) {
 			$cat_id = $row_cats['cat_id'];
@@ -23,9 +23,9 @@
 	// post it to catalog.php .left-side-bar
 	// and to brands.php
 	function getBrands() {
-		global $con;
+		global $conn;
 		$get_brands = "select * from brands";
-		$run_brands = mysqli_query($con, $get_brands);
+		$run_brands = mysqli_query($conn, $get_brands);
 
 		while ($row_brands = mysqli_fetch_array($run_brands)) {
 			$brands_id = $row_brands['id'];
@@ -40,9 +40,9 @@
 	// post it to catalog.php .left-side-bar
 	// and to brands.php
 	function getMen() {
-		global $con;
+		global $conn;
 		$get_men = "SELECT product_name FROM product WHERE categories_id = '1'";
-		$run_men = mysqli_query($con, $get_men);
+		$run_men = mysqli_query($conn, $get_men);
 
 		while ($row_men = mysqli_fetch_array($run_men)) {
 			
@@ -53,9 +53,9 @@
 	}
 
 	function getWomen() {
-		global $con;
+		global $conn;
 		$get_women = "SELECT product_name FROM product WHERE categories_id = '2'";
-		$run_women = mysqli_query($con, $get_women);
+		$run_women = mysqli_query($conn, $get_women);
 
 		while ($row_women = mysqli_fetch_array($run_women)) {
 			
@@ -66,9 +66,9 @@
 	}
 
 	function getUnisex() {
-		global $con;
+		global $conn;
 		$get_unisex = "SELECT product_name FROM product WHERE categories_id = '3'";
-		$run_unisex = mysqli_query($con, $get_unisex);
+		$run_unisex = mysqli_query($conn, $get_unisex);
 
 		while ($row_unisex = mysqli_fetch_array($run_unisex)) {
 			
@@ -80,9 +80,9 @@
 
 
 	function getStocks() {
-		global $con;
+		global $conn;
 		$get_stocks = "select * from stocks";
-		$run_stocks = mysqli_query($con, $get_stocks);
+		$run_stocks = mysqli_query($conn, $get_stocks);
 
 		while ($row_stocks = mysqli_fetch_array($run_stocks)) {
 			$stocks_id = $row_stocks['id'];
@@ -93,9 +93,9 @@
 	}
 
 	function getVolume() {
-		global $con;
+		global $conn;
 		$get_volume = "select * from volume";
-		$run_volume = mysqli_query($con, $get_volume);
+		$run_volume = mysqli_query($conn, $get_volume);
 
 		while ($row_volume = mysqli_fetch_array($run_volume)) {
 			$volume_id = $row_volume['id'];
@@ -106,9 +106,9 @@
 	}
 
 	function getPackaging() {
-		global $con;
+		global $conn;
 		$get_packaging = "select * from packaging";
-		$run_packaging = mysqli_query($con, $get_packaging);
+		$run_packaging = mysqli_query($conn, $get_packaging);
 
 		while ($row_packaging = mysqli_fetch_array($run_packaging)) {
 			$packaging_id = $row_packaging['id'];
