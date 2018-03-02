@@ -1,3 +1,54 @@
+<!-- details modal -->
+		<div class="modal fade details-1" id="details-1" tabindex="-1" role="dialog" aria-labelledby="details-1" aria-hidden="true">
+			<div class="modal-dialog modal-lg">
+				<div class="modal-content">
+					<div class="modal-header">
+						<button class="close" type="button" data-dismiss="modal" aria-label="Close">
+							<span aria-hidden="true">&times;</span>
+						</button>
+						<h4 class="modal-title text-center">HUGO BOSS</h4>
+					</div><!-- end of modal header -->
+
+					<div class="modal-body">
+						<div class="container-fluid">
+							<div class="row">
+								<div class="col-sm-6">
+									<div class="center-block">
+										<img src="assets/images/hugojustdiff.jpg" alt="hugojustdiff" class="details img-responsive">	
+									</div><!-- center-block -->
+								</div><!-- col-sm-6 -->
+
+								<div class="col-sm-6">
+									<h4>Details</h4>
+									<p>Product Decription here. Product Decription here. Product Decription here. Product Decription here. </p>
+									<hr>
+									<p>Price: php 54.99</p>
+									<p>Brand: Hugo Boss</p>
+									<form action="add_to_cart.php" method="POST">
+										<div class="form-group">
+											<label></label>
+										</div>
+									</form>
+								</div><!-- col-sm-6 -->
+							</div><!-- row -->
+						</div><!-- container-fluid -->
+					</div><!-- modal-body -->
+
+					<div class="modal-footer">
+						<button class="btn btn-default" data-dismiss="modal">Close</button>
+						<button class="btn btn-warning" type="submit"><span class="glyphicon glyphicon-shopping-cart"></span>Add to Cart</button>
+					</div>
+				</div><!-- modal-content -->
+			</div><!-- modal-dialog modal-lg -->
+		</div><!-- modal fade details-1 -->
+
+
+
+
+
+
+
+
 TESTERS are items that were intended to be placed on the counter of a department store for customers to sample. 
 They are usually unboxed or in a simple brown or white box. 
 Testers are always fresh, new, and completely full but sometimes they do not have a cap.

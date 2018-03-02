@@ -9,13 +9,16 @@
 
 	<title>SCENT OF ADALINE | <?php getTitle(); ?></title>
 
-	<link rel="stylesheet" href="animate.min.css">
+	<link rel="stylesheet" href="animate.css">
 
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@3.5.2/animate.min.css">
   	<!-- or 
   	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">-->
 
   	<!-- fonts -->
+
+  	<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+  	
 	<link href="https://fonts.googleapis.com/css?family=Gloria+Hallelujah" rel="stylesheet">
 
 	<!-- fav icon -->
@@ -26,3 +29,7 @@
 
 	<!-- imports custom stylesheet -->
 	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+  	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>

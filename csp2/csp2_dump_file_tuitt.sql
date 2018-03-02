@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Feb 22, 2018 at 01:57 PM
+-- Generation Time: Mar 01, 2018 at 02:13 PM
 -- Server version: 10.1.21-MariaDB
 -- PHP Version: 7.1.2
 
@@ -23,19 +23,19 @@ SET time_zone = "+00:00";
 -- --------------------------------------------------------
 
 --
--- Table structure for table `brand`
+-- Table structure for table `brands`
 --
 
-CREATE TABLE `brand` (
+CREATE TABLE `brands` (
   `id` int(11) NOT NULL,
   `name` varchar(255) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
--- Dumping data for table `brand`
+-- Dumping data for table `brands`
 --
 
-INSERT INTO `brand` (`id`, `name`) VALUES
+INSERT INTO `brands` (`id`, `name`) VALUES
 (1, 'Acqua Di Gio'),
 (2, 'Burberry'),
 (3, 'Bvlgari'),
@@ -74,40 +74,47 @@ INSERT INTO `brand` (`id`, `name`) VALUES
 -- --------------------------------------------------------
 
 --
+-- Table structure for table `categories`
+--
+
+CREATE TABLE `categories` (
+  `cat_id` int(11) NOT NULL,
+  `cat_title` varchar(255) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `categories`
+--
+
+INSERT INTO `categories` (`cat_id`, `cat_title`) VALUES
+(1, 'men'),
+(2, 'women'),
+(3, 'unisex');
+
+-- --------------------------------------------------------
+
+--
 -- Table structure for table `customer`
 --
 
 CREATE TABLE `customer` (
   `id` int(11) NOT NULL,
-  `email` varchar(255) NOT NULL,
-  `image` varchar(255) NOT NULL,
   `username` varchar(255) NOT NULL,
   `password` varchar(255) NOT NULL,
+  `email` varchar(255) NOT NULL,
   `first_name` varchar(255) NOT NULL,
   `last_name` varchar(255) NOT NULL,
   `address` tinytext NOT NULL,
-  `contact` varchar(255) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
-
--- --------------------------------------------------------
-
---
--- Table structure for table `gender`
---
-
-CREATE TABLE `gender` (
-  `id` int(11) NOT NULL,
-  `name` varchar(255) NOT NULL
+  `contact` varchar(255) NOT NULL,
+  `image` varchar(255) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
--- Dumping data for table `gender`
+-- Dumping data for table `customer`
 --
 
-INSERT INTO `gender` (`id`, `name`) VALUES
-(1, 'men'),
-(2, 'women'),
-(3, 'unisex');
+INSERT INTO `customer` (`id`, `username`, `password`, `email`, `first_name`, `last_name`, `address`, `contact`, `image`) VALUES
+(1, 'user', '12dea96fec20593566ab75692c9949596833adc9', 'user@domain.com', 'user firstname', 'user lastname', 'user address here', '09161234567', '');
 
 -- --------------------------------------------------------
 
@@ -169,7 +176,7 @@ CREATE TABLE `product` (
   `product_name` varchar(255) NOT NULL,
   `price` decimal(10,2) NOT NULL,
   `volume_id` int(11) NOT NULL,
-  `gender_id` int(11) NOT NULL,
+  `categories_id` int(11) NOT NULL,
   `brand_id` int(11) NOT NULL,
   `stocks_id` int(11) NOT NULL,
   `packaging_id` int(11) NOT NULL,
@@ -180,7 +187,7 @@ CREATE TABLE `product` (
 -- Dumping data for table `product`
 --
 
-INSERT INTO `product` (`id`, `product_name`, `price`, `volume_id`, `gender_id`, `brand_id`, `stocks_id`, `packaging_id`, `image`) VALUES
+INSERT INTO `product` (`id`, `product_name`, `price`, `volume_id`, `categories_id`, `brand_id`, `stocks_id`, `packaging_id`, `image`) VALUES
 (1, '212 Men 100ml TB', '550.00', 1, 1, 5, 1, 2, 'assets/images/212men.jpg'),
 (2, '212 Men 100ml OB', '750.00', 1, 1, 5, 1, 1, 'assets/images/212men.jpg'),
 (3, '212 Sexy Men 100ml OB', '750.00', 1, 1, 5, 1, 1, 'assets/images/212sexymen.jpg'),
@@ -192,7 +199,42 @@ INSERT INTO `product` (`id`, `product_name`, `price`, `volume_id`, `gender_id`, 
 (9, 'Bvlgari Extreme 100ml OB', '750.00', 1, 1, 3, 1, 1, 'assets/images/bvlgari-omnia-amethyste.jpg'),
 (10, 'Bvlgari Man 100ml OB', '750.00', 1, 1, 3, 1, 1, 'assets/images/bvlgari-omnia-amethyste.jpg'),
 (11, 'Bvlgari Man Extreme 100ml OB', '750.00', 1, 1, 3, 1, 1, 'assets/images/bvlgari-omnia-amethyste.jpg'),
-(12, 'Bvlgari Man in Black 100ml OB', '750.00', 1, 1, 3, 1, 1, 'assets/images/bvlgari-omnia-amethyste.jpg');
+(12, 'Bvlgari Man in Black 100ml OB', '750.00', 1, 1, 3, 1, 1, 'assets/images/bvlgari-omnia-amethyste.jpg'),
+(13, 'Chanel Allure Sports 100ml TB', '550.00', 1, 1, 6, 1, 2, 'assets/images/chanelallure.jpg'),
+(14, 'Chanel Allure Sports 100ML OB', '750.00', 1, 1, 6, 1, 1, 'assets/images/chanelallure.jpg'),
+(15, 'Chanel Bleu De Chanel 100ml OB', '750.00', 1, 1, 6, 1, 1, 'assets/images/chanelbleu.jpg'),
+(16, 'Chanel Bleu De Chanel 100ml TB', '550.00', 1, 1, 6, 1, 2, 'assets/images/chanelbleu.jpg'),
+(17, 'CK Eternity 100ml TB', '550.00', 1, 1, 4, 1, 2, 'assets/images/cketernity.jpg'),
+(18, 'CK Eternity Now 100ml TB', '550.00', 1, 1, 4, 1, 2, 'assets/images/cketernitynowmen.jpg'),
+(19, 'CK Eternity Now 100ml OB', '750.00', 1, 1, 4, 1, 1, 'assets/images/cketernitynowmen.jpg'),
+(20, 'CK Free 100ml OB', '750.00', 1, 1, 4, 1, 1, 'assets/images/ckfree.jpg'),
+(21, 'CK In2U Him 100ml OB', '750.00', 1, 1, 4, 1, 1, 'assets/images/ckin2u.jpg'),
+(22, 'Clinique Happy 100ml TB', '550.00', 1, 2, 8, 1, 1, 'assets/images/cliniquehappy.jpg'),
+(23, 'Clinique Happy 100ml OB', '750.00', 1, 2, 8, 1, 1, 'assets/images/cliniquehappy.jpg'),
+(24, 'D&G Light Blue 125ml TB', '650.00', 2, 1, 10, 1, 2, 'assets/images/DGlightblue.jpg'),
+(25, 'D&G Light Blue 125ml OB', '750.00', 2, 1, 10, 1, 1, 'assets/images/DGlightblue.jpg'),
+(26, 'D&G The One 100ml OB', '750.00', 1, 1, 10, 1, 1, 'assets/images/dolcetheonemen.jpg'),
+(27, 'Dior Fahrenheit 100ml TB', '550.00', 1, 1, 7, 1, 2, 'assets/images/dolcefahrenheitmen.jpg'),
+(28, 'Dior Fahrenheit 100ml OB', '750.00', 1, 1, 7, 1, 1, 'assets/images/dolcefahrenheitmen.jpg'),
+(29, 'Dior Sauvage 100ml OB', '750.00', 1, 1, 7, 1, 1, 'assets/images/dolcesauvagemen.jpg'),
+(30, 'Hugo Boss Bottled Night 100ml OB', '750.00', 1, 1, 18, 1, 1, 'assets/images/HugoBossBottledNight.jpg'),
+(31, 'Hugo Boss Bottled 100ml OB', '750.00', 1, 1, 18, 1, 1, 'assets/images/HugoBossBottledNight.jpg'),
+(32, 'Hugo Boss Just Different 150ml TB', '750.00', 3, 1, 18, 1, 2, 'assets/images/hugojustdiff.jpg'),
+(33, 'Hugo Boss Just Different 150ml OB', '850.00', 3, 1, 18, 1, 1, 'assets/images/hugojustdiff.jpg'),
+(34, 'Hugo Boss Man 150ml OB', '850.00', 3, 1, 18, 1, 1, 'assets/images/hugobossman.jpg'),
+(35, 'Issey Miyake L\'eau D\'issey 125ml TB', '650.00', 2, 1, 19, 1, 2, 'assets/images/issey-men.jpg'),
+(36, 'Issey Miyake L\'eau D\'issey 125ml OB', '750.00', 2, 1, 19, 1, 1, 'assets/images/issey-men.jpg'),
+(37, 'Kenzo Blue 100ml TB ?(Out of Stock)', '550.00', 1, 1, 22, 2, 2, 'assets/images/kenzoleauparmen.jpg'),
+(38, 'Lacoste Cool Play Blue 125ml TB(Out of Stock)', '650.00', 2, 1, 23, 2, 2, 'assets/images/LacosteCoolPlayBlue.jpg'),
+(39, 'Lacoste Essential 125ml TB', '650.00', 2, 1, 23, 1, 2, 'assets/images/Lacoste Essential.jpg'),
+(40, 'Lacoste Essential 125ml OB', '750.00', 2, 1, 23, 1, 1, 'assets/images/Lacoste Essential.jpg'),
+(41, 'Jo Malone Blackberry & Bay Edp 100ml OB (unisex)', '750.00', 1, 3, 20, 1, 1, 'assets/images/JoMaloneBlackberryBay.jpg'),
+(42, 'Jo Malone Carrot Blossom & Fennel Edp 100ml (unisex)', '750.00', 1, 3, 20, 1, 1, 'assets/images/JoMaloneCarrotBlossom.jpg'),
+(43, 'Jo Malone Dark Amber & Ginger Lily Edp 100ml OB (unisex)', '750.00', 1, 3, 20, 1, 1, 'assets/images/JoMaloneDarkAmber.jpg'),
+(44, 'Jo Malone Jade Leaf Tea Edp 100ml OB (unisex)', '750.00', 1, 3, 20, 1, 1, 'assets/images/JoMaloneJadeLeafTea.jpg'),
+(45, 'Jo Malone Lavender & Coriander Edp 100ml OB (unisex)', '750.00', 1, 3, 20, 1, 1, 'assets/images/Jo-Malone-Lavender-Coriander.jpg'),
+(46, 'Jo Malone Lime Basil & Mandarin Edp 100ml OB (unisex)?', '750.00', 1, 3, 20, 1, 1, 'assets/images/JoMaloneLimeBasilMandarin.jpg'),
+(73, 'item1', '100.00', 1, 1, 1, 1, 1, '');
 
 -- --------------------------------------------------------
 
@@ -287,10 +329,16 @@ INSERT INTO `volume` (`id`, `name`) VALUES
 --
 
 --
--- Indexes for table `brand`
+-- Indexes for table `brands`
 --
-ALTER TABLE `brand`
+ALTER TABLE `brands`
   ADD PRIMARY KEY (`id`);
+
+--
+-- Indexes for table `categories`
+--
+ALTER TABLE `categories`
+  ADD PRIMARY KEY (`cat_id`);
 
 --
 -- Indexes for table `customer`
@@ -299,12 +347,6 @@ ALTER TABLE `customer`
   ADD PRIMARY KEY (`id`),
   ADD UNIQUE KEY `email` (`email`),
   ADD UNIQUE KEY `username` (`username`);
-
---
--- Indexes for table `gender`
---
-ALTER TABLE `gender`
-  ADD PRIMARY KEY (`id`);
 
 --
 -- Indexes for table `my_cart`
@@ -334,7 +376,7 @@ ALTER TABLE `place_order`
 ALTER TABLE `product`
   ADD PRIMARY KEY (`id`),
   ADD KEY `product_fk0` (`volume_id`),
-  ADD KEY `product_fk1` (`gender_id`),
+  ADD KEY `product_fk1` (`categories_id`),
   ADD KEY `product_fk2` (`brand_id`),
   ADD KEY `product_fk3` (`stocks_id`),
   ADD KEY `product_fk4` (`packaging_id`);
@@ -379,20 +421,20 @@ ALTER TABLE `volume`
 --
 
 --
--- AUTO_INCREMENT for table `brand`
+-- AUTO_INCREMENT for table `brands`
 --
-ALTER TABLE `brand`
+ALTER TABLE `brands`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=35;
+--
+-- AUTO_INCREMENT for table `categories`
+--
+ALTER TABLE `categories`
+  MODIFY `cat_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 --
 -- AUTO_INCREMENT for table `customer`
 --
 ALTER TABLE `customer`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
---
--- AUTO_INCREMENT for table `gender`
---
-ALTER TABLE `gender`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 --
 -- AUTO_INCREMENT for table `my_cart`
 --
@@ -412,7 +454,7 @@ ALTER TABLE `place_order`
 -- AUTO_INCREMENT for table `product`
 --
 ALTER TABLE `product`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=13;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=74;
 --
 -- AUTO_INCREMENT for table `purchase`
 --
@@ -461,10 +503,11 @@ ALTER TABLE `place_order`
 --
 ALTER TABLE `product`
   ADD CONSTRAINT `product_fk0` FOREIGN KEY (`volume_id`) REFERENCES `volume` (`id`),
-  ADD CONSTRAINT `product_fk1` FOREIGN KEY (`gender_id`) REFERENCES `gender` (`id`),
-  ADD CONSTRAINT `product_fk2` FOREIGN KEY (`brand_id`) REFERENCES `brand` (`id`),
+  ADD CONSTRAINT `product_fk2` FOREIGN KEY (`brand_id`) REFERENCES `brands` (`id`),
   ADD CONSTRAINT `product_fk3` FOREIGN KEY (`stocks_id`) REFERENCES `stocks` (`id`),
-  ADD CONSTRAINT `product_fk4` FOREIGN KEY (`packaging_id`) REFERENCES `packaging` (`id`);
+  ADD CONSTRAINT `product_fk4` FOREIGN KEY (`packaging_id`) REFERENCES `packaging` (`id`),
+  ADD CONSTRAINT `product_ibfk_1` FOREIGN KEY (`categories_id`) REFERENCES `categories` (`cat_id`),
+  ADD CONSTRAINT `product_ibfk_2` FOREIGN KEY (`categories_id`) REFERENCES `categories` (`cat_id`);
 
 --
 -- Constraints for table `purchase`

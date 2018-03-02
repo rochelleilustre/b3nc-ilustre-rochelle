@@ -22,7 +22,7 @@ include 'partials/head.php'
 	<main class="wrapper ">
 		
 	<div class="container">	
-	<h1>LOG IN PAGE</h1>
+	<!-- <h1>LOG IN PAGE</h1> -->
 
 
 
