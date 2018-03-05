@@ -1,7 +1,13 @@
 <?php
 
+session_start();
+
+if (isset($_SESSION['current_user']))
+	header('location: home.php');
+
+
 function getTitle(){
-	echo 'INDEX of CSP2 E-COMMERCE WEBSITE';
+	echo 'INDEX | CSP2 E-COMMERCE WEBSITE';
 }
 
 include 'partials/head.php'

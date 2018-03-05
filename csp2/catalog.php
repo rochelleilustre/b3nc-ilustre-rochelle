@@ -76,8 +76,10 @@ include 'partials/head.php'
 		</div>-->
 
 		<!-- details modal -->
-		<div class="modal fade details-1" id="details-1?id=$modal_id" tabindex="-1" role="dialog" aria-labelledby="details-1" aria-hidden="true">
-			<?php getModal(); ?>
+		<!-- <div class="modal fade details-1" id="details-1" tabindex="-1" role="dialog" aria-labelledby="details-1" aria-hidden="true"> -->
+			<?php
+			// getModal();
+			?>
 		</div><!-- modal fade details-1 -->
 
 		</div> <!-- end of col-md-8 feature -->
@@ -99,5 +101,40 @@ include 'partials/head.php'
 	<!-- foot -->
 	<?php include 'partials/foot.php'; ?>
 
+	<!-- delete modal -->
+	<div id="show-item-details-modal" class="modal fade" role="dialog">
+	  <div class="modal-dialog">
+
+	    <!-- Modal content-->
+	    <div class="modal-content">
+	      <div class="modal-header">
+	        <button type="button" class="close" data-dismiss="modal">&times;</button>
+	        <h4 class="modal-title">Item Details</h4>
+	      </div>
+	      <div id="show-item-details-modal-body" class="modal-body">
+	      </div>
+	      <div class="modal-footer">
+	      </div>
+	    </div>
+
+	  </div>
+	</div>
+
+	<script type="text/javascript">
+		
+		$(document).on('click', '.show-item-details', function () {
+			var id = $(this).data('index');
+			// console.log(id);
+
+			$.get('assets/show_item_details.php',
+				{
+					item_id: id
+				},
+				function (data) {
+					$('#show-item-details-modal-body').html(data);
+				}
+			);
+		});
+	</script>
 </body>
 </html>

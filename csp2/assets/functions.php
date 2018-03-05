@@ -137,7 +137,7 @@
 					<img src='assets/images/$product_image' width='200' alt='$product_name'>
 					<h4>$product_name</h4>
 					<p>PHP $product_price</p>
-					<button type='button' class='btn btn-sm btn-success image-responsive' data-toggle='modal' data-target='#details-1?id=$product_id'>Details</button>
+					<button type='button' class='btn btn-sm btn-success image-responsive show-item-details' data-toggle='modal' data-target='#show-item-details-modal' data-index='".$product_id."'>Details</button>
 					<br><br>
 					
 				</div>

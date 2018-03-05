@@ -34,8 +34,31 @@ include 'assets/functions.php';
             ?>
           </a></li>
         <li><a href="catalog.php">Catalog</a></li>
-        <li><a href="login.php">Log In <span class="glyphicon glyphicon glyphicon-log-in" aria-hidden="true"></span></a></li>
-        <li><a href="register.php">Register</a></li>
+        
+
+        <?php
+
+        if (isset($_SESSION['current_user'])) {
+          echo '
+            <li>
+              <a href="logout.php">Logout</a>
+            </li>
+          ';
+        } else {
+          echo '
+            <li>
+              <li><a href="login.php">Log In <span class="glyphicon glyphicon glyphicon-log-in" aria-hidden="true"></span></a></li>
+            </li>
+            <li>
+              <a href="register.php">Register</a>
+            </li>
+          ';
+        }
+
+        ?>
+
+
+        <!-- <li><a href="register.php">Register</a></li> -->
        </ul>
     </div>
 
