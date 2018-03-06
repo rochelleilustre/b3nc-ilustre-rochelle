@@ -611,7 +611,7 @@ a {
 	width: 100%;
 	min-height: auto;
 	background-color: #363636;
-	position: fixed;
+	/*position: fixed;*/
 	left: 0;
 	bottom: 0;
 	text-align: center;
