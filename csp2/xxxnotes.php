@@ -48,7 +48,6 @@
 
 
 
-
 TESTERS are items that were intended to be placed on the counter of a department store for customers to sample. 
 They are usually unboxed or in a simple brown or white box. 
 Testers are always fresh, new, and completely full but sometimes they do not have a cap.

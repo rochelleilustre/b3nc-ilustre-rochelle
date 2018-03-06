@@ -118,4 +118,119 @@
 		}
 	}
 
+	function getProducts(){
+		global $conn;
+		$get_product = "select * from product";
+		$run_product = mysqli_query($conn, $get_product);
+
+		while ($row_product = mysqli_fetch_array($run_product)) {
+			$product_id = $row_product['id'];
+			$product_image = $row_product ['image'];
+			$product_name = $row_product ['product_name'];
+			$product_price = $row_product ['price'];		
+			
+		
+			echo "
+
+				<div class='item-parent-container form-group'>
+					
+					<img src='assets/images/$product_image' width='200' alt='$product_name'>
+					<h4>$product_name</h4>
+					<p>PHP $product_price</p>
+					<button type='button' class='btn btn-sm btn-success image-responsive' data-toggle='modal' data-target='#details-1?id=$product_id'>Details</button>
+					<br><br>
+					
+				</div>
+
+				
+
+
+			";
+
+		}
+	}	
+
+
+	function getModal(){
+		global $conn;
+		$get_modal = "select * from product limit 0,1";
+		$run_modal = mysqli_query($conn, $get_modal);
+
+		while ($row_modal = mysqli_fetch_array($run_modal)) {
+			$modal_id = $row_modal['id'];
+			$modal_name = $row_modal ['product_name'];
+			$modal_price = $row_modal ['price'];
+			$modal_volume = $row_modal ['volume_id'];
+			$modal_categories = $row_modal ['cat_title'];
+			$modal_brand = $row_modal ['brand_id'];
+			$modal_stocks = $row_modal ['stocks_id'];
+			$modal_image = $row_modal ['image'];
+
+
+	echo "		
+		<div class='modal-dialog modal-lg'>
+			<div class='modal-content'>
+				<div class='modal-header'>
+					<button class='close' type='button' data-dismiss='modal' aria-label='Close'>
+						<span aria-hidden='true'>&times;</span>
+					</button>
+					<h4 class='modal-title text-center'>$modal_name</h4>
+				</div><!-- end of modal header -->
+
+				<div class='modal-body'>
+					<div class='container-fluid'>
+						<div class='row'>
+							<div class='col-sm-6'>
+								<div class='center-block'>
+									<img src='assets/images/$modal_image' alt='$modal_name' class='details img-responsive'>	
+								</div><!-- center-block -->
+							</div><!-- col-sm-6 -->
+
+							<div class='col-sm-6'>
+								<h4 value='$modal_name'>$modal_name</h4>
+									
+								<hr>
+								<p>php $modal_price</p>	
+								<p>$modal_brand</p>
+								<form action='add_to_cart.php' method='POST'>
+									<div class='form-group'>
+										<label></label>
+									</div>
+								</form>
+							</div><!-- col-sm-6 -->
+						</div><!-- row -->
+					</div><!-- container-fluid -->
+				</div><!-- modal-body -->
+
+				<div class='modal-footer'>
+					<button class='btn btn-default' data-dismiss='modal'>Close</button>
+					<button class='btn btn-warning' type='submit'><span class='glyphicon glyphicon-shopping-cart'></span>Add to Cart</button>
+				</div>
+			</div><!-- modal-content -->
+		</div><!-- modal-dialog modal-lg -->
+
+			";
+
+		}
+
+	}
+
 ?>
+
+<!-- 
+
+$product_name = $row_product ['product_name'];
+			$product_price = $row_product ['product_price'];
+			$product_volume = $row_product ['product_volume'];
+			$product_categories = $row_product ['product_categories'];
+			$product_brand = $row_product ['product_brand'];
+			$product_stocks = $row_product ['product_stocks'];
+			$product_image = $row_product ['product_image'];
+
+<div class='col-md-3'>
+					<img src='assets/images/$product_image' width='250' alt=$product_name>
+					<h4>$product_name</h4>
+					<p>$product_price</p>
+					<button type='button' class='btn btn-sm btn-success' data-toggle='modal' data-target='#details-1'>Details</button>
+				</div>
+ -->

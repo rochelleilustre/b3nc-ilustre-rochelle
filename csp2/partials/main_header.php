@@ -22,7 +22,17 @@ include 'assets/functions.php';
     
     <div id="bs-example-navbar-collapse-1" class="navbar-collapse">
       <ul class="nav navbar-nav navbar-right" >
-        <li><a href="mycart.php">My Cart <span class="glyphicon glyphicon glyphicon glyphicon-shopping-cart" aria-hidden="true"></span></a></li>
+        <li><a href="mycart.php">My Cart <span class="glyphicon glyphicon glyphicon glyphicon-shopping-cart" aria-hidden="true"></span>
+        <?php
+
+            if (isset($_SESSION['current_user']) && isset($_SESSION['item_count'])) {
+              echo '
+                <strong style="color:red;">( '.$_SESSION['item_count'].' )</strong>
+              ';
+            }
+
+            ?>
+          </a></li>
         <li><a href="catalog.php">Catalog</a></li>
         <li><a href="login.php">Log In <span class="glyphicon glyphicon glyphicon-log-in" aria-hidden="true"></span></a></li>
         <li><a href="register.php">Register</a></li>

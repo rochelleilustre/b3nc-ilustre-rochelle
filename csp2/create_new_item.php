@@ -19,21 +19,6 @@ include 'partials/head.php'
 	<!-- main header -->
 	<?php include 'partials/main_header.php' ?>
 
-<<<<<<< HEAD
-	<main class="wrapper container">
-	<div class="container">	
-	<h1>CREATE NEW ITEM PAGE</h1>
-	</div>
-
-	<div class="insert-product container">
-		<form action="assets/createnewitem.php" method="POST">
-			
-			<table align="center">
-
-			  	<tr>
-			    	<td>Product Name: </td>
-					<td><input type="text" name="product_name"></td>
-=======
 	<main class="wrapper">
 	
 	<div class="insert-product container">
@@ -41,23 +26,18 @@ include 'partials/head.php'
 
 		<hr>
 
-		<form action="assets/createnewitem.php" method="POST">
+		<form action="assets/createnewitem.php" method="POST" enctype="multipart/form-data">
 			
 			<table>
 
 			  	<tr>
 			    	<td>Product Name: </td>
 					<td><input type="text" name="product_name" class="form-control"></td>
->>>>>>> 5832edcba97e03d66799077ed27c2db798ec8d1d
 			  	</tr>
 
 				<tr>
 					<td>Product Price: </td>
-<<<<<<< HEAD
-					<td><input type="text" name="product_price"></td>
-=======
 					<td><input type="text" name="product_price" class="form-control"></td>
->>>>>>> 5832edcba97e03d66799077ed27c2db798ec8d1d
 				</tr>
 
 				<tr>
@@ -74,11 +54,7 @@ include 'partials/head.php'
 									$volume_id = $row_volume['id'];
 									$volume_name = $row_volume['name'];
 
-<<<<<<< HEAD
-									echo "<option>$volume_name</option>";
-=======
 									echo '<option value="'.$volume_id.'">'.$volume_name.'</option>';
->>>>>>> 5832edcba97e03d66799077ed27c2db798ec8d1d
 								}
 
 							?>
@@ -100,11 +76,7 @@ include 'partials/head.php'
 									$cat_id = $row_cats['cat_id'];
 									$cat_title = $row_cats['cat_title'];
 
-<<<<<<< HEAD
-									echo "<option>$cat_title</option>";
-=======
 									echo '<option value=" ' . $cat_id. '">'. $cat_title .'</option>';
->>>>>>> 5832edcba97e03d66799077ed27c2db798ec8d1d
 									}	
 								?>
 						</select>
@@ -125,11 +97,7 @@ include 'partials/head.php'
 									$brands_id = $row_brands['id'];
 									$name = $row_brands['name'];
 
-<<<<<<< HEAD
-									echo "<option>$name</option>";
-=======
 									echo '<option value=" ' . $brands_id. '">'. $name .'</option>';
->>>>>>> 5832edcba97e03d66799077ed27c2db798ec8d1d
 									}
 								?>
 						</select>
@@ -149,11 +117,7 @@ include 'partials/head.php'
 										$stocks_id = $row_stocks['id'];
 										$stocks_name = $row_stocks['name'];
 
-<<<<<<< HEAD
-										echo "<option>$stocks_name</option>";
-=======
 										echo '<option value=" ' . $stocks_id. '">'. $stocks_name .'</option>';
->>>>>>> 5832edcba97e03d66799077ed27c2db798ec8d1d
 									}
 								?>
 						</select>
@@ -173,11 +137,7 @@ include 'partials/head.php'
 									$packaging_id = $row_packaging['id'];
 									$packaging_name = $row_packaging['name'];
 
-<<<<<<< HEAD
-									echo "<option>$packaging_name</option>";
-=======
 									echo '<option value=" ' . $packaging_id. '">'. $packaging_name .'</option>';
->>>>>>> 5832edcba97e03d66799077ed27c2db798ec8d1d
 								}
 
 
