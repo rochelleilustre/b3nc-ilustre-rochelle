@@ -10,8 +10,9 @@ $last_name = $_POST['last_name'];
 $address = $_POST['address'];
 $contact = $_POST['contact'];
 $image = $_POST['image'];
+$role = 'customer';
 
-$sql = "INSERT INTO customer (username, password, email, first_name, last_name, address, contact, image) VALUES ('$username', '$password', '$email', '$first_name', '$last_name', '$address', '$contact', '$image')";
+$sql = "INSERT INTO customers (username, password, email, first_name, last_name, address, contact, image) VALUES ('$username', '$password', '$email', '$first_name', '$last_name', '$address', '$contact', '$image')";
 
 $result = mysqli_query($conn, $sql);
 

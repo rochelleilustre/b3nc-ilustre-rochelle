@@ -40,6 +40,11 @@ include 'assets/functions.php';
 
         if (isset($_SESSION['current_user'])) {
           echo '
+
+            <li>
+              <a href="logout.php">Profile</a>
+            </li>
+
             <li>
               <a href="logout.php">Logout</a>
             </li>

@@ -103,6 +103,8 @@ include 'partials/head.php'
 	  	</div><!-- modal-dialog modal-lg -->
 	</div><!-- show-item-details-moda -->
 
+
+
 	<script type="text/javascript">
 		
 		$(document).on('click', '.show-item-details', function () {
@@ -111,7 +113,8 @@ include 'partials/head.php'
 
 			$.get('assets/show_item_details.php',
 				{
-					item_id: id
+					item_id: id,
+					brand_name: name	
 				},
 				function (data) {
 					$('#show-item-details-modal-body').html(data);

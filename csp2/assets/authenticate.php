@@ -7,7 +7,7 @@ require '../connect.php'; //database connection
 $username = $_POST['username'];
 $password = sha1($_POST['password']);
 
-$sql = "SELECT username, password FROM customer WHERE username = '$username'";
+$sql = "SELECT username, password FROM customers WHERE username = '$username'";
 $result = mysqli_query($conn, $sql);
 
 $isLogInSuccessful = false;
