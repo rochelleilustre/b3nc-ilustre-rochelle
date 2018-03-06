@@ -22,74 +22,51 @@ include 'partials/head.php'
 	<main class="wrapper container">
 
 
-	<div class="container-fluid product">
-		<div class="col-md-2 left-side-bar">
+		<div class="container-fluid product">
+			<div class="col-md-2 left-side-bar">
 
-			<div id="sidebar-title">FILTER BY</div>
-				<select id="filter">
-					<option>Select Filter</option>
-					<option>Price | low to high</option>
-					<option>Price | high to low</option>
-					<option>Alphabetically | A-Z</option>
-					<option>Alphabetically | Z-A</option>
-				</select>
+				<div id="sidebar-title">FILTER BY</div>
+					<select id="filter">
+						<option>Select Filter</option>
+						<option>Price | low to high</option>
+						<option>Price | high to low</option>
+						<option>Alphabetically | A-Z</option>
+						<option>Alphabetically | Z-A</option>
+					</select>
 
-			<div id="sidebar-title">CATEGORIES</div>
+				<div id="sidebar-title">CATEGORIES</div>
+					<ul id="cats">
+						<!-- <li><a href="#">For Men</a></li>
+						<li><a href="#">For Women</a></li>
+						<li><a href="#">Unisex</a></li> -->
 
-				<ul id="cats">
-					<!-- <li><a href="#">For Men</a></li>
-					<li><a href="#">For Women</a></li>
-					<li><a href="#">Unisex</a></li> -->
+						<?php getCats(); ?>
+					</ul>
 
-					<?php getCats(); ?>
+				<div id="sidebar-title">BRANDS</div>
+					<ul id="brands" class="bscrollbar">
+							<!-- <li><a href="#">Brand 1</a></li>
+							<li><a href="#">Brand 2</a></li>
+							<li><a href="#">Brand 3</a></li> -->
 
-				</ul>
+						<?php getBrands(); ?>	
+					</ul>	
 
-			<div id="sidebar-title">BRANDS</div>
-				<ul id="brands" class="bscrollbar">
-						<!-- <li><a href="#">Brand 1</a></li>
-						<li><a href="#">Brand 2</a></li>
-						<li><a href="#">Brand 3</a></li> -->
+				<div><a class="btn btn-primary btn-lg" href="create_new_item.php" role="button">ADD ITEMS</a></div>
 
-					<?php getBrands(); ?>	
+			</div><!-- col-md-2 left-side-bar -->
+				
 
-				</ul>	
-
-			<div><a class="btn btn-primary btn-lg" href="create_new_item.php" role="button">ADD ITEMS</a></div>
-
-		</div><!-- col-md-2 left-side-bar -->
-			
-
-		<!-- main content -->	
-		<div class="col-md-10 items-wrapper">
-			<h2>CATALOG SCENTS 2018</h2>
-			<br>
-			<div class="items container" id="items">
-				<?php getProducts(); ?>
-			</div>
-
-		</div>
-		
-		<!-- Right Side Bar 
-		<div class="col-md-2"></div>
-
-		</div>-->
-
-		<!-- details modal -->
-		<!-- <div class="modal fade details-1" id="details-1" tabindex="-1" role="dialog" aria-labelledby="details-1" aria-hidden="true"> -->
-			<?php
-			// getModal();
-			?>
-		</div><!-- modal fade details-1 -->
-
-		</div> <!-- end of col-md-8 feature -->
-			
-		<div class="col-md-2"><!-- Right Side Bar --></div>
-
-
-		</div>
-
-
+			<!-- main content -->	
+			<div class="col-md-10 items-wrapper">
+				<h2>CATALOG SCENTS 2018</h2>
+				<br>
+				<div class="items container" id="items">
+					<?php getProducts(); ?>
+				</div><!-- items container -->
+			</div><!-- col-md-10 items-wrapper -->
+							
+			<!--<div class="col-md-2"> Right Side Bar</div>-->
 
 		</div><!-- end of container-fluid -->
 	</main>
@@ -101,24 +78,30 @@ include 'partials/head.php'
 	<!-- foot -->
 	<?php include 'partials/foot.php'; ?>
 
-	<!-- delete modal -->
+	<!-- show-item-details-modal -->
 	<div id="show-item-details-modal" class="modal fade" role="dialog">
-	  <div class="modal-dialog">
+	 	<div class="modal-dialog modal-lg">
 
-	    <!-- Modal content-->
-	    <div class="modal-content">
-	      <div class="modal-header">
-	        <button type="button" class="close" data-dismiss="modal">&times;</button>
-	        <h4 class="modal-title">Item Details</h4>
-	      </div>
-	      <div id="show-item-details-modal-body" class="modal-body">
-	      </div>
-	      <div class="modal-footer">
-	      </div>
-	    </div>
+		    <!-- Modal content-->
+		    <div class="modal-content">
+		      
+			    <div class="modal-header">
+			    	<button type="button" class="close" data-dismiss="modal">&times;</button>
+			        <h4 class="modal-title">Item Details</h4>
+			    </div>
+			      
+			    <div id="show-item-details-modal-body" class="modal-body">
+			    	
+			    </div><!-- show-item-details-modal-body -->
 
-	  </div>
-	</div>
+			    <div class="modal-footer">
+			      	<button class='btn btn-default' data-dismiss='modal'>Close</button>
+					<button class='btn btn-warning' type='submit'><span class='glyphicon glyphicon-shopping-cart'></span>Add to Cart</button>
+			    </div><!-- modal-footer -->
+		    </div><!-- modal-content -->
+
+	  	</div><!-- modal-dialog modal-lg -->
+	</div><!-- show-item-details-moda -->
 
 	<script type="text/javascript">
 		
